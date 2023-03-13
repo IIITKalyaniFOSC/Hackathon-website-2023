@@ -864,6 +864,130 @@ body {
   width: 12 rem;
 }
 
+.faq-section {
+  padding: 4em 3em 2em 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.faq-title {
+  padding: 0.5em 0;
+  font-size: 3rem;
+  color: #9E9E9E;
+}
+
+.faq-title span {
+  color: #fff;
+}
+
+.faq-container {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 97%;
+  background-color: #2e2e2e;
+  padding: 0.1em 2em 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'VT323', monospace;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.faq-heading {
+  font-size: 2.25rem;
+  color: #E87D3E;
+}
+
+.terminate-icon {
+  padding: 1em 0 0 0;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.faq {
+  padding-bottom: 1em;
+}
+
+.faq-collapsible {
+  padding: 0;
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: 'VT323', monospace;
+  font-size: 1.75rem;
+  color: #ffffff;
+}
+
+.active, .faq-collapsible:hover {
+  color: #fff;
+}
+
+.faq-collapsible::after {
+  content: '[+]';
+  color: #E5B567;
+  font-weight: 400;
+  padding-right: 1em;
+}
+
+.active::after {
+  content: '[-]';
+  color: #169B81;
+}
+
+.faq-content {
+  padding: 0 1.2em 0 3em;
+  color: #fff;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-title{
+    font-size: 1.5rem;
+  }
+
+  .faq-section {
+    padding: 2em 3em 2em 1.5em;
+  }
+
+  .faq-container {
+    width: 104%;
+    padding: 0.5em 2em 0.5em 1em;
+  }
+
+  .faq-heading {
+    font-size: 1.27rem;
+  }
+
+  .terminate-icon {
+    display: none;
+  }
+
+  .faq-collapsible {
+    font-size: 1rem;
+  }
+
+  .faq {
+    font-size: 1rem;
+  }
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1021,4 +1145,3 @@ body {
     opacity: 1;
   }
 }
-
