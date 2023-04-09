@@ -1480,3 +1480,7 @@ body {
     line-height: 2.5rem;
   }
 }
+
+*, html {
+  scroll-behavior: smooth !important;
+}
