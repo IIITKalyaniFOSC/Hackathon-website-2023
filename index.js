@@ -125,3 +125,24 @@ function openTab(evt, tabName, bgColor, color) {
 }
 
 document.getElementById("defaultOpen").click();
+
+//blinking animation
+const blinkingAnimation=()=>{
+  new TypeIt("#blinking", { 
+    lifeLike: false, 
+    speed: 0 
+  })
+  .type(".")
+  .pause(435)
+  .type(".")
+  .pause(441)
+  .type(".")
+  .pause(438)
+  .go();
+}
+//preloader
+const loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  blinkingAnimation()
+  loader.style.display = "none";
+});
