@@ -140,9 +140,9 @@ const blinkingAnimation=()=>{
   .pause(438)
   .go();
 }
+blinkingAnimation();
 //preloader
 const loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
-  blinkingAnimation()
   loader.style.display = "none";
 });
