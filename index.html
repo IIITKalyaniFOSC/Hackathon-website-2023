@@ -50,9 +50,12 @@
       <li class="mx-4 my-6 xl:my-0 hover:text-white">
         <a href="#rules" class="text-3xl 2xl:text-4xl">RULES & FAQ</a>
       </li>
-      <button class="text-3xl md:text-4xl duration-500 px-2 py-1 mx-4 hover:bg-white hover:text-black" style="color: #f21212;">
-        REGISTER
-      </button>
+      <div 
+	    class="apply-button" 
+	    data-hackathon-slug="statuscode0" 
+	    data-button-theme="dark"
+	  style="height: 44px; width: 312px"
+    ></div>
     </ul>
   </nav>
 
@@ -168,7 +171,7 @@
           $ ls -a <span class="text-white">TRACKS</span>.txt
         </h1>
         
-        <div class="tab-box mx-5 md:mx-10 mt-5 md:mt-10">
+        <div class="tab-box mx-5 md:mx-10 mt-5 md:mt-10 hidden">
         <div class="flex flex-wrap justify-center overflow-x-auto overflow-y-auto mt-4">
           <button class="tablinks bg-gray-500 text-gray-400 hover:text-gray-100 rounded-t-lg py-2 mb-0 px-4 m-1" onclick="openTab(event, 'medical')" id="defaultOpen" autofocus>Medical</button>
           <button class="tablinks bg-gray-900 text-gray-400 hover:text-gray-100 rounded-t-lg py-2 mb-0 px-4 m-1" onclick="openTab(event, 'wildlife')">Wildlife</button>
@@ -722,6 +725,7 @@
       }
     }
   </script>
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 
 </html>

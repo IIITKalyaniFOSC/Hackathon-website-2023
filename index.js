@@ -146,3 +146,20 @@ const loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
+
+
+//devfolio
+
+// create a script element
+const script = document.createElement('script');
+script.src = 'https://apply.devfolio.co/v2/sdk.js';
+script.async = true;
+script.defer = true;
+
+// add the script to the body of the document
+document.body.appendChild(script);
+
+// remove the script from the body of the document on unmount
+window.addEventListener('beforeunload', () => {
+  document.body.removeChild(script);
+});
