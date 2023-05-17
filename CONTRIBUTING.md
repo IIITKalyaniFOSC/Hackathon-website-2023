@@ -4,7 +4,7 @@ When contributing to this repository, please first discuss the change you wish t
 email, or any other method with the owners of this repository before making a change. We also might have some pre-existing issues =, feel free to go through them.
 
 1. Get assigned to an existing issue or create an issue for the changes required.
-2. Once the issue is assigned, fork the repository and create a branch of `your name` from the `Deploy` branch.
+2. Once the issue is assigned, fork the repository and create a branch of `your name` from the `main` branch.
 3. Once the changes are done, push the changes to the forked repository.
 4. Once the changes are pushed, create a pull request.
 
