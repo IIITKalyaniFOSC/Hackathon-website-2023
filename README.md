@@ -16,3 +16,16 @@
   * to write ***vanilla/normal*** css, after running the command in a terminal, leave the terminal running and write the css in `src/input.css`
     * tailwind will compile your css into the `dist/output.css` which we be later shipped to `deploy` branch for deployment
 * For ***tailwind*** simply follow the normal tailwind procedure  listed [here](https://tailwindcss.com/docs/installation) 
+## How to deploy the website 
+ 
+ Right now the deployment is kind of a tiresome process, we will use this till we find a better alternative for it.
+
+ * First make changes on the `main` branch in your desired way(tailwindcss/vanilla).
+ * After you are done with the changes, copy the `index.html`, `output.css` and `index.css` from the `main` branch to the `deploy` branch. (I use gitkraken for making it easier to copy, using similar tool is recommended)
+* After you have made changes to both the branches push the branches using `git push origin main` and `git push origin deploy`.
+* After this the `cpanel` script will deploy the site to the server.
+
+>  **Warning:** You can directly make changes to the deploy branch and that would be reflected to the site as well, but it would mess up the `tailwindcss` rules and is not recommended .
+
+
+
