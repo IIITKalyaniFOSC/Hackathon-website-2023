@@ -5,8 +5,9 @@ email, or any other method with the owners of this repository before making a ch
 
 1. Get assigned to an existing issue or create an issue for the changes required.
 2. Once the issue is assigned, fork the repository and create a branch of `your name` from the `main` branch.
-3. Once the changes are done, push the changes to the forked repository.
-4. Once the changes are pushed, create a pull request.
+3. Merge `your name` branch to main in your fork and test it for any issues.
+4. Once the changes are done, push the changes to the forked repository.
+5. Once the changes are pushed, create a pull request.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
