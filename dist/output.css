@@ -680,6 +680,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-\[10rem\] {
   margin-bottom: 10rem;
 }
@@ -708,10 +712,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -728,6 +728,10 @@ video {
   height: 0.75rem;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .h-\[30rem\] {
   height: 30rem;
 }
@@ -736,16 +740,12 @@ video {
   height: 60rem;
 }
 
-.h-\[8rem\] {
-  height: 8rem;
-}
-
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .h-\[65vh\] {
   height: 65vh;
+}
+
+.h-\[8rem\] {
+  height: 8rem;
 }
 
 .w-\[20rem\] {
@@ -939,6 +939,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -952,11 +957,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pb-10 {
@@ -1297,12 +1297,17 @@ body {
     justify-content: center;
   }
 
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:gap-\[5rem\] {
     gap: 5rem;
   }
 
-  .md\:gap-5 {
-    gap: 1.25rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl {
@@ -1318,11 +1323,6 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -1393,16 +1393,16 @@ body {
     display: none;
   }
 
-  .xl\:h-\[40vh\] {
-    height: 40vh;
-  }
-
   .xl\:h-\[100\%\] {
     height: 100%;
   }
 
   .xl\:h-\[30vh\] {
     height: 30vh;
+  }
+
+  .xl\:h-\[40vh\] {
+    height: 40vh;
   }
 
   .xl\:w-\[30vw\] {
@@ -1429,19 +1429,14 @@ body {
     gap: 20rem;
   }
 
-  .xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .xl\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .xl\:pl-0 {
