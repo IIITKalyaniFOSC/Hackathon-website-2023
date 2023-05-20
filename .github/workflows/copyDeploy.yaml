@@ -11,7 +11,7 @@ jobs:
       - name: copy
         env:
           SRC_FOLDER_PATH: 'dist'
-          TARGET_BRANCH: 'actions'
+          TARGET_BRANCH: 'deploy'
         run: |
           files=$(ls $SRC_FOLDER_PATH) # get the file list
           git config --global user.name 'GitHub Action'
