@@ -1,910 +1,1243 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-    <link rel="icon" href="./assets/favicon_io/favicon.ico" />
-    <title>Status Code 0 | IIIT Kalyani</title>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                fontFamily: {
-                    sans: ["Roboto", "sans-serif"],
-                    body: ["Roboto", "sans-serif"],
-                    mono: ["ui-monospace", "monospace"],
-                },
-            },
-            corePlugins: {
-                preflight: false,
-            },
-        };
-    </script>
-</head>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/favicon-10ae7e9a.ico" />
 
-<body class="bg-[#1E1E1E]">
-    <!-- <div id="preloader">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <title>Status Code 0 | IIIT Kalyani</title>
+    <script type="module" crossorigin src="/assets/index-e0b1d37a.js"></script>
+    <link rel="stylesheet" href="/assets/index-bece9e72.css">
+  </head>
+  <body class="bg-[#1E1E1E]">
+    <div id="preloader">
       <h1 id="loadingText">
         Status Code 0 loading <span id="blinking"></span>
       </h1>
-    </div> -->
+    </div>
 
-    <nav class="py-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5">
-        <div class="flex justify-between items-center">
-            <span class="cursor-pointer">
-                <h1 class="m-0 text-3xl md:text-5xl xl:text-5xl">
-                    > STATUS CODE
-                    <span style="color: #f21212">0</span>
-                </h1>
-            </span>
+    <nav
+      class="py-5 bg-[#1E1E1E] xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
+    >
+      <div class="flex justify-between items-center">
+        <span class="cursor-pointer">
+          <h1 class="m-0 text-3xl md:text-5xl xl:text-5xl">
+            > STATUS CODE
+            <span style="color: #f21212">0</span>
+          </h1>
+        </span>
 
-            <span id="check" class="cursor-pointer mx-2 xl:hidden block">
-                <ion-icon class="text-3xl md:text-5xl" name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-        <ul
-            class="xl:flex xl:items-center z-50 xl:z-auto xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]">
-            <li class="mx-4 my-6 xl:my-0 hover:text-white">
-                <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
-            </li>
-            <li class="mx-4 my-6 xl:my-0 hover:text-white">
-                <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
-            </li>
-            <li class="mx-4 my-6 xl:my-0 hover:text-white">
-                <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
-            </li>
-            <li class="mx-4 my-6 xl:my-0 hover:text-white">
-                <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
-            </li>
-            <li class="mx-4 my-6 xl:my-0 hover:text-white">
-                <a href="#faq" class="text-3xl 2xl:text-4xl">RULES & FAQ</a>
-            </li>
-            <div class="apply-button" data-hackathon-slug="statuscode0" data-button-theme="dark"
-                style="height: 44px; width: 312px"></div>
-        </ul>
+        <span id="check" class="cursor-pointer mx-2 xl:hidden block">
+          <ion-icon
+            class="text-3xl md:text-5xl"
+            name="menu"
+            onclick="Menu(this)"
+          ></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="xl:flex xl:items-center lkmvi xl:z-auto xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]"
+      >
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#faq" class="text-3xl 2xl:text-4xl">RULES & FAQ</a>
+        </li>
+        <div
+          class="apply-button"
+          data-hackathon-slug="statuscode0"
+          data-button-theme="dark"
+          style="height: 44px; width: 312px"
+        ></div>
+      </ul>
     </nav>
-
     <div
-        class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[30rem] mx-5 xl:mx-16 py-24">
-        <div class="hero-text">
-            <h1 class="text-[#9E9E9E] m-0 tracking-wider text-2xl md:text-4xl xl:text-5xl">
-                $ man <span class="text-white z-10" id="element"></span>
-            </h1>
-            <p class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[120%]">
-                Status Code 0 is an exciting 36-hour hackathon event that brings
-                together talented software developers to showcase their creativity and
-                build innovative projects. Participants will have the opportunity to
-                compete in a variety of categories or tracks, demonstrating their
-                skills and ingenuity while collaborating with like-minded individuals.
-                This event is the perfect opportunity for developers to challenge
-                themselves, learn new skills, and create amazing products that have
-                the potential to make a significant impact in the industry.
-            </p>
+      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[30rem] mx-5 xl:mx-16 py-24"
+    >
+      <div class="hero-text">
+        <h1
+          class="text-[#9E9E9E] m-0 tracking-wider text-2xl md:text-4xl xl:text-5xl"
+        >
+          $ man <span class="text-white z-10" id="element"></span>
+        </h1>
+        <p
+          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[120%]"
+        >
+          Status Code 0 is an exciting 36-hour hackathon event that brings
+          together talented software developers to showcase their creativity and
+          build innovative projects. Participants will have the opportunity to
+          compete in a variety of categories or tracks, demonstrating their
+          skills and ingenuity while collaborating with like-minded individuals.
+          This event is the perfect opportunity for developers to challenge
+          themselves, learn new skills, and create amazing products that have
+          the potential to make a significant impact in the industry.
+        </p>
 
-            <div class="container my-12 flex items-center justify-center" style="color: #f21212">
-                <h1 class="text-5xl hidden m-0 text-white" id="headline">
-                    Countdown to the main event
-                </h1>
-                <div id="countdown ">
-                    <ul class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
-                        <li><span id="days"></span></li>
-                        <li><span id=""></span>:</li>
-                        <li><span id="hours"></span></li>
-                        <li><span id=""></span>:</li>
-                        <li><span id="minutes"></span></li>
-                        <li><span id=""></span>:</li>
-                        <li><span id="seconds"></span></li>
-                    </ul>
-                    <ul class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]">
-                        <li><span id=""></span>days</li>
-                        <li><span id=""></span>:</li>
-                        <li><span class="" id=""></span> hrs</li>
-                        <li><span id=""></span>:</li>
-                        <li><span id=""></span> min</li>
-                        <li><span id=""></span>:</li>
-                        <li><span id=""></span>sec</li>
-                    </ul>
-                </div>
-            </div>
+        <div
+          class="container my-12 flex items-center justify-center"
+          style="color: #f21212"
+        >
+          <h1 class="text-5xl hidden m-0 text-white" id="headline">
+            Countdown to the main event
+          </h1>
+          <div id="countdown ">
+            <ul
+              class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
+            >
+              <li><span id="days"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="hours"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="minutes"></span></li>
+              <li><span id=""></span>:</li>
+              <li><span id="seconds"></span></li>
+            </ul>
+            <ul
+              class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
+            >
+              <li><span id=""></span>days</li>
+              <li><span id=""></span>:</li>
+              <li><span class="" id=""></span> hrs</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span> min</li>
+              <li><span id=""></span>:</li>
+              <li><span id=""></span>sec</li>
+            </ul>
+          </div>
         </div>
-        <img class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block" style="margin: 0 5em 10em 0"
-            src="./assets/mascot.gif" alt="" />
+      </div>
+      <img
+        class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block"
+        style="margin: 0 5em 10em 0"
+        src="/assets/mascot-9cf2466a.gif"
+        alt=""
+      />
     </div>
 
     <div id="schedule" class="mt-10 mx-5 xl:mx-16">
-        <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
-            $ cat <span class="text-white">SCHEDULE</span>.txt
-        </h1>
-        <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
-            <div class="relative mb-[10rem] w-[90vw] xl:w-[30vw]">
-                <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="./assets/ladder.png" alt="" />
-                <img class="mt-5 h-[60rem] w-auto relative xl:hidden" src="./assets/laddermobile.png" alt="" />
-                <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#CCCC6C]">
-                        Registration Begin
-                    </h1>
-                    <p class="xl:text-2xl">7th May 2023 : 0001 Hrs</p>
-                </div>
-                <div class="absolute top-[12.8rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#CCCC6C]">
-                        Registration Closes
-                    </h1>
-                    <p class="xl:text-2xl">5th August 2023 : 0000 Hrs</p>
-                </div>
-                <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#6164AD]">
-                        Opening Ceremony
-                    </h1>
-                    <p class="xl:text-2xl">12th August 2023 : 0900 Hrs</p>
-                </div>
-                <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#CD3838]">
-                        Speaker session
-                    </h1>
-                    <p class="xl:text-2xl">TBD</p>
-                </div>
-            </div>
-            <div class="absolute xl:relative mb-[10rem] w-[90vw] xl:w-[30vw]">
-                <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="./assets/ladder.png" alt="" />
-                <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#50BE62]">
-                        Mid- Phase Evaluation
-                    </h1>
-                    <p class="xl:text-2xl">12th August 2023 : 2200 Hrs</p>
-                </div>
-                <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#CD3838]">
-                        Speaker Session
-                    </h1>
-                    <p class="xl:text-2xl">TBD</p>
-                </div>
-                <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#50BE62]">
-                        Final Evaluation
-                    </h1>
-                    <p class="xl:text-2xl">13th August 2023 : 1500 Hrs</p>
-                </div>
-                <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
-                    <h1 class="text-4xl xl:text-4xl m-0 text-[#6164AD]">
-                        Closing Ceremony
-                    </h1>
-                    <p class="xl:text-2xl">13th August 2023 : 1730 Hrs</p>
-                </div>
-            </div>
+      <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
+        $ cat <span class="text-white">SCHEDULE</span>.txt
+      </h1>
+      <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
+        <div class="relative mb-[10rem] w-[90vw] xl:w-[30vw]">
+          <img
+            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC"
+            alt=""
+          />
+          <img
+            class="mt-5 h-[60rem] w-auto relative xl:hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAANGCAYAAAC1OHOpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbuSURBVHgB7d2hkcUwEAVB6cqRKrBN1ce/DTy8Gy6celjaM3OvH+ecvXj4W3wmViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWsN9ek+SdZQViBWIFYgXX29Fzwe8sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAqut+M5Zy8eLCsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQK9gzcy8+saxArECsQKzgejuec/biwbICsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECXyMHlhWIFYgViBX4GjmwrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsYM/MvfjEsgKxArECsYLr7XjO2YsHywrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECvbM3ItPLCsQKxArECu43o7nnL14sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGDPzL34xLICsQKxArGCf//TKWtbPq/eAAAAAElFTkSuQmCC"
+            alt=""
+          />
+          <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#CCCC6C]">
+              Registration Begin
+            </h1>
+            <p class="xl:text-2xl">15 April 2023, 0000 hrs</p>
+          </div>
+          <div class="absolute top-[12.8rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#CCCC6C]">
+              Registration Closes
+            </h1>
+            <p class="xl:text-2xl">30 April 2023, 0000 hrs</p>
+          </div>
+          <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#6164AD]">
+              Opening Ceremony
+            </h1>
+            <p class="xl:text-2xl">6 May 2023, 0900 hrs</p>
+          </div>
+          <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#CD3838]">
+              Speaker session
+            </h1>
+            <p class="xl:text-2xl">6 May 2023, 1600 hrs</p>
+          </div>
         </div>
+        <div class="absolute xl:relative mb-[10rem] w-[90vw] xl:w-[30vw]">
+          <img
+            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC"
+            alt=""
+          />
+          <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#50BE62]">
+              Mid Evaluation
+            </h1>
+            <p class="xl:text-2xl">7 May 2023 , 0000 hrs</p>
+          </div>
+          <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#CD3838]">
+              Speaker Session
+            </h1>
+            <p class="xl:text-2xl">7 May 2023, 1000 hrs</p>
+          </div>
+          <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#50BE62]">
+              Final Evaluation
+            </h1>
+            <p class="xl:text-2xl">7 May 2012, 1400 hrs</p>
+          </div>
+          <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
+            <h1 class="text-4xl xl:text-4xl m-0 text-[#6164AD]">
+              Closing Ceremony
+            </h1>
+            <p class="xl:text-2xl">7 May 2023 ,1600 hrs</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="tracks" class="mt-10 mx-5 xl:mx-16">
-        <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
-            $ ls -a <span class="text-white">TRACKS</span>.txt
-        </h1>
-        <div class="mx-10 my-20 bg-[#555555] pt-10 pb-2 px-2 hidden xl:block">
-            <ul class="flex list-none flex-col flex-wrap pl-0 md:flex-row" role="tablist" data-te-nav-ref>
-                <li role="presentation" class="flex-auto text-center">
-                    <a href="#pills-home01"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-home-tab01" data-te-toggle="pill" data-te-target="#pills-home01" data-te-nav-active
-                        role="tab" aria-controls="pills-home01" aria-selected="true">Medical</a>
-                </li>
-                <li role="profile" class="flex-auto text-center">
-                    <a href="#pills-profile01"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-profile-tab01" data-te-toggle="pill" data-te-target="#pills-profile01" role="tab"
-                        aria-controls="pills-profile01" aria-selected="false">Environment</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-contact01"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-contact01" role="tab"
-                        aria-controls="pills-contact01" aria-selected="false">Wildlife</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-04"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-04" role="tab"
-                        aria-controls="pills-04" aria-selected="false">Gender Inclusivity</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-05"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-05" role="tab"
-                        aria-controls="pills-05" aria-selected="false">Education</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-06"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-06" role="tab"
-                        aria-controls="pills-06" aria-selected="false">Employment</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-07"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-07" role="tab"
-                        aria-controls="pills-07" aria-selected="false">Fintech</a>
-                </li>
-                <li role="contact" class="flex-auto text-center">
-                    <a href="#pills-08"
-                        class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-                        id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-08" role="tab"
-                        aria-controls="pills-08" aria-selected="false">Security</a>
-                </li>
-            </ul>
+      <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
+        $ ls -a <span class="text-white">TRACKS</span>.txt
+      </h1>
+      <div class="mx-10 my-20 bg-[#555555] pt-10 pb-2 px-2 hidden xl:block">
+        <ul
+          class="flex list-none flex-col flex-wrap pl-0 md:flex-row"
+          role="tablist"
+          data-te-nav-ref
+        >
+          <li role="presentation" class="flex-auto text-center">
+            <a
+              href="#pills-home01"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-home-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-home01"
+              data-te-nav-active
+              role="tab"
+              aria-controls="pills-home01"
+              aria-selected="true"
+              >Medical</a
+            >
+          </li>
+          <li role="profile" class="flex-auto text-center">
+            <a
+              href="#pills-profile01"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-profile-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-profile01"
+              role="tab"
+              aria-controls="pills-profile01"
+              aria-selected="false"
+              >Environment</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-contact01"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-contact01"
+              role="tab"
+              aria-controls="pills-contact01"
+              aria-selected="false"
+              >Wildlife</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-04"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-04"
+              role="tab"
+              aria-controls="pills-04"
+              aria-selected="false"
+              >Gender Inclusivity</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-05"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-05"
+              role="tab"
+              aria-controls="pills-05"
+              aria-selected="false"
+              >Education</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-06"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-06"
+              role="tab"
+              aria-controls="pills-06"
+              aria-selected="false"
+              >Employment</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-07"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-07"
+              role="tab"
+              aria-controls="pills-07"
+              aria-selected="false"
+              >Fintech</a
+            >
+          </li>
+          <li role="contact" class="flex-auto text-center">
+            <a
+              href="#pills-08"
+              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              id="pills-contact-tab01"
+              data-te-toggle="pill"
+              data-te-target="#pills-08"
+              role="tab"
+              aria-controls="pills-08"
+              aria-selected="false"
+              >Security</a
+            >
+          </li>
+        </ul>
 
-            <!--Pills content-->
-            <div class="mb-2">
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-home01" role="tabpanel" aria-labelledby="pills-home-tab01" data-te-tab-active>
-                    In this track, participants work on developing software solutions
-                    related to healthcare and medicine. They might build applications
-                    that help patients manage their health, or tools that assist
-                    healthcare providers in diagnosing and treating patients.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-profile01" role="tabpanel" aria-labelledby="pills-profile-tab01">
-                    The wildlife track encourages participants to build software
-                    solutions that support wildlife conservation and the preservation of
-                    biodiversity. Participants might develop applications that help
-                    track wildlife populations, monitor habitats, prevent illegal
-                    wildlife trade, or even provide early warning systems for natural
-                    calamities such as forest fires or floods that can significantly
-                    impact wildlife and their habitats. The aim is to leverage
-                    technology to mitigate the effects of such natural disasters and
-                    protect wildlife from harm.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-contact01" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    This track focuses on building software solutions that promote
-                    sustainability and protect the environment. Participants might
-                    create applications that help reduce waste, conserve energy, monitor
-                    the health of ecosystems, or streamline recycling processes. The
-                    possibilities are endless, and the goal is to develop innovative
-                    solutions that contribute to a cleaner and more sustainable future.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-04" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    The Gender Inclusivity Track at Status Code 0 focuses on building
-                    software solutions that promote gender equality and inclusiveness,
-                    addressing various issues affecting women and girls. Participants
-                    are encouraged to create applications that combat gender-based
-                    violence, improve access to healthcare, and promote equal
-                    opportunities for women in the workplace. Furthermore, the track
-                    encourages participants to build solutions that support the LGBTQIA+
-                    community and non-binary individuals. This includes creating
-                    applications that address discrimination, promote equal rights, and
-                    provide support for their mental health and overall well-being. The
-                    goal is to leverage technology to create a more equitable and
-                    inclusive society, free from all forms of discrimination and bias.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-05" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    The education track encourages participants to build software
-                    solutions that enhance the quality of education. Participants might
-                    develop applications that provide personalized learning experiences,
-                    improve access to education for disadvantaged communities, or help
-                    teachers and students collaborate more effectively.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-06" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    This track focuses on building software solutions that address
-                    employment challenges. Participants might create applications that
-                    help job seekers find employment, or tools that assist employers in
-                    finding the right candidates for their open positions.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-07" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    The fintech track encourages participants to build software
-                    solutions that support financial innovation and inclusion.
-                    Participants might develop applications that make financial services
-                    more accessible, improve financial literacy, or support financial
-                    inclusion for underbanked communities.
-                </div>
-                <div class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-                    id="pills-08" role="tabpanel" aria-labelledby="pills-contact-tab01">
-                    This track focuses on building software solutions that improve
-                    cybersecurity. Participants might develop applications that detect
-                    and prevent cyber threats, or tools that help organizations protect
-                    their data and networks.
-                </div>
-            </div>
+        <!--Pills content-->
+        <div class="mb-2">
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-home01"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab01"
+            data-te-tab-active
+          >
+            In this track, participants work on developing software solutions
+            related to healthcare and medicine. They might build applications
+            that help patients manage their health, or tools that assist
+            healthcare providers in diagnosing and treating patients.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-profile01"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab01"
+          >
+            The wildlife track encourages participants to build software
+            solutions that support wildlife conservation and the preservation of
+            biodiversity. Participants might develop applications that help
+            track wildlife populations, monitor habitats, prevent illegal
+            wildlife trade, or even provide early warning systems for natural
+            calamities such as forest fires or floods that can significantly
+            impact wildlife and their habitats. The aim is to leverage
+            technology to mitigate the effects of such natural disasters and
+            protect wildlife from harm.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-contact01"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            This track focuses on building software solutions that promote
+            sustainability and protect the environment. Participants might
+            create applications that help reduce waste, conserve energy, monitor
+            the health of ecosystems, or streamline recycling processes. The
+            possibilities are endless, and the goal is to develop innovative
+            solutions that contribute to a cleaner and more sustainable future.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-04"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            The Gender Inclusivity Track at Status Code 0 focuses on building
+            software solutions that promote gender equality and inclusiveness,
+            addressing various issues affecting women and girls. Participants
+            are encouraged to create applications that combat gender-based
+            violence, improve access to healthcare, and promote equal
+            opportunities for women in the workplace. Furthermore, the track
+            encourages participants to build solutions that support the LGBTQIA+
+            community and non-binary individuals. This includes creating
+            applications that address discrimination, promote equal rights, and
+            provide support for their mental health and overall well-being. The
+            goal is to leverage technology to create a more equitable and
+            inclusive society, free from all forms of discrimination and bias.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-05"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            The education track encourages participants to build software
+            solutions that enhance the quality of education. Participants might
+            develop applications that provide personalized learning experiences,
+            improve access to education for disadvantaged communities, or help
+            teachers and students collaborate more effectively.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-06"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            This track focuses on building software solutions that address
+            employment challenges. Participants might create applications that
+            help job seekers find employment, or tools that assist employers in
+            finding the right candidates for their open positions.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-07"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            The fintech track encourages participants to build software
+            solutions that support financial innovation and inclusion.
+            Participants might develop applications that make financial services
+            more accessible, improve financial literacy, or support financial
+            inclusion for underbanked communities.
+          </div>
+          <div
+            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+            id="pills-08"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab01"
+          >
+            This track focuses on building software solutions that improve
+            cybersecurity. Participants might develop applications that detect
+            and prevent cyber threats, or tools that help organizations protect
+            their data and networks.
+          </div>
         </div>
-        <!-- Accordian mobile-->
-        <div class="bg-[#555555] my-10 px-3 py-10 xl:hidden">
-            <div id="accordionExample ">
-                <div class="">
-                    <h2 class="mb-0" id="headingOne">
-                        <button
-                            class="group relative text-center flex w-full items-center justify-center px-5 py-4 bg-white text-[#1B1B1B] transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            MEDICAL
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="!visible" data-te-collapse-item data-te-collapse-show
-                        aria-labelledby="headingOne" data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            In this track, participants work on developing software
-                            solutions related to healthcare and medicine. They might build
-                            applications that help patients manage their health, or tools
-                            that assist healthcare providers in diagnosing and treating
-                            patients.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="mb-0" id="headingTwo">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
-                            aria-expanded="false" aria-controls="collapseTwo">
-                            ENVIRONMENT
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            The wildlife track encourages participants to build software
-                            solutions that support wildlife conservation and the
-                            preservation of biodiversity. Participants might develop
-                            applications that help track wildlife populations, monitor
-                            habitats, prevent illegal wildlife trade, or even provide early
-                            warning systems for natural calamities such as forest fires or
-                            floods that can significantly impact wildlife and their
-                            habitats. The aim is to leverage technology to mitigate the
-                            effects of such natural disasters and protect wildlife from
-                            harm.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="accordion-header mb-0" id="headingThree">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed
-                            data-te-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            WILDLIFE
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            This track focuses on building software solutions that promote
-                            sustainability and protect the environment. Participants might
-                            create applications that help reduce waste, conserve energy,
-                            monitor the health of ecosystems, or streamline recycling
-                            processes. The possibilities are endless, and the goal is to
-                            develop innovative solutions that contribute to a cleaner and
-                            more sustainable future.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="accordion-header mb-0" id="headingFour">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed
-                            data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            INCLUSIVITY
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            The Gender Inclusivity Track at Status Code 0 focuses on
-                            building software solutions that promote gender equality and
-                            inclusiveness, addressing various issues affecting women and
-                            girls. Participants are encouraged to create applications that
-                            combat gender-based violence, improve access to healthcare, and
-                            promote equal opportunities for women in the workplace.
-                            Furthermore, the track encourages participants to build
-                            solutions that support the LGBTQIA+ community and non-binary
-                            individuals. This includes creating applications that address
-                            discrimination, promote equal rights, and provide support for
-                            their mental health and overall well-being. The goal is to
-                            leverage technology to create a more equitable and inclusive
-                            society, free from all forms of discrimination and bias.
-                        </div>
-                    </div>
-                </div>
-                <div class="border border-x-0 mt-2 border-t-0 border-neutral-200 bg-white">
-                    <h2 class="accordion-header mb-0" id="headingFive">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed
-                            data-te-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            EDUCATION
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            The education track encourages participants to build software
-                            solutions that enhance the quality of education. Participants
-                            might develop applications that provide personalized learning
-                            experiences, improve access to education for disadvantaged
-                            communities, or help teachers and students collaborate more
-                            effectively.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="accordion-header mb-0" id="headingSix">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix"
-                            aria-expanded="false" aria-controls="collapseSix">
-                            EMPLOYMENT
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSix"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            This track focuses on building software solutions that address
-                            employment challenges. Participants might create applications
-                            that help job seekers find employment, or tools that assist
-                            employers in finding the right candidates for their open
-                            positions.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="accordion-header mb-0" id="headingSeven">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed
-                            data-te-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            FINTECH
-                        </button>
-                    </h2>
-                    <div id="collapseSeven" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSeven"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            The fintech track encourages participants to build software
-                            solutions that support financial innovation and inclusion.
-                            Participants might develop applications that make financial
-                            services more accessible, improve financial literacy, or support
-                            financial inclusion for underbanked communities.
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2">
-                    <h2 class="accordion-header mb-0" id="headingEight">
-                        <button
-                            class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
-                            type="button" data-te-collapse-init data-te-collapse-collapsed
-                            data-te-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            SECURITY
-                        </button>
-                    </h2>
-                    <div id="collapseEight" class="!visible hidden" data-te-collapse-item aria-labelledby="headingEight"
-                        data-te-parent="#accordionExample">
-                        <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-                            This track focuses on building software solutions that improve
-                            cybersecurity. Participants might develop applications that
-                            detect and prevent cyber threats, or tools that help
-                            organizations protect their data and networks.
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <!-- Accordian mobile-->
+      <div class="bg-[#555555] my-10 px-3 py-10 xl:hidden">
+        <div id="accordionExample ">
+          <div class="">
+            <h2 class="mb-0" id="headingOne">
+              <button
+                class="group relative text-center flex w-full items-center justify-center px-5 py-4 bg-white text-[#1B1B1B] transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                MEDICAL
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="!visible"
+              data-te-collapse-item
+              data-te-collapse-show
+              aria-labelledby="headingOne"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                In this track, participants work on developing software
+                solutions related to healthcare and medicine. They might build
+                applications that help patients manage their health, or tools
+                that assist healthcare providers in diagnosing and treating
+                patients.
+              </div>
             </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="mb-0" id="headingTwo">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ENVIRONMENT
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingTwo"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                The wildlife track encourages participants to build software
+                solutions that support wildlife conservation and the
+                preservation of biodiversity. Participants might develop
+                applications that help track wildlife populations, monitor
+                habitats, prevent illegal wildlife trade, or even provide early
+                warning systems for natural calamities such as forest fires or
+                floods that can significantly impact wildlife and their
+                habitats. The aim is to leverage technology to mitigate the
+                effects of such natural disasters and protect wildlife from
+                harm.
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingThree">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                WILDLIFE
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingFour"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                This track focuses on building software solutions that promote
+                sustainability and protect the environment. Participants might
+                create applications that help reduce waste, conserve energy,
+                monitor the health of ecosystems, or streamline recycling
+                processes. The possibilities are endless, and the goal is to
+                develop innovative solutions that contribute to a cleaner and
+                more sustainable future.
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingFour">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                INCLUSIVITY
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingFour"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                The Gender Inclusivity Track at Status Code 0 focuses on
+                building software solutions that promote gender equality and
+                inclusiveness, addressing various issues affecting women and
+                girls. Participants are encouraged to create applications that
+                combat gender-based violence, improve access to healthcare, and
+                promote equal opportunities for women in the workplace.
+                Furthermore, the track encourages participants to build
+                solutions that support the LGBTQIA+ community and non-binary
+                individuals. This includes creating applications that address
+                discrimination, promote equal rights, and provide support for
+                their mental health and overall well-being. The goal is to
+                leverage technology to create a more equitable and inclusive
+                society, free from all forms of discrimination and bias.
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-0 mt-2 border-t-0 border-neutral-200 bg-white"
+          >
+            <h2 class="accordion-header mb-0" id="headingFive">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                EDUCATION
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingFive"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                The education track encourages participants to build software
+                solutions that enhance the quality of education. Participants
+                might develop applications that provide personalized learning
+                experiences, improve access to education for disadvantaged
+                communities, or help teachers and students collaborate more
+                effectively.
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingSix">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                EMPLOYMENT
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingSix"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                This track focuses on building software solutions that address
+                employment challenges. Participants might create applications
+                that help job seekers find employment, or tools that assist
+                employers in finding the right candidates for their open
+                positions.
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingSeven">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                FINTECH
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingSeven"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                The fintech track encourages participants to build software
+                solutions that support financial innovation and inclusion.
+                Participants might develop applications that make financial
+                services more accessible, improve financial literacy, or support
+                financial inclusion for underbanked communities.
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingEight">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-white px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-[#D9D9D9] font-bold text-4xl"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                SECURITY
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingEight"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
+              >
+                This track focuses on building software solutions that improve
+                cybersecurity. Participants might develop applications that
+                detect and prevent cyber threats, or tools that help
+                organizations protect their data and networks.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="prize" class="mt-10 mx-5 xl:mx-16">
-        <div class="hidden md:justify-center md:items-center">
-            <img class="h-[8rem] md:h-[20rem]" src="./assets/flyingComputer.gif" alt="shape pattern" />
-        </div>
-        <div class="prize">
-            <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
-                $ vi <span class="text-white">PRIZE</span>.yml
-            </h1>
-            <div class="mt-5">
-                <h1 class="text-3xl text-[#9E9E9E]">
-                    > ANNOUNCEMENT COMING
+      <div class="hidden md:justify-center md:items-center">
+        <img
+          class="h-[8rem] md:h-[20rem]"
+          src="data:image/gif;base64,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"
+          alt="shape pattern"
+        />
+      </div>
+      <div class="prize">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
+          $ vi <span class="text-white">PRIZE</span>.yml
+        </h1>
+        <div class="mt-5">
+          <h1 class="text-3xl text-[#9E9E9E]">
+            > ANNOUNCEMENT COMING
 
-                    <span class="text-[red]">SOON</span>
-                </h1>
-            </div>
-
-            <div class="text-white text-[1.4rem] md:text-3xl mt-5 hidden">
-                <h2>
-                    &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
-                    &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-                    <span class="text-[#CCCC6C]">20000</span><br />
-                    &nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runner-up:
-                    <span class="text-[#CCCC6C]">10000</span><br />
-                    &nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;second-runner-up:
-                    <span class="text-[#CCCC6C]">5000</span><br />
-                    &nbsp;5 <br />
-                    &nbsp;6 <span class="text-[#CD3838]">Track-1:</span> <br />
-                    &nbsp;7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-                    <span class="text-[#CCCC6C]">5000</span><br />
-                    &nbsp;8 <br />
-                    &nbsp;9 <span class="text-[#CD3838]">Track-2:</span> <br />
-                    10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-                    <span class="text-[#CCCC6C]">5000</span>
-                </h2>
-            </div>
+            <span class="text-[red]">SOON</span>
+          </h1>
         </div>
+
+        <div class="text-white text-[1.4rem] md:text-3xl mt-5 hidden">
+          <h2>
+            &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
+            &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+            <span class="text-[#CCCC6C]">20000</span><br />
+            &nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runner-up:
+            <span class="text-[#CCCC6C]">10000</span><br />
+            &nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;second-runner-up:
+            <span class="text-[#CCCC6C]">5000</span><br />
+            &nbsp;5 <br />
+            &nbsp;6 <span class="text-[#CD3838]">Track-1:</span> <br />
+            &nbsp;7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+            <span class="text-[#CCCC6C]">5000</span><br />
+            &nbsp;8 <br />
+            &nbsp;9 <span class="text-[#CD3838]">Track-2:</span> <br />
+            10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+            <span class="text-[#CCCC6C]">5000</span>
+          </h2>
+        </div>
+      </div>
     </div>
 
     <div id="sponsers" class="mt-10 mx-5 xl:mx-16">
-        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
-            $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
-        </h1>
-        <div class="border-8 border-[#68ACB0] text-white p-10 mb-16 my-10">
-            <div class="transform -translate-y-14 flex items-center justify-center">
-                <h1 class="font-bold text-4xl text-center w-[20rem] bg-[#1E1E1E] tracking-widest text-[#68ACB0] m-0">
-                    PLATINUM
-                </h1>
-            </div>
-            <div class="flex flex-col xl:flex-row items-center gap-10 justify-around">
-                <a href="https://devfolio.co/" class="cursor-pointer">
-                    <img src="./assets/Devfolio.svg" alt="DEVFOLIO LOGO" />
-                </a>
-                <a href="https://polygon.technology/" class="cursor-pointer">
-                    <img src="./assets/Polygon.svg" alt="POLYGON LOGO" />
-                </a>
-            </div>
+      <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
+        $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
+      </h1>
+      <div class="border-8 border-[#68ACB0] text-white p-10 mb-16 my-10">
+        <div class="transform -translate-y-14 flex items-center justify-center">
+          <h1
+            class="font-bold text-4xl text-center w-[20rem] bg-[#1E1E1E] tracking-widest text-[#68ACB0] m-0"
+          >
+            PLATINUM
+          </h1>
         </div>
-        <div class="border-8 border-[#BE9BE5] text-white p-10 mb-16">
-            <div class="transform -translate-y-14 flex items-center justify-center">
-                <h1 class="font-bold text-4xl text-center w-[20rem] bg-[#1E1E1E] tracking-widest text-[#BE9BE5] m-0">
-                    GOLD
-                </h1>
-            </div>
+        <div
+          class="flex flex-col xl:flex-row items-center gap-10 justify-around"
+        >
+          <a href="https://devfolio.co/" class="cursor-pointer">
+            <img src="/assets/Devfolio-88f610a1.svg" alt="DEVFOLIO LOGO" />
+          </a>
+          <a href="https://polygon.technology/" class="cursor-pointer">
+            <img src="/assets/Polygon-49522c6d.svg" alt="POLYGON LOGO" />
+          </a>
+        </div>
+      </div>
+      <div class="border-8 border-[#BE9BE5] text-white p-10 mb-16">
+        <div class="transform -translate-y-14 flex items-center justify-center">
+          <h1
+            class="font-bold text-4xl text-center w-[20rem] bg-[#1E1E1E] tracking-widest text-[#BE9BE5] m-0"
+          >
+            GOLD
+          </h1>
+        </div>
 
-            <div class="flex flex-col xl:flex-row items-center justify-around gap-10">
-                <a href="https://solana.com/" class="cursor-pointer">
-                    <img src="./assets/Solana.svg" alt="SOLANA LOGO" />
-                </a>
-                <a href="https://filecoin.io/" class="cursor-pointer">
-                    <img src="./assets/Filecoin.svg" alt="FILECOIN LOGO" />
-                </a>
-                <a href="https://replit.com/" class="cursor-pointer">
-                    <img src="./assets/Replit.svg" alt="REPLIT LOGO" />
-                </a>
-            </div>
+        <div
+          class="flex flex-col xl:flex-row items-center justify-around gap-10"
+        >
+          <a href="https://solana.com/" class="cursor-pointer">
+            <img src="/assets/Solana-793e8952.svg" alt="SOLANA LOGO" />
+          </a>
+          <a href="https://filecoin.io/" class="cursor-pointer">
+            <img src="/assets/Filecoin-ff8b0181.svg" alt="FILECOIN LOGO" />
+          </a>
+          <a href="https://replit.com/" class="cursor-pointer">
+            <img src="/assets/Replit-1ee11cfb.svg" alt="REPLIT LOGO" />
+          </a>
         </div>
+      </div>
     </div>
 
     <!-- FAQ -->
     <div id="faq" class="mt-10 mx-5 xl:mx-16">
-        <div class="mb-10">
-            <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
-                $ ./<span class="text-white">RULES && </span>./<span class="text-white">FAQ</span>
+      <div class="mb-10">
+        <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
+          $ ./<span class="text-white">RULES && </span>./<span
+            class="text-white"
+            >FAQ</span
+          >
+        </h1>
+      </div>
+      <div class="bg-[#2E2E2E]">
+        <div class="flex justify-end pt-2 pr-2">
+          <img class="h-3" src="/assets/terminate-icon-8d639348.svg" />
+        </div>
+
+        <div class="ml-7 mr-3 pt-3 pb-10">
+          <div class="mt-5">
+            <h1 class="text-[#E87D3E] text-3xl xl:text-4xl m-0">RULES</h1>
+            <ul>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <span class="text-[#169B81]">[1] </span
+                  ><button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#169B81]"
+                  >
+                    [+]
+                  </button>
+                  Code of Conduct
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  [1] Eligibility: Only participants who have registered for the
+                  hackathon are eligible to participate.<br />
+                  [2] Code of Conduct: Participants must adhere to the code of
+                  conduct and anti-harassment policy during the event. Any
+                  violation of these policies may result in disqualification or
+                  expulsion from the event.<br />
+                  [3] Original Work: All submissions must be the original work
+                  of the participants. Any plagiarism or use of copyrighted
+                  material may result in disqualification.<br />
+                  [4] Teams: Participants may form teams of up to a certain
+                  number of members, usually specified in the rules. Teams may
+                  not exceed the specified limit, and participants may not be a
+                  member of more than one team.<br />
+                  [5] Time Limits: There may be time limits imposed on certain
+                  aspects of the event, such as the length of the hackathon or
+                  the time allowed for presentations.<br />
+                  [6] Judging Criteria: The judging criteria for the hackathon
+                  will be specified in the rules, including factors such as
+                  creativity, innovation, and technical skill.<br />
+                  [7] Prizes: The prizes for the hackathon will be specified in
+                  the rules, along with any other relevant information about
+                  prize distribution.<br />
+                  [8] Disqualification: The organizers reserve the right to
+                  disqualify any participant or team at their discretion, for
+                  any reason including but not limited to violation of the
+                  rules, code of conduct or anti-harassment policy, cheating or
+                  unethical behavior.<br />
+                  [9] Liability: Participants are responsible for their own
+                  actions during the event, and the organizers are not liable
+                  for any injury, loss, or damage incurred during the event.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <span class="text-[#169B81]">[2] </span
+                  ><button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#169B81]"
+                  >
+                    [+]
+                  </button>
+                  Guidelines for Hackers
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  [1] Be respectful and courteous to your fellow participants,
+                  mentors, and judges.<br />
+                  [2] Come prepared to work on a project and be open to
+                  collaboration.<br />
+                  [3] Be willing to learn new skills and embrace new
+                  challenges.<br />
+                  [4] Familiarize yourself with the hackathon theme and track
+                  that you are participating in.<br />
+                  [5] Focus on creating a functional and innovative solution,
+                  rather than just finishing quickly.<br />
+                  [6] Make sure to document your work and keep it organized
+                  throughout the hackathon.<br />
+                  [7] Present your solution in a clear and concise manner during
+                  the final presentations.<br />
+                  [8] Follow the hackathon's code of conduct and anti-harassment
+                  policy at all times.<br />
+                  [9] Avoid using AI-generated code, such as ChatGPT or Copilot,
+                  to ensure that all work is original and created by you or your
+                  team.<br />
+                  [10] Do not plagiarize or copy existing repositories or
+                  projects. While the use of open source resources is allowed,
+                  it's important to ensure that all code and ideas are original
+                  or properly attributed to their source.<br />
+                  [11] Utilize open source tools and resources responsibly and
+                  ethically, respecting the licenses and permissions associated
+                  with them.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <span class="text-[#169B81]">[3] </span
+                  ><button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#169B81]"
+                  >
+                    [+]
+                  </button>
+                  Guidelines for Mentors
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  [1] Be available to provide guidance and support to the
+                  hackers throughout the hackathon.<br />
+                  [2] Encourage and motivate the hackers to push their limits
+                  and achieve their best.<br />
+                  [3] Share your expertise and help the hackers overcome any
+                  technical difficulties they may face.<br />
+                  [4] Be open to answering questions and providing feedback on
+                  the hackers' solutions.<br />
+                  [5] Encourage teamwork and collaboration among the hackers.<br />
+                  [6] Follow the hackathon's code of conduct and anti-harassment
+                  policy at all times.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <span class="text-[#169B81]">[4] </span
+                  ><button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#169B81]"
+                  >
+                    [+]
+                  </button>
+                  Guidelines for Judges
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  [1] Familiarize yourself with the criteria for evaluating the
+                  solutions presented by the hackers.<br />
+                  [2] Be impartial and fair in your evaluations, taking into
+                  account the creativity, functionality, and feasibility of each
+                  solution.<br />
+                  [3] Be willing to ask questions and provide constructive
+                  feedback to the hackers during the final presentations.<br />
+                  [4] Evaluate each solution based on its own merit and not the
+                  background of the participants.<br />
+                  [5] Follow the hackathon's code of conduct and anti-harassment
+                  policy at all times.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <span class="text-[#169B81]">[5] </span
+                  ><button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#169B81]"
+                  >
+                    [+]
+                  </button>
+                  Anti-Harassment Policy
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  status_code_0 is committed to providing a safe and inclusive
+                  environment for all participants, regardless of gender, age,
+                  sexual orientation, disability, physical appearance, body
+                  size, race, religion, social class, economic status, or
+                  veteran status. The following behaviors are strictly
+                  prohibited at all status_code_0 events and in any online
+                  interactions related to the event:<br /><br />
+                  [1] Offensive verbal or written comments, including but not
+                  limited to comments related to the characteristics listed
+                  above.<br />
+                  [2] Sharing sexual images or other materials.<br />
+                  [3] Deliberate intimidation, stalking, following, or
+                  brigading.<br />
+                  [4] Doxxing, or the publication of personal information
+                  without consent.<br />
+                  [5] Harassing photography or recording.<br />
+                  [6] Sustained disruption of talks or other events.<br />
+                  [7] Inappropriate physical contact.<br />
+                  [8] Unwelcome sexual attention.<br /><br />
+
+                  If you are being subjected to harassment or witness someone
+                  else being harassed, we encourage you to report the behavior
+                  to a status_code_0 representative. If you are unsure how to
+                  report the behavior, or if you need immediate assistance,
+                  please reach out to a status_code_0 representative on site.<br /><br />
+
+                  status_code_0 takes all reports of harassment seriously and
+                  will take appropriate action to address the situation. This
+                  may include, but is not limited to, a warning to the offender,
+                  or expulsion from the event with no eligibility for
+                  reimbursement or refund of any type.<br /><br />
+
+                  All participants, including sponsors, judges, mentors,
+                  volunteers, organizers, and status_code_0 staff, are subject
+                  to this anti-harassment policy.<br /><br />
+
+                  By participating in a status_code_0 event, you agree to follow
+                  this anti-harassment policy and to make a good-faith effort to
+                  maintain a respectful and inclusive environment for all
+                  participants.<br /><br />
+
+                  Note: This policy is not exhaustive and status_code_0 reserves
+                  the right to take any action it deems necessary to ensure a
+                  safe and inclusive environment for all participants.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-9">
+            <h1 class="text-[#E87D3E] text-3xl xl:text-4xl">> FAQ</h1>
+            <ul>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  What is team size to participate ?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  You can participate individually or in teams of 2 or 3. If you
+                  are participating in the hackathon individually and looking
+                  for a team, we will help you in connecting to other individual
+                  participants to get you a team.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  Will the hackathon be in person or online?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  The Status Code 0 hackathon will be conducted in complete
+                  offline/in person mode.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  How much is participation fees?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  Participation is absolutely free inclusive of resources.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  What are prerequisites to participate in this hackathon ?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  No prerequisites are needed. Even a novice can excel in this
+                  event.
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  How to register?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  Register your team @ .
+                </p>
+              </li>
+              <li>
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                  <button
+                    onclick="Toggle(this)"
+                    class="faq-collapsible text-[#E5B567]"
+                  >
+                    [+]
+                  </button>
+                  What is the venue of Status Code 0 ?
+                </h1>
+                <p
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                >
+                  IISER KOLKATA
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <div
+      id="rules"
+      class="bg-[url('/assets/footer.png')] bg-cover h-[65vh] xl:h-[30vh] footer mt-10 px-5 xl:px-16"
+    >
+      <div
+        class="flex flex-col justify-center py-20 h-[100%] xl:h-[100%] gap-5"
+      >
+        <div class="flex flex-col xl:flex-row justify-between gap-5">
+          <div class="resources footerelements">
+            <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
+            <a
+              href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#9E9E9E]"
+            >
+              Sponsorship Brochure
+            </a>
+          </div>
+          <div class="address footerelements">
+            <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
+              ADDRESS
             </h1>
-        </div>
-        <div class="bg-[#2E2E2E]">
-            <div class="flex justify-end pt-2 pr-2">
-                <img class="h-3" src="./assets/terminate-icon.svg" />
+            <p
+              class="footercontent text-xl md:text-2xl addresscontent text-[#9E9E9E]"
+            >
+              APC Ray Lecture Hall Complex, IISER Kolkata
+            </p>
+            <p
+              class="text-xl md:text-2xl addresscontent text-[#9E9E9E] hover:text-white"
+            >
+              <a href="https://goo.gl/maps/PPd7UW3EXEUvu7po7"
+                >How to reach the venue?</a
+              >
+            </p>
+          </div>
+          <div class="social">
+            <h1
+              class="footerheading footerelements text-2xl md:text-4xl m-0 mb-5"
+            >
+              STAY CONNECTED
+            </h1>
+            <div class="flex justify-start xl:justify-between gap-7 md:gap-5">
+              <a href="https://www.instagram.com/tc_iiitkalyani/">
+                <img
+                  class="sociallogos insta_logo"
+                  src="data:image/png;base64,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"
+                  alt="insta_logo"
+                />
+              </a>
+              <a href="https://twitter.com/tc_IIITkalyani">
+                <img
+                  class="twitter_logo sociallogos"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ0SURBVHgBzVhNbBtFFH5vZtc/wbacqmqbtqGJ0tLCBZ9yAaHkAhw4BA7IQki1D4hW5S83flSSHhCVABHEgVQcXCSECJcYCYkWDg4HKgQVDahSSwTUoY0MJMGu7MY/uzuPGbcurrO2t2vT5JN2d/a9N/O+ffP3ZhH+ZwwksgMW45duESJaTEBiMRZ8pl19rBX6Tiz1mKbOlo9sK0AXEE5kw0HGs1TvpA5UexYL07q3PK7KOQj71DPI+ay5mnkvM74/yWrkdF9wxuvnP6iGoUPseuPbiCIHDeSorow3LuYPHKqssZeNkmda1al+FNEg+HtKyq5KsPjlhx5Z+THk+oEQ01KdkFRditvvSdnpsI5oPVkW6J3AnuDBGzY5ECz24JbdX0srZI2NEFBEkdwhHYELmJZ5DnVvyw+sRc/uXQAcJzBz3xuFh7Z+DgFm14AiqSN/txvdfbuQRI8zxs+JivEJnj8zxFpYjgXM0uzuRHak7+1fDoAD7EpkI8i5DzrHTyJ/9fHl1x6YZ62s0HPXCDKeYuGtE4pou25HxpLAtPYEqalmRV5nhRyDSy8MfqcEmrrpO+8zZa2vpIuH7WoxXY/KR1Qn+rQvkZ3h3FMxromzfx0O/g1ugE3lXwiP582lqG9hnenek7mhMrJfwRFIrpV8goTx400RZ0UE9hYQDcs3L7gAMvwMdc/kYtR7oSbTagWTaBVE5TRwzyMOmgrI+faO7P7/JMAyDK0TFuEwuIRs47xXlJfrZdUxOBCb9JUBRvgfv8fkNjQHLkAk+iyBk+AyegqmaV1eeCq0Ao0EcznwaYwnjD37HkUUc7CJoNWVw3L9SZCATYVqBMOR++UdLdiEuL4O7hkrycIx2EAgYkrT+M+N8irBdBxLKMz3waxMwwaByqWU5f3nQqP85k6Sjvfm/KbnqPyUDSFplgv5K0/2Fxvlt2x1C8+GVriFx+44SbOSZIYxZ6ey3XRkThc2gI9xhHsJ4Wkp2gluQKQGV1szM786nnlucMpOp8F6chEL+YsqtDLt2iI9dCM7aQ5L7l5UOdVMrdnI0oi0SIATzXd1h3AQPVEuXsw8v/9iM/26dEtNFiHuzG5C5bWk7gtMtbKxzQdlWOcRqKN1kdrrz/DQ9ldlQNKt7GwJqigyIU6SwNFOiVYnig1d6fi3YQYL7aq3HSQDicIO+VAXWFzOaBJHZNH5xKnO5EZX4jQXWiwdD/zZrrrjWSDPGy/JZOKodBfGJpF3ApmMfKOBNaZ6yYm91s5g78cUqoj8IXmYfgWuk3MNMo1TGus5nI6HHJFTaOqvP5GPAqMPkIgRokpCXSeiVCnOa9q20Wtry+bt/lqpEuz/6OolG508E2M3zsVpLvTRdNyfBheodvHQ3aF9VxaLT5TRnIEu4vLBUIcrvU0Xq/OvOguDC9T+ZOVnX+/NJaccj7NW+Bd6aoLHJRET9AAAAABJRU5ErkJggg=="
+                  alt="twitter_logo"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/technology-gymkhana-iiit-kalyani-a28035262"
+              >
+                <img
+                  class="sociallogos linkedin_logo"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHoSURBVHgB7ZjNS8JgGMCffZhkH/RFFJUVCZl08NIhKDI6KHQIukSXIugoHaJr/0J6SqhTEEFh0S27uaAunewQdCiMIDyIEaSm+2p71bWUwjV0U/aD7Xne7d34be8DzxiAgYG2YMUHJr1HdrOpyQWaw0bDvsUQWXyYBMIlhABoDU9Qwv5b0LV+2A/NTSTH0G2gIyRB3mLZxzDcg5vMoCdw0DmGoFpIJZPdEwPgHOmSxlmGBV/wDiqJIkGnrQs8gmSBjzRdcUGjBtWiaIlpmkPLWkCeVwpFgjvBCNqqSX0t8fKcDabGe6VxJsvCZuAG5VtLThjuaSnrPlTkFU7Cj2XNVSRo7W4Bx2C7NJbXoCgnP/cX988JKBdFgkqIJVIQun1BeQOZq6RZZx/0dlrAYW2HVfcoesDTqyfQRvAtBQeXDyhvbjShaLe25QSHOtAmPoRmgnJYjkcxHxRRFcF0hkGR+4eh0erUYgiqxRBUS319LCSF1iR2iALyXix2hY5Ws2wuU3J9/P3zx/Xy/DekfzMzG2cXGEF4QC/wQIX9C67aqUGMMa8BTo9xHLMNOkKqwfDufEwIsWnvcRzwqrTostCPSR6eY86Fn1iU8OkjvjD9CTLpJHW9t+IvjEsECYyMC4ECjeBYNgq1xBeM1Jn89yRZlAAAAABJRU5ErkJggg=="
+                  alt="linkedin_logo"
+                />
+              </a>
             </div>
-
-            <div class="ml-7 mr-3 pt-3 pb-10">
-                <div class="mt-5">
-                    <h1 class="text-[#E87D3E] text-3xl xl:text-4xl m-0">RULES</h1>
-                    <ul>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <span class="text-[#169B81]">[1] </span><button onclick="Toggle(this)"
-                                    class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Code of Conduct
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-24">
-                                [1] <b class = "text-white">Eligibility:</b> Only participants who have registered for the
-                                hackathon are eligible to participate.<br />
-                                [2] <b class = "text-white">Code of Conduct:</b> Participants must adhere to the code of
-                                conduct and anti-harassment policy during the event. Any
-                                violation of these policies may result in disqualification or
-                                expulsion from the event.<br />
-                                [3] <b class = "text-white">Original work:</b> All submissions must be the original work
-                                of the participants. Any plagiarism or use of copyrighted
-                                material may result in disqualification.<br />
-                                [4] <b class = "text-white">Teams:</b> Participants may form teams of up to a certain
-                                number of members, usually specified in the rules. Teams may
-                                not exceed the specified limit, and participants may not be a
-                                member of more than one team.<br />
-                                [5] <b class = "text-white">Time Limits:</b> There may be time limits imposed on certain
-                                aspects of the event, such as the length of the hackathon or
-                                the time allowed for presentations.<br />
-                                [6] <b class = "text-white">Judging Criteria:</b> The judging criteria for the hackathon
-                                will be specified in the rules, including factors such as
-                                creativity, innovation, and technical skill.<br />
-                                [7] <b class = "text-white">Prizes:</b> The prizes for the hackathon will be specified in
-                                the rules, along with any other relevant information about
-                                prize distribution.<br />
-                                [8] <b class = "text-white">Disqualification:</b> The organizers reserve the right to
-                                disqualify any participant or team at their discretion, for
-                                any reason including but not limited to violation of the
-                                rules, code of conduct or anti-harassment policy, cheating or
-                                unethical behavior.<br />
-                                [9] <b class = "text-white">Liability: </b> Participants are responsible for their own
-                                actions during the event, and the organizers are not liable
-                                for any injury, loss, or damage incurred during the event.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <span class="text-[#169B81]">[2] </span><button onclick="Toggle(this)"
-                                    class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Guidelines for Hackers
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-24">
-                                <b class = "text-white">[1]</b> Be respectful and courteous to your fellow participants,
-                                mentors, and judges.<br />
-                                <b class = "text-white">[2]</b> Come prepared to work on a project and be open to
-                                collaboration.<br />
-                                <b class = "text-white">[3]</b> Be willing to learn new skills and embrace new
-                                challenges.<br />
-                                <b class = "text-white">[4]</b> Familiarize yourself with the hackathon theme and track
-                                that you are participating in.<br />
-                                <b class = "text-white">[5]</b> Focus on creating a functional and innovative solution,
-                                rather than just finishing quickly.<br />
-                                <b class = "text-white">[6]</b> Make sure to document your work and keep it organized
-                                throughout the hackathon.<br />
-                                <b class = "text-white">[7]</b> Present your solution in a clear and concise manner during
-                                the final presentations.<br />
-                                <b class = "text-white">[8]</b> Follow the hackathon's code of conduct and anti-harassment
-                                policy at all times.<br />
-                                <b class = "text-white">[9]</b> Avoid using AI-generated code, such as ChatGPT or Copilot,
-                                to ensure that all work is original and created by you or your
-                                team.<br />
-                                <b class = "text-white">[10]</b> Do not plagiarize or copy existing repositories or
-                                projects. While the use of open source resources is allowed,
-                                it's important to ensure that all code and ideas are original
-                                or properly attributed to their source.<br />
-                                <b class = "text-white">[11]</b> Utilize open source tools and resources responsibly and
-                                ethically, respecting the licenses and permissions associated
-                                with them.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <span class="text-[#169B81]">[3] </span><button onclick="Toggle(this)"
-                                    class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Guidelines for Mentors
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-24">
-                                <b class = "text-white">[1]</b> Be available to provide guidance and support to the
-                                hackers throughout the hackathon.<br />
-                                <b class = "text-white">[2]</b> Encourage and motivate the hackers to push their limits
-                                and achieve their best.<br />
-                                <b class = "text-white">[3]</b> Share your expertise and help the hackers overcome any
-                                technical difficulties they may face.<br />
-                                <b class = "text-white">[4]</b> Be open to answering questions and providing feedback on
-                                the hackers' solutions.<br />
-                                <b class = "text-white">[5]</b> Encourage teamwork and collaboration among the hackers.<br />
-                                <b class = "text-white">[6]</b> Follow the hackathon's code of conduct and anti-harassment
-                                policy at all times.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <span class="text-[#169B81]">[4] </span><button onclick="Toggle(this)"
-                                    class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Guidelines for Judges
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-24">
-                                <b class = "text-white">[1]</b> Familiarize yourself with the criteria for evaluating the
-                                solutions presented by the hackers.<br />
-                                <b class = "text-white">[2]</b> Be impartial and fair in your evaluations, taking into
-                                account the creativity, functionality, and feasibility of each
-                                solution.<br />
-                                <b class = "text-white">[3]</b> Be willing to ask questions and provide constructive
-                                feedback to the hackers during the final presentations.<br />
-                                <b class = "text-white">[4]</b> Evaluate each solution based on its own merit and not the
-                                background of the participants.<br />
-                                <b class = "text-white">[5]</b> Follow the hackathon's code of conduct and anti-harassment
-                                policy at all times.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <span class="text-[#169B81]">[5] </span><button onclick="Toggle(this)"
-                                    class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Anti-Harassment Policy
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-24">
-                                <b class = "text-white">status_code_0 </b> is committed to providing a safe and inclusive
-                                environment for all participants, regardless of gender, age,
-                                sexual orientation, disability, physical appearance, body
-                                size, race, religion, social class, economic status, or
-                                veteran status. The following behaviors are strictly
-                                prohibited at all status_code_0 events and in any online
-                                interactions related to the event:<br /><br />
-                                <b class = "text-white">[1]</b> Offensive verbal or written comments, including but not
-                                limited to comments related to the characteristics listed
-                                above.<br />
-                                <b class = "text-white">[2]</b> Sharing sexual images or other materials.<br />
-                                <b class = "text-white">[3]</b> Deliberate intimidation, stalking, following, or
-                                brigading.<br />
-                                <b class = "text-white">[4]</b> Doxxing, or the publication of personal information
-                                without consent.<br />
-                                <b class = "text-white">[5]</b> Harassing photography or recording.<br />
-                                <b class = "text-white">[6]</b> Sustained disruption of talks or other events.<br />
-                                <b class = "text-white">[7]</b> Inappropriate physical contact.<br />
-                                <b class = "text-white">[8]</b> Unwelcome sexual attention.<br /><br />
-
-                                If you are being subjected to harassment or witness someone
-                                else being harassed, we encourage you to report the behavior
-                                to a status_code_0 representative. If you are unsure how to
-                                report the behavior, or if you need immediate assistance,
-                                please reach out to a status_code_0 representative on site.<br /><br />
-
-                                status_code_0 takes all reports of harassment seriously and
-                                will take appropriate action to address the situation. This
-                                may include, but is not limited to, a warning to the offender,
-                                or expulsion from the event with no eligibility for
-                                reimbursement or refund of any type.<br /><br />
-
-                                All participants, including sponsors, judges, mentors,
-                                volunteers, organizers, and status_code_0 staff, are subject
-                                to this anti-harassment policy.<br /><br />
-
-                                By participating in a status_code_0 event, you agree to follow
-                                this anti-harassment policy and to make a good-faith effort to
-                                maintain a respectful and inclusive environment for all
-                                participants.<br /><br />
-
-                                <b class = "text-white">Note:</b> This policy is not exhaustive and status_code_0 reserves
-                                the right to take any action it deems necessary to ensure a
-                                safe and inclusive environment for all participants.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-9">
-                    <h1 class="text-[#E87D3E] text-3xl xl:text-4xl">> FAQ</h1>
-                    <ul>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                What is team size to participate ?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                You can participate individually or in teams of 2 or 3. If you
-                                are participating in the hackathon individually and looking
-                                for a team, we will help you in connecting to other individual
-                                participants to get you a team.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                Will the hackathon be in person or online?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                The Status Code 0 hackathon will be conducted in complete
-                                offline/in person mode.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                How much is participation fees?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                Participation is absolutely free inclusive of resources.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                What are prerequisites to participate in this hackathon ?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                No prerequisites are needed. Even a novice can excel in this
-                                event.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                How to register?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                Register your team via <a href="https://statuscode0.devfolio.co/">Devfolio</a>.
-                            </p>
-                        </li>
-                        <li>
-                            <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                                <button onclick="Toggle(this)" class="faq-collapsible text-[#169B81]">
-                                    [+]
-                                </button>
-                                What is the venue of Status Code 0 ?
-                            </h1>
-                            <p class="example text-zinc-400 text-xl sm:text-2xl xl:text-3xl pl-12">
-                                IISER KOLKATA
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="copyright flex items-center justify-center mx-5">
+          <h1 class="m-0 text-xl xl:text-2xl">© 2023 Tech Club IIIT Kalyani</h1>
+        </div>
+      </div>
     </div>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <div id="rules" class="bg-[url('./assets/footer.png')] bg-cover h-[65vh] xl:h-[30vh] footer mt-10 px-5 xl:px-16">
-        <div class="flex flex-col justify-center py-20 h-[100%] xl:h-[100%] gap-5">
-            <div class="flex flex-col xl:flex-row justify-between gap-5">
-                <div class="resources footerelements">
-                    <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
-                    <a href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
-                        class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#9E9E9E]">
-                        Sponsorship Brochure
-                    </a>
-                </div>
-                <div class="address footerelements">
-                    <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
-                        ADDRESS
-                    </h1>
-                    <p class="footercontent text-xl md:text-2xl addresscontent text-[#9E9E9E]">
-                        APC Ray Lecture Hall Complex, IISER Kolkata
-                    </p>
-                    <p class="text-xl md:text-2xl addresscontent text-[#9E9E9E] hover:text-white">
-                        <a href="https://goo.gl/maps/PPd7UW3EXEUvu7po7">How to reach the venue?</a>
-                    </p>
-                </div>
-                <div class="social">
-                    <h1 class="footerheading footerelements text-2xl md:text-4xl m-0 mb-5">
-                        STAY CONNECTED
-                    </h1>
-                    <div class="flex justify-start xl:justify-between gap-7 md:gap-5">
-                        <a href="https://www.instagram.com/tc_iiitkalyani/">
-                            <img class="sociallogos insta_logo" src="./assets/images/insta_logo.png" alt="insta_logo" />
-                        </a>
-                        <a href="https://twitter.com/tc_IIITkalyani">
-                            <img class="twitter_logo sociallogos" src="./assets/images/twitter_logo.png"
-                                alt="twitter_logo" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/technology-gymkhana-iiit-kalyani-a28035262">
-                            <img class="sociallogos linkedin_logo" src="./assets/images/linkedin_logo.png"
-                                alt="linkedin_logo" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright flex items-center justify-center mx-5">
-                <h1 class="m-0 text-xl xl:text-2xl">© 2023 Tech Club IIIT Kalyani</h1>
-            </div>
-        </div>
-    </div>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu'
+          ? ((e.name = 'close'),
+            list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100'))
+          : ((e.name = 'menu'),
+            list.classList.remove('top-[80px]'),
+            list.classList.remove('opacity-100'));
+      }
+      //toggle end
+    </script>
 
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-    <script src="./dist/index.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+    
+  </body>
 </html>
