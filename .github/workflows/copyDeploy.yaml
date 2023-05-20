@@ -10,10 +10,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: copy
         env:
-          SRC_FOLDER_PATH: 'dist/assets', 'dist/index.html'
+          SRC_FOLDER_PATH: '/dist/*'
           TARGET_BRANCH: 'actions'
         run: |
-          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          files=$(ls $SRC_FOLDER_PATH) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
