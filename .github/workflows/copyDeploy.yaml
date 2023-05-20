@@ -1,35 +1,24 @@
-name: Copy Dist to actions Branch
+name: Copy folder to other branch
 
-on:
-  push:
-    branches:
-      - main  # Modify this branch name if needed
+on: [push]
 
 jobs:
-  copy-dist:
+  copy:
+    name: Copy my folder
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
-
-      - name: Copy dist/ folder
+      - uses: actions/checkout@v2
+      - name: copy
+        env:
+          SRC_FOLDER_PATH: 'dist'
+          TARGET_BRANCH: 'actions'
         run: |
-          mkdir actions
-          cp -R dist/* actions/
-
-      - name: Checkout actions branch
-        uses: actions/checkout@v2
-        with:
-          ref: actions
-          path: actions
-
-      - name: Commit and push changes
-        run: |
-          cd actions
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch                         # fetch branches
+          git checkout $TARGET_BRANCH       # checkout to your branch
+          git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
           git add -A
-          git commit -m "Copy dist/ folder to actions branch"
-          git push
-
+          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+          git push origin $TARGET_BRANCH # push to remote branch
