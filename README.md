@@ -1,6 +1,6 @@
 # Repository for hosting the website of **status_code_0**
 
-> **Warning:** we are using vite now so the below information is redundant.
+> **Warning:** we are using vite now so the below information is invalid.
 
 > **Please use** `npx prettier --write .` **before pushing**.
 
