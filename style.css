@@ -24,7 +24,7 @@ body {
   background-size: 15%;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 50;
 }
 #loadingText {
   position: fixed;
