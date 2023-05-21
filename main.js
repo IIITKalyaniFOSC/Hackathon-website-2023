@@ -1,4 +1,5 @@
 // Initialization for ES Users
-import { Carousel, initTE } from 'tw-elements';
+import { Tab, Collapse, initTE } from 'tw-elements';
 
-initTE({ Carousel });
+initTE({ Collapse });
+initTE({ Tab });
