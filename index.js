@@ -19,27 +19,6 @@ window.addEventListener('load', function () {
   loader.style.display = 'none';
 });
 
-// Faq toggle
-function Toggle(e) {
-  let element = e.parentElement.nextElementSibling;
-  let hidden = element.getAttribute('hidden');
-
-  if (hidden) {
-    element.removeAttribute('hidden');
-    e.innerText = '[-]';
-  } else {
-    element.setAttribute('hidden', 'hidden');
-    e.innerText = '[+]';
-  }
-}
-
-const collection = document.getElementsByClassName('example');
-for (let i = 0; i < collection.length; i++) {
-  collection[i].setAttribute('hidden', 'hidden');
-}
-
-// Faq toggle end
-
 //Todo configure when date is reached
 // https://codepen.io/AllThingsSmitty/pen/JJavZN
 

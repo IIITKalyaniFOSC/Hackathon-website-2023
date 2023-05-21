@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    
     <link
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <title>Status Code 0 | IIIT Kalyani</title>
-    <script type="module" crossorigin src="/assets/index-3454c56b.js"></script>
-    <link rel="stylesheet" href="/assets/index-e0540ec1.css" />
+    <script type="module" crossorigin src="/assets/index-da9b077b.js"></script>
+    <link rel="stylesheet" href="/assets/index-e0540ec1.css">
   </head>
   <body class="bg-[#1E1E1E]">
     <div id="preloader">
@@ -1226,6 +1226,26 @@
             list.classList.remove('opacity-100'));
       }
       //toggle end
+      // Faq toggle
+      function Toggle(e) {
+        let element = e.parentElement.nextElementSibling;
+        let hidden = element.getAttribute('hidden');
+
+        if (hidden) {
+          element.removeAttribute('hidden');
+          e.innerText = '[-]';
+        } else {
+          element.setAttribute('hidden', 'hidden');
+          e.innerText = '[+]';
+        }
+      }
+
+      const collection = document.getElementsByClassName('example');
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].setAttribute('hidden', 'hidden');
+      }
+
+      // Faq toggle end
     </script>
 
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
@@ -1237,5 +1257,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    
+    
   </body>
 </html>
