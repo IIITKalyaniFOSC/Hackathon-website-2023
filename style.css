@@ -13,6 +13,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --ti-cursor-color: white;
+}
+
 body {
   font-family: 'VT323', monospace;
   color: #ffffff;
