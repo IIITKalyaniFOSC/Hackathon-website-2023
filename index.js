@@ -129,14 +129,14 @@ new TypeIt('#element', {
   .go();
 
 //heading animations
-new TypeIt("#heading-schedule", {
+new TypeIt('#heading-schedule', {
   speed: 125,
   waitUntilVisible: true,
 })
   .type('cat <span class="text-white">SCHEDULE</span>.txt')
   .go();
 
-new TypeIt("#heading-tracks", {
+new TypeIt('#heading-tracks', {
   speed: 125,
   waitUntilVisible: true,
 })
@@ -154,14 +154,14 @@ new TypeIt("#heading-tracks", {
   .move(3, { instant: true })
   .go();
 
-new TypeIt("#heading-prizes", {
+new TypeIt('#heading-prizes', {
   speed: 150,
   waitUntilVisible: true,
 })
   .type('vi <span class="text-white">PRIZE</span>.yml')
   .go();
 
-new TypeIt("#heading-sponsors", {
+new TypeIt('#heading-sponsors', {
   speed: 125,
   waitUntilVisible: true,
 })
@@ -170,11 +170,13 @@ new TypeIt("#heading-sponsors", {
   .type('ar.gz', { instant: true })
   .go();
 
-new TypeIt("#heading-rules", {
+new TypeIt('#heading-rules', {
   speed: 125,
   waitUntilVisible: true,
 })
-  .type('./<span class="text-white">RULES && </span>./<span class= "text-white">FAQ</span>')
+  .type(
+    './<span class="text-white">RULES && </span>./<span class= "text-white">FAQ</span>'
+  )
   .go();
 
 //devfolio
