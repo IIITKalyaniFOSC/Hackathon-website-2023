@@ -79,7 +79,7 @@
           $ man <span class="text-white z-10" id="element"></span>
         </h1>
         <p
-          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[120%]"
+          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[150%]"
         >
           Status Code 0 is an exciting 36-hour hackathon event that brings
           together talented software developers to showcase their creativity and
@@ -134,7 +134,7 @@
 
     <div id="schedule" class="mt-10 mx-5 xl:mx-16">
       <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
-        $ cat <span class="text-white">SCHEDULE</span>.txt
+        $ <span id="heading-schedule"></span>
       </h1>
       <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
         <div class="relative mb-[10rem] w-[90vw] xl:w-[30vw]">
@@ -209,7 +209,7 @@
 
     <div id="tracks" class="mt-10 mx-5 xl:mx-16">
       <h1 class="text-[#9E9E9E] m-0 text-2xl md:text-4xl xl:text-5xl">
-        $ ls -a <span class="text-white">TRACKS</span>.txt
+        $ <span id="heading-tracks"></span>
       </h1>
       <div class="mx-10 my-20 bg-[#555555] pt-10 pb-2 px-2 hidden xl:block">
         <ul
@@ -724,7 +724,7 @@
       </div>
       <div class="prize">
         <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl">
-          $ vi <span class="text-white">PRIZE</span>.yml
+          $ <span id="heading-prizes"></span>
         </h1>
         <div class="mt-5">
           <h1 class="text-3xl text-[#9E9E9E]">
@@ -758,7 +758,7 @@
 
     <div id="sponsers" class="mt-10 mx-5 xl:mx-16">
       <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
-        $ tar -xvzf <span class="text-white"> SPONSORS</span>.tar.gz
+        $ <span id="heading-sponsors"></span>
       </h1>
       <div class="border-8 border-[#68ACB0] text-white p-10 mb-16 my-10">
         <div class="transform -translate-y-14 flex items-center justify-center">
@@ -808,10 +808,7 @@
     <div id="faq" class="mt-10 mx-5 xl:mx-16">
       <div class="mb-10">
         <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
-          $ ./<span class="text-white">RULES && </span>./<span
-            class="text-white"
-            >FAQ</span
-          >
+          $ <span id="heading-rules"></span>
         </h1>
       </div>
       <div class="bg-[#2E2E2E]">
@@ -819,14 +816,13 @@
           <img class="h-3" src="./assets/terminate-icon.svg" />
         </div>
 
-        <div class="ml-7 mr-3 pt-3 pb-10">
+        <div class="mx-4 xl:mx-7 pt-3 pb-10">
           <div class="mt-5">
             <h1 class="text-[#E87D3E] text-3xl xl:text-4xl m-0">RULES</h1>
             <ul>
               <li>
                 <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                  <span class="text-[#169B81]">[1] </span
-                  ><button
+                  <button
                     onclick="Toggle(this)"
                     class="faq-collapsible text-[#169B81]"
                   >
@@ -835,7 +831,7 @@
                   Code of Conduct
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   [1] Eligibility: Only participants who have registered for the
                   hackathon are eligible to participate.<br />
@@ -871,8 +867,7 @@
               </li>
               <li>
                 <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                  <span class="text-[#169B81]">[2] </span
-                  ><button
+                  <button
                     onclick="Toggle(this)"
                     class="faq-collapsible text-[#169B81]"
                   >
@@ -881,7 +876,7 @@
                   Guidelines for Hackers
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   [1] Be respectful and courteous to your fellow participants,
                   mentors, and judges.<br />
@@ -913,8 +908,7 @@
               </li>
               <li>
                 <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                  <span class="text-[#169B81]">[3] </span
-                  ><button
+                  <button
                     onclick="Toggle(this)"
                     class="faq-collapsible text-[#169B81]"
                   >
@@ -923,7 +917,7 @@
                   Guidelines for Mentors
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   [1] Be available to provide guidance and support to the
                   hackers throughout the hackathon.<br />
@@ -940,8 +934,7 @@
               </li>
               <li>
                 <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                  <span class="text-[#169B81]">[4] </span
-                  ><button
+                  <button
                     onclick="Toggle(this)"
                     class="faq-collapsible text-[#169B81]"
                   >
@@ -950,7 +943,7 @@
                   Guidelines for Judges
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   [1] Familiarize yourself with the criteria for evaluating the
                   solutions presented by the hackers.<br />
@@ -967,8 +960,7 @@
               </li>
               <li>
                 <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
-                  <span class="text-[#169B81]">[5] </span
-                  ><button
+                  <button
                     onclick="Toggle(this)"
                     class="faq-collapsible text-[#169B81]"
                   >
@@ -977,7 +969,7 @@
                   Anti-Harassment Policy
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   status_code_0 is committed to providing a safe and inclusive
                   environment for all participants, regardless of gender, age,
@@ -1032,17 +1024,17 @@
             <h1 class="text-[#E87D3E] text-3xl xl:text-4xl">> FAQ</h1>
             <ul>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   What is team size to participate ?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   You can participate individually or in teams of 2 or 3. If you
                   are participating in the hackathon individually and looking
@@ -1051,83 +1043,83 @@
                 </p>
               </li>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   Will the hackathon be in person or online?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   The Status Code 0 hackathon will be conducted in complete
                   offline/in person mode.
                 </p>
               </li>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   How much is participation fees?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   Participation is absolutely free inclusive of resources.
                 </p>
               </li>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   What are prerequisites to participate in this hackathon ?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   No prerequisites are needed. Even a novice can excel in this
                   event.
                 </p>
               </li>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   How to register?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   Register your team @ .
                 </p>
               </li>
               <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0">
+                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
                   >
                     [+]
                   </button>
                   What is the venue of Status Code 0 ?
                 </h1>
                 <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-12"
+                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
                 >
                   IISER KOLKATA
                 </p>
