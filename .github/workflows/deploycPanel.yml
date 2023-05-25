@@ -1,10 +1,9 @@
 name: status_code_0_deployment
 on:
   workflow_run:
-      workflows: ["copy_dist_to_deploy"]
+      workflows: [copy_dist_to_deploy]
       types: [completed]
-      branches:
-          - main
+      branches: [main]
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
