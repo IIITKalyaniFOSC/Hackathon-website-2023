@@ -22,6 +22,10 @@ body {
   color: #ffffff;
 }
 
+* {
+  scroll-behavior: smooth !important;
+}
+
 #preloader {
   background: #1e1e1e url('./assets/start.gif') no-repeat center center;
   height: 100vh;
