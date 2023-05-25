@@ -1,4 +1,4 @@
-name: Copy folder to other branch
+name: copy_dist_to_deploy
 
 on: [push]
 
