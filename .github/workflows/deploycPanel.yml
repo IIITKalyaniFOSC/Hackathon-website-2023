@@ -4,7 +4,7 @@ on:
       workflows: ["Copy folder to other branch"]
       types: [completed]
       branches:
-          - 'main'
+          - main
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
