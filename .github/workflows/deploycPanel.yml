@@ -1,8 +1,10 @@
 name: status_code_0_deployment
 on:
-  push:
-    branches:
-      - 'main'
+  workflow_run:
+      workflows: ["Copy folder to other branch"]
+      types: [requested]
+      branches:
+          - 'main'
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
