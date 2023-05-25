@@ -2,7 +2,7 @@ name: status_code_0_deployment
 on:
   workflow_run:
       workflows: ["Copy folder to other branch"]
-      types: [requested]
+      types: [completed]
       branches:
           - 'main'
 jobs:
