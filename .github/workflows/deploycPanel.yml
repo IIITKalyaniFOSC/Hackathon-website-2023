@@ -2,7 +2,7 @@ name: status_code_0_deployment
 on:
   push:
     branches:
-      - deploy
+      - main
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
