@@ -26,18 +26,60 @@ body {
   scroll-behavior: smooth !important;
 }
 
-#preloader {
-  background: #1e1e1e url('./assets/start.gif') no-repeat center center;
-  height: 100vh;
-  background-size: 15%;
-  width: 100%;
+
+
+ #preloader {
+  
   position: fixed;
-  z-index: 51;
+  width: 100%;
+  height:100vh;
+  background: #1E1E1E;
+  z-index: 99999999;
 }
+
+#loadingImage {
+  animation-delay: 0ms;
+  transition-delay: 0ms;
+  height:35vh;
+  margin-left: 5%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #loadingText {
-  position: fixed;
-  font-size: 3rem;
-  top: 70%;
-  width: 100%;
+  font-size: 2.5rem;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media only screen and (max-width: 37.5rem) {
+  #preloader {
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+  #loadingText {
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 100%;
+    height:100vh;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #loadingImage{
+    height: 35vh;
+    align-content: center;
+  }
+} 
