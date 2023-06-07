@@ -767,7 +767,7 @@
       </div>
     </div>
 
-    <div id="sponsers" class="mt-10 mx-5 xl:mx-16 xl:mb-10" >
+    <div id="sponsers" class="mt-10 mx-5 xl:mx-16" >
       <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
         $ <span id="heading-sponsors"></span>
       </h1>
@@ -775,7 +775,7 @@
 
       <!-- Sponsor Border -->
 
-      <div class="relative border border-none mt-0 mb-0 xl:mb-[60px]">
+      <div class="relative border border-none h-[20rem] mt-0 mb-0">
         <div
           class="  bg-[#68ACB0]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]"
         ></div>
@@ -831,7 +831,7 @@
           <!-- Sponsor Content -->
 
           <div
-            class="flex flex-col xl:flex-row items-center gap-10 justify-around mb-3 mt-0 transform -translate-y-10 xl:-translate-y-0"
+            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 transform -translate-y-10 xl:-translate-y-0"
           >
             <a href="https://devfolio.co/" class="cursor-pointer w-52">
               <img
@@ -851,7 +851,7 @@
         </div>
       </div>
       <!-- Sponsor Border -->
-      <div class="border border-none mt-0  xl:mt-0 transform -translate-y-[7rem] xl:-translate-y-15">
+      <div class="border border-none h-[30rem] xl:h-[27.5rem] mt-0  xl:mt-0">
         
         <div
         class="  bg-[#BE9BE5]   p-1 mt-10 max-w-full ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem] h-3"></div>
@@ -1273,7 +1273,7 @@
     </section> -->
 
     <!-- FAQ -->
-    <div id="faq" class="mt-0 xl:mt-10 mx-5 xl:mx-16 -translate-y-[12rem]">
+    <div id="faq" class="mt-0 xl:mt-0 mx-5 xl:mx-16 -translate-y-[0rem]">
       <div class="mb-10">
         <h1 class="text-[#9E9E9E] text-2xl md:text-4xl xl:text-5xl m-0">
           $ <span id="heading-rules"></span>
@@ -1286,110 +1286,194 @@
 
         <div class="mx-4 xl:mx-7 pt-0 pb-10">
           <div class="mt-6">
-            <h1 class="text-[#E87D3E] text-3xl xl:text-4xl">> FAQ</h1>
-            <ul id="accordion">
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+            <div id="accordionFaq">
+              <div>
+                <h1 id="headingOne" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingOne">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
                   >
-                    [+]
-                  </button>
-                  How many team members do I need ?
+                  [+]
+                </button>
+                How many team members do I need ?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  You can participate individually or in teams of 3 to 5 members. If you
-                  are participating in the hackathon individually and looking
-                  for a team, we will help you in connecting to other individual
-                  participants to get you a team.
-                </p>
-              </li>
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+              </div>
+              <div
+              id="collapseOne"
+              class="!visible hidden"
+              data-te-collapse-item
+              data-te-collapse-collapsed
+              aria-labelledby="headingOne"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              You can participate individually or in teams of 3 to 5 members. If you
+              are participating in the hackathon individually and looking
+              for a team, we will help you in connecting to other individual
+              participants to get you a team.
+              </div>
+            </div>
+              <div>
+                <h1 id="headingTwo" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingTwo">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
                   >
-                    [+]
-                  </button>
-                  Will the hackathon be in person or online?
+                  [+]
+                </button>
+                Will the hackathon be in person or online?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  The Status Code 0 hackathon will be conducted in complete
-                  offline/in person mode.
-                </p>
-              </li>
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+              </div>
+              <div
+              id="collapseTwo"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingTwo"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              The Status Code 0 hackathon will be conducted in complete
+              offline/in person mode.
+              </div>
+            </div>
+              <div>
+                <h1 id="headingThree" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingThree">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
                   >
-                    [+]
-                  </button>
-                  How much are the participation fees?
+                  [+]
+                </button>
+                How much are the participation fees?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  Participation is absolutely free inclusive of resources.
-                </p>
-              </li>
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+              </div>
+              <div
+              id="collapseThree"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingThree"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              Participation is absolutely free inclusive of resources.
+              </div>
+            </div>
+              <div>
+                <h1 id="headingFour" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFour">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
                   >
-                    [+]
-                  </button>
-                  What are the prerequisites to participate in this hackathon ?
+                  [+]
+                </button>
+                What are the prerequisites to participate in this hackathon ?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  No prerequisites are needed. Even a novice can excel in this
-                  event.
-                </p>
-              </li>
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+              </div>
+              <div
+              id="collapseFour"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingFour"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              No prerequisites are needed. Even a novice can excel in this
+              event.
+              </div>
+            </div>
+              <div>
+                <h1 id="headingFive" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFive">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
                   >
-                    [+]
-                  </button>
-                  How do I register?
+                  [+]
+                </button>
+                How do I register?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  Register your team @ <a target="_blank" class="text-blue-600 underline hover:text-blue-500" href="https://statuscode0.devfolio.co/?ref=3b650b8ad9">Devfolio</a>
-                </p>
-              </li>
-              <li>
-                <h1 class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex">
+              </div>
+              <div
+              id="collapseFive"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingFive"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              Register your team @ <a target="_blank" class="text-blue-600 underline hover:text-blue-500" href="https://statuscode0.devfolio.co/?ref=3b650b8ad9">Devfolio</a>
+              </div>
+            </div>
+              <div>
+                <h1 id="headingSix" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingSix">
                   <button
                     onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%]"
+                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
                   >
-                    [+]
-                  </button>
-                  What is the venue for Status Code 0 ?
+                  [+]
+                </button>
+                What is the venue for Status Code 0 ?
                 </h1>
-                <p
-                  class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
-                >
-                  IISER KOLKATA
-                </p>
-              </li>
-            </ul>
+              </div>
+              <div
+              id="collapseSix"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingSix"
+              data-te-parent="#accordionFaq"
+            >
+              <div
+                class="example text-[#D6D6D6] text-xl sm:text-2xl xl:text-3xl pl-8 sm:pl-10 xl:pl-12"
+              >
+              IISER KOLKATA
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1417,7 +1501,9 @@
             </a>
           </div>
           <div
-            class="address footerelements flex flex-col justify-center items-center text-center"
+           
+            class="address footerelements flex flex-col justify-center items-center text-center flex flex-col justify-center items-center text-center"
+          
           >
             <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
               ADDRESS
@@ -1519,28 +1605,19 @@
       }
       //toggle end
       // Faq toggle
-      const collection = document.getElementsByClassName('example');
+      const collection = document.getElementsByClassName('faq-collapsible');
       function Toggle(e) {
-        let element = e.parentElement.nextElementSibling;
-        let hidden = element.getAttribute('hidden');
-        
         for (let i = 0; i < collection.length; i++) {
-          collection[i].setAttribute('hidden', 'hidden');
-          collection[i].previousElementSibling.children[0].innerText = '[+]';
+          let element = collection[i];
+          let hidden = element.getAttribute('data-te-collapse-collapsed');
+          if (hidden == null) {
+            element.innerText = '[-]';
+          }
+          else {
+            element.innerText = '[+]';
+          }
         }
-        
-        if (hidden) {
-          element.removeAttribute('hidden');
-          e.innerText = '[-]';
-        } else {
-          element.setAttribute('hidden', 'hidden');
-          e.innerText = '[+]';
-        }
-      }
-      
-      for (let i = 0; i < collection.length; i++) {
-        collection[i].setAttribute('hidden', 'hidden');
-      }      
+      }    
 
       // Faq toggle end
     </script>
