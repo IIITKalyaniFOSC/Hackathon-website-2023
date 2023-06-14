@@ -193,7 +193,7 @@ new TypeIt('#heading-rules', {
   waitUntilVisible: true,
 })
   .type(
-    './<span class="text-white">RULES && </span>./<span class= "text-white">FAQ</span>'
+    './<span class="text-white">FAQ</span>'
   )
   .go();
 
