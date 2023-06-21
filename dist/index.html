@@ -1,263 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="/assets/favicon-10ae7e9a.ico" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <title>Status Code 0 | IIIT Kalyani</title>
-    <script type="module" crossorigin src="/assets/index-9b11f7e6.js"></script>
-    <link rel="stylesheet" href="/assets/index-fa594cfc.css">
-  </head>
-  <body class="bg-[#1E1E1E]">
+<head>
+  <meta charset="UTF-8" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/assets/favicon-10ae7e9a.ico" />
 
-    <div id="preloader">
-      <img id="loadingImage" src="/assets/preloader-db1393e0.gif" />
-      
-      <h1 id="loadingText" >
-        Status Code 0 loading <span id="blinking"></span>
-      </h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <title>Status Code 0 | IIIT Kalyani</title>
+  <script type="module" crossorigin src="/assets/index-ef4b1d91.js"></script>
+  <link rel="stylesheet" href="/assets/index-cfe1131e.css">
+</head>
+
+<body class="bg-[#1E1E1E]">
+
+  <div id="preloader">
+    <img id="loadingImage" src="/assets/preloader-db1393e0.gif" />
+
+    <h1 id="loadingText">
+      Status Code 0 loading <span id="blinking"></span>
+    </h1>
+  </div>
+
+  <nav class="py-5 bg-[#1E1E1E] fixed w-full xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5">
+    <div class="flex justify-between items-center">
+      <a href="#">
+        <img class="w-32 md:w-36" src="/assets/iupgz4ve 1-2aa14036.png" alt="">
+      </a>
+
+      <span id="check" class="cursor-pointer xl:hidden block">
+        <ion-icon class="text-3xl mr-10 md:text-5xl" name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
     </div>
-
-    <nav
-      class="py-5 bg-[#1E1E1E] fixed w-full xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
-    >
-      <div class="flex justify-between items-center">
-        <a href="#">
-          <img class="w-32 md:w-36" src="/assets/iupgz4ve 1-2aa14036.png" alt="">
-        </a>
-
-        <span id="check" class="cursor-pointer xl:hidden block">
-          <ion-icon
-            class="text-3xl mr-10 md:text-5xl"
-            name="menu"
-            onclick="Menu(this)"
-          ></ion-icon>
-        </span>
-      </div>
-      <ul
-        class="xl:flex xl:mr-20 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]"
-      >
-        <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
-        </li>
-        <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
-        </li>
-        <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
-        </li>
-        <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
-        </li>
-        <!-- <li class="mx-4 my-6 xl:my-0 hover:text-white">
+    <ul
+      class="xl:flex xl:mr-20 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]">
+      <li class="mx-4 my-6 xl:my-0 hover:text-white">
+        <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
+      </li>
+      <li class="mx-4 my-6 xl:my-0 hover:text-white">
+        <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
+      </li>
+      <li class="mx-4 my-6 xl:my-0 hover:text-white">
+        <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
+      </li>
+      <li class="mx-4 my-6 xl:my-0 hover:text-white">
+        <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
+      </li>
+      <!-- <li class="mx-4 my-6 xl:my-0 hover:text-white">
           <a href="#team" class="text-3xl 2xl:text-4xl">TEAM</a>
         </li> -->
-        <li class="mx-4 my-6 xl:my-0 hover:text-white">
-          <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
-        </li>
-        <div
-          class="apply-button"
-          data-hackathon-slug="statuscode0"
-          data-button-theme="dark"
-          style="height: 44px; width: 312px"
-        ></div>
-      </ul>
-    </nav>
-    <div
-      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[30rem] mx-5 xl:mx-16 py-32"
-    >
-      <div class="hero-text">
-        <h1
-          class="text-[#9E9E9E] m-0 tracking-wider text-3xl md:text-4xl xl:text-5xl"
-        >
-          $ man <span class="text-white z-10" id="element"> StatusCode</span><span class="text-red-600">0</span>
-        </h1>
-        <p
-          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[150%]"
-        >
-        Unleash your creativity and join Status Code 0, 
-        the ultimate 36-hour hackathon extravaganza! 
-        Gather with top-tier software developers to 
-        transform ideas into groundbreaking projects that 
-        redefine the industry. Compete across diverse categories, 
-        showcasing your skills, ingenuity, and collaborative 
-        spirit alongside like-minded individuals. Discover 
+      <li class="mx-4 my-6 xl:my-0 hover:text-white">
+        <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
+      </li>
+
+    </ul>
+  </nav>
+  <div class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[30rem] mx-5 xl:mx-16 py-32">
+    <div class="hero-text">
+      <h1 class="text-[#9E9E9E] m-0 tracking-wider text-3xl md:text-4xl xl:text-5xl">
+        $ man <span class="text-white z-10" id="element"> StatusCode</span><span class="text-red-600">0</span>
+      </h1>
+      <p class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[150%]">
+        Unleash your creativity and join Status Code 0,
+        the ultimate 36-hour hackathon extravaganza!
+        Compete across diverse categories,
+        showcasing your skills, ingenuity, and collaborative
+        spirit alongside like-minded individuals. Discover
         the perfect platform to challenge yourself, acquire
-        new skills, and craft awe-inspiring products with 
-        the potential to make a significant impact. 
-        Don't miss this unparalleled opportunity to 
-        showcase your talent and be part of the tech 
-        revolution. Welcome to Status Code 0 - where 
+        new skills, and craft awe-inspiring products with
+        the potential to make a significant impact.
+        Don't miss this unparalleled opportunity to
+        showcase your talent and be part of the tech
+        revolution. Welcome to Status Code 0 - where
         innovation knows no boundaries.
-        </p>
+      </p>
 
-        <div
-          class="container my-12 flex items-center justify-center"
-          style="color: #f21212"
-        >
-          <h1 class="text-5xl hidden m-0 text-white" id="headline">
-            Countdown to the main event
+      <div class="container my-12 flex items-center justify-center" style="color: #f21212">
+        <h1 class="text-5xl hidden m-0 text-white" id="headline">
+          Countdown to the main event
+        </h1>
+        <div id="countdown ">
+          <ul class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <li><span id="days"></span></li>
+            <li><span id=""></span>:</li>
+            <li><span id="hours"></span></li>
+            <li><span id=""></span>:</li>
+            <li><span id="minutes"></span></li>
+            <li><span id=""></span>:</li>
+            <li><span id="seconds"></span></li>
+          </ul>
+          <ul class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
+            style="padding-bottom: 60px;">
+            <li><span id=""></span>days</li>
+            <li><span id=""></span>:</li>
+            <li><span class="" id=""></span> hrs</li>
+            <li><span id=""></span>:</li>
+            <li><span id=""></span> min</li>
+            <li><span id=""></span>:</li>
+            <li><span id=""></span>sec</li>
+          </ul>
+          <div class="apply-button" data-hackathon-slug="statuscode0" data-button-theme="dark"
+            style="height: 44px; width: 312px;"></div>
+        </div>
+      </div>
+    </div>
+    <img class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block" style="margin: 0 5em 10em 0"
+      src="/assets/mascot-9cf2466a.gif" alt="" />
+  </div>
+
+  <!-- SCHEDULE -->
+  <div id="schedule" class="mt-10 mx-5 xl:mx-16" style="padding-bottom: 60px;">
+    <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
+      $ <span id="heading-schedule"></span>
+    </h1>
+    <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
+      <div class="relative mb-10 w-[90vw] xl:w-[30vw]">
+        <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC" alt="" />
+        <img class="mt-5 h-[60rem] w-auto relative xl:hidden" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAANGCAYAAAC1OHOpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbuSURBVHgB7d2hkcUwEAVB6cqRKrBN1ce/DTy8Gy6celjaM3OvH+ecvXj4W3wmViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWsN9ek+SdZQViBWIFYgXX29Fzwe8sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAqut+M5Zy8eLCsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQK9gzcy8+saxArECsQKzgejuec/biwbICsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECXyMHlhWIFYgViBX4GjmwrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsYM/MvfjEsgKxArECsYLr7XjO2YsHywrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECvbM3ItPLCsQKxArECu43o7nnL14sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGDPzL34xLICsQKxArGCf//TKWtbPq/eAAAAAElFTkSuQmCC" alt="" />
+        <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
+            Registration Begin
           </h1>
-          <div id="countdown ">
-            <ul
-              class="flex justify-around text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              <li><span id="days"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="hours"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="minutes"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="seconds"></span></li>
-            </ul>
-            <ul
-              class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
-            >
-              <li><span id=""></span>days</li>
-              <li><span id=""></span>:</li>
-              <li><span class="" id=""></span> hrs</li>
-              <li><span id=""></span>:</li>
-              <li><span id=""></span> min</li>
-              <li><span id=""></span>:</li>
-              <li><span id=""></span>sec</li>
-            </ul>
-          </div>
+          <p class="xl:text-2xl">15 April 2023, 12:00 am</p>
+        </div>
+        <div class="absolute top-[12.8rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
+            Registration Closes
+          </h1>
+          <p class="xl:text-2xl">20 July 2023, 12:00 am</p>
+        </div>
+        <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
+            Opening Ceremony
+          </h1>
+          <p class="xl:text-2xl">12 August 2023, 10:00 am</p>
+        </div>
+        <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
+            API Workshop
+          </h1>
+          <p class="xl:text-2xl">12 August 2023, 12:30 pm</p>
         </div>
       </div>
-      <img
-        class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block"
-        style="margin: 0 5em 10em 0"
-        src="/assets/mascot-9cf2466a.gif"
-        alt=""
-      />
-    </div>
-
-    <!-- SCHEDULE -->
-    <div id="schedule" class="mt-10 mx-5 xl:mx-16">
-      <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
-        $ <span id="heading-schedule"></span>
-      </h1>
-      <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
-        <div class="relative mb-10 w-[90vw] xl:w-[30vw]">
-          <img
-            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC"
-            alt=""
-          />
-          <img
-            class="mt-5 h-[60rem] w-auto relative xl:hidden"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAANGCAYAAAC1OHOpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbuSURBVHgB7d2hkcUwEAVB6cqRKrBN1ce/DTy8Gy6celjaM3OvH+ecvXj4W3wmViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWsN9ek+SdZQViBWIFYgXX29Fzwe8sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAqut+M5Zy8eLCsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQK9gzcy8+saxArECsQKzgejuec/biwbICsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECXyMHlhWIFYgViBX4GjmwrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsYM/MvfjEsgKxArECsYLr7XjO2YsHywrECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECvbM3ItPLCsQKxArECu43o7nnL14sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGDPzL34xLICsQKxArGCf//TKWtbPq/eAAAAAElFTkSuQmCC"
-            alt=""
-          />
-          <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
-              Registration Begin
-            </h1>
-            <p class="xl:text-2xl">15 April 2023, 0000 hrs</p>
-          </div>
-          <div class="absolute top-[12.8rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
-              Registration Closes
-            </h1>
-            <p class="xl:text-2xl">20 July 2023, 0000 hrs</p>
-          </div>
-          <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
-              Opening Ceremony
-            </h1>
-            <p class="xl:text-2xl">12 August 2023, 0900 hrs</p>
-          </div>
-          <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
-              Speaker session
-            </h1>
-            <p class="xl:text-2xl">12 August 2023, 1600 hrs</p>
-          </div>
+      <div class="absolute xl:relative mb-10 w-[90vw] xl:w-[30vw]">
+        <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC" alt="" />
+        <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
+            Auth0 Workshop
+          </h1>
+          <p class="xl:text-2xl">12 August 2023, 04:00 pm</p>
         </div>
-        <div class="absolute xl:relative mb-10 w-[90vw] xl:w-[30vw]">
-          <img
-            class="mt-5 h-[30rem] w-auto relative hidden xl:block"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAGVCAYAAAC2DQwBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANwSURBVHgB7dyhkcUwEAVB6cqRKrBN1ce/DTy8Gy6cenj3zNzrxzlnLx7+Fp+JFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgV7LdvkryzrECsQKxArOB6O3oX/M6yArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArGCPTP34hPLCsQKxArECq634zlnLx4sKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxAr2DNzLz6xrECsQKxArOB6O55z9uLBsgKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxgj0z9+ITywrECsQKxAr+AbsQFgWGR5OUAAAAAElFTkSuQmCC"
-            alt=""
-          />
-          <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
-              Mid Evaluation
-            </h1>
-            <p class="xl:text-2xl">13 August 2023 , 0000 hrs</p>
-          </div>
-          <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
-              Speaker Session
-            </h1>
-            <p class="xl:text-2xl">13 August 2023, 1000 hrs</p>
-          </div>
-          <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
-              Final Evaluation
-            </h1>
-            <p class="xl:text-2xl">13 August 2012, 1400 hrs</p>
-          </div>
-          <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
-            <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
-              Closing Ceremony
-            </h1>
-            <p class="xl:text-2xl">13 August 2023 ,1600 hrs</p>
-          </div>
+        <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
+            Mid Evaluation
+          </h1>
+          <p class="xl:text-2xl">13 August 2023, 11:00 pm</p>
+        </div>
+        <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
+            Final Evaluation
+          </h1>
+          <p class="xl:text-2xl">13 August 2023, 03:30 pm</p>
+        </div>
+        <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
+          <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
+            Closing Ceremony
+          </h1>
+          <p class="xl:text-2xl">13 August 2023, 05:15 pm hrs</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- TRACKS -->
-    <div id="tracks" class="mt-10 mx-5 xl:mx-16">
-      <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
-        $ <span id="heading-tracks"></span>
-      </h1>
-      <div class="mx-0  my-10 bg-[#555555] pt-10 pb-2 px-2 hidden 2xl:block">
-        <ul
-          class="flex list-none flex-col flex-nowrap pl-0 md:flex-row overflow-hidden"
-          role="tablist"
-          data-te-nav-ref
-        >
-          <li role="presentation" class="flex-auto text-center">
-            <a
-              href="#pills-home01"
-              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-              id="pills-home-tab01"
-              data-te-toggle="pill"
-              data-te-target="#pills-home01"
-              data-te-nav-active
-              role="tab"
-              aria-controls="pills-home01"
-              aria-selected="true"
-              >Medical</a
-            >
-          </li>
-          <li role="profile" class="flex-auto text-center">
-            <a
-              href="#pills-profile01"
-              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-              id="pills-profile-tab01"
-              data-te-toggle="pill"
-              data-te-target="#pills-profile01"
-              role="tab"
-              aria-controls="pills-profile01"
-              aria-selected="false"
-              >Environment</a
-            >
-          </li>
-          <li role="contact" class="flex-auto text-center">
+  <!-- TRACKS -->
+  <div id="tracks" class="mt-10 mx-5 xl:mx-16" style="padding-bottom: 60px;">
+    <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
+      $ <span id="heading-tracks"></span>
+    </h1>
+    <div class="mx-0  my-10 bg-[#555555] pt-10 pb-2 px-2 hidden 2xl:block">
+      <ul class="flex list-none flex-col flex-nowrap pl-0 md:flex-row overflow-hidden" role="tablist" data-te-nav-ref>
+        <li role="presentation" class="flex-auto text-center">
+          <a href="#pills-home01"
+            class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+            id="pills-home-tab01" data-te-toggle="pill" data-te-target="#pills-home01" data-te-nav-active role="tab"
+            aria-controls="pills-home01" aria-selected="true">Medical</a>
+        </li>
+        <li role="profile" class="flex-auto text-center">
+          <a href="#pills-profile01"
+            class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+            id="pills-profile-tab01" data-te-toggle="pill" data-te-target="#pills-profile01" role="tab"
+            aria-controls="pills-profile01" aria-selected="false">Wildlife and Environment</a>
+        </li>
+        <!-- <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-contact01"
               class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
@@ -269,8 +206,8 @@
               aria-selected="false"
               >Wildlife</a
             >
-          </li>
-          <li role="contact" class="flex-auto text-center">
+          </li> -->
+        <!-- <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-04"
               class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
@@ -282,47 +219,26 @@
               aria-selected="false"
               >Gender Inclusivity</a
             >
-          </li>
-          <li role="contact" class="flex-auto text-center">
-            <a
-              href="#pills-05"
-              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-              id="pills-contact-tab01"
-              data-te-toggle="pill"
-              data-te-target="#pills-05"
-              role="tab"
-              aria-controls="pills-05"
-              aria-selected="false"
-              >Education</a
-            >
-          </li>
-          <li role="contact" class="flex-auto text-center">
-            <a
-              href="#pills-06"
-              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-              id="pills-contact-tab01"
-              data-te-toggle="pill"
-              data-te-target="#pills-06"
-              role="tab"
-              aria-controls="pills-06"
-              aria-selected="false"
-              >Employment</a
-            >
-          </li>
-          <li role="contact" class="flex-auto text-center">
-            <a
-              href="#pills-07"
-              class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
-              id="pills-contact-tab01"
-              data-te-toggle="pill"
-              data-te-target="#pills-07"
-              role="tab"
-              aria-controls="pills-07"
-              aria-selected="false"
-              >Fintech</a
-            >
-          </li>
-          <li role="contact" class="flex-auto text-center">
+          </li> -->
+        <li role="contact" class="flex-auto text-center">
+          <a href="#pills-05"
+            class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+            id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-05" role="tab"
+            aria-controls="pills-05" aria-selected="false">Education</a>
+        </li>
+        <li role="contact" class="flex-auto text-center">
+          <a href="#pills-06"
+            class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+            id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-06" role="tab"
+            aria-controls="pills-06" aria-selected="false">Auth0</a>
+        </li>
+        <li role="contact" class="flex-auto text-center">
+          <a href="#pills-07"
+            class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+            id="pills-contact-tab01" data-te-toggle="pill" data-te-target="#pills-07" role="tab"
+            aria-controls="pills-07" aria-selected="false">Web 3.0</a>
+        </li>
+        <!-- <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-08"
               class="block bg-[#9E9E9E] px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
@@ -334,38 +250,34 @@
               aria-selected="false"
               >Security</a
             >
-          </li>
-        </ul>
+          </li> -->
+      </ul>
 
-        <!--Pills content-->
-        <div class="mb-2">
-          <div
-            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-            id="pills-home01"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab01"
-            data-te-tab-active
-          >
-            In this track, participants work on developing software solutions
-            related to healthcare and medicine. They might build applications
-            that help patients manage their health, or tools that assist
-            healthcare providers in diagnosing and treating patients.
-          </div>
-          <div
-            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-            id="pills-profile01"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab01"
-          > 
+      <!--Pills content-->
+      <div class="mb-2">
+        <div
+          class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+          id="pills-home01" role="tabpanel" aria-labelledby="pills-home-tab01" data-te-tab-active>
+          In this track, participants work on developing software solutions
+          related to healthcare and medicine. They might build applications
+          that help patients manage their health, or tools that assist
+          healthcare providers in diagnosing and treating patients.
+        </div>
+        <div
+          class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+          id="pills-profile01" role="tabpanel" aria-labelledby="pills-profile-tab01">
           This track focuses on building software solutions that promote
           sustainability and protect the environment. Participants might
-          create applications that help reduce waste, conserve energy, monitor
-          the health of ecosystems, or streamline recycling processes. The
-          possibilities are endless, and the goal is to develop innovative
-          solutions that contribute to a cleaner and more sustainable future.
-            
-          </div>
-          <div
+          create applications that help reduce waste, conserve energy,
+          monitor the health of ecosystems, or streamline recycling
+          processes or applications that would help in tracking wildlife populations, monitor
+          habitats, prevent illegal wildlife trade, or even provide early
+          warning systems for natural calamities such as forest fires or
+          floods that can significantly impact wildlife and their
+          habitats.
+
+        </div>
+        <!-- <div
             class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
             id="pills-contact01"
             role="tabpanel"
@@ -380,8 +292,8 @@
             impact wildlife and their habitats. The aim is to leverage
             technology to mitigate the effects of such natural disasters and
             protect wildlife from harm.
-          </div>
-          <div
+          </div> -->
+        <!-- <div
             class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
             id="pills-04"
             role="tabpanel"
@@ -399,43 +311,32 @@
             provide support for their mental health and overall well-being. The
             goal is to leverage technology to create a more equitable and
             inclusive society, free from all forms of discrimination and bias.
-          </div>
-          <div
-            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-            id="pills-05"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab01"
-          >
-            The education track encourages participants to build software
-            solutions that enhance the quality of education. Participants might
-            develop applications that provide personalized learning experiences,
-            improve access to education for disadvantaged communities, or help
-            teachers and students collaborate more effectively.
-          </div>
-          <div
-            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-            id="pills-06"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab01"
-          >
-            This track focuses on building software solutions that address
-            employment challenges. Participants might create applications that
-            help job seekers find employment, or tools that assist employers in
-            finding the right candidates for their open positions.
-          </div>
-          <div
-            class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
-            id="pills-07"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab01"
-          >
-            The fintech track encourages participants to build software
-            solutions that support financial innovation and inclusion.
-            Participants might develop applications that make financial services
-            more accessible, improve financial literacy, or support financial
-            inclusion for underbanked communities.
-          </div>
-          <div
+          </div> -->
+        <div
+          class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+          id="pills-05" role="tabpanel" aria-labelledby="pills-contact-tab01">
+          The education track encourages participants to build software
+          solutions that enhance the quality of education. Participants might
+          develop applications that provide personalized learning experiences,
+          improve access to education for disadvantaged communities, or help
+          teachers and students collaborate more effectively.
+        </div>
+        <div
+          class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+          id="pills-06" role="tabpanel" aria-labelledby="pills-contact-tab01">
+          Participate in the Auth0 Special Track at Status Code 0 and create a product
+          using Auth0 for a chance to win $20 Amazon Gift Cards for all members of your team.
+        </div>
+        <div
+          class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
+          id="pills-07" role="tabpanel" aria-labelledby="pills-contact-tab01">
+          As part of this track, participants may explore decentralized finance (DeFi) applications,
+          enabling seamless peer-to-peer financial transactions,
+          decentralized marketplaces, and novel governance models.
+          One can design secure and transparent systems that empower users with
+          greater control over their digital assets.
+        </div>
+        <!-- <div
             class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
             id="pills-08"
             role="tabpanel"
@@ -445,79 +346,57 @@
             cybersecurity. Participants might develop applications that detect
             and prevent cyber threats, or tools that help organizations protect
             their data and networks.
+          </div> -->
+      </div>
+    </div>
+    <!-- Accordian mobile-->
+    <div class="bg-[#555555] my-10 px-3 py-10 2xl:hidden">
+      <div id="accordionExample">
+        <div class="bg-[#9E9E9E]">
+          <h2 class="mb-0" id="headingOne">
+            <button
+              class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              MEDICAL
+            </button>
+          </h2>
+          <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+            data-te-parent="#accordionExample">
+            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+              In this track, participants work on developing software
+              solutions related to healthcare and medicine. They might build
+              applications that help patients manage their health, or tools
+              that assist healthcare providers in diagnosing and treating
+              patients.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Accordian mobile-->
-      <div class="bg-[#555555] my-10 px-3 py-10 2xl:hidden">
-        <div id="accordionExample">
-          <div class="bg-[#9E9E9E]">
-            <h2 class="mb-0" id="headingOne">
-              <button
+        <div class="mt-2">
+          <h2 class="mb-0" id="headingTwo">
+            <button
               class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-                type="button"
-                data-te-collapse-init
-                data-te-collapse-collapsed
-                data-te-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                MEDICAL
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingOne"
-              data-te-parent="#accordionExample"
-            >
-              <div
-                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
-              >
-                In this track, participants work on developing software
-                solutions related to healthcare and medicine. They might build
-                applications that help patients manage their health, or tools
-                that assist healthcare providers in diagnosing and treating
-                patients.
-              </div>
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              WILDLIFE AND ENVIRONMENT
+            </button>
+          </h2>
+          <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+            data-te-parent="#accordionExample">
+            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+              This track focuses on building software solutions that promote
+              sustainability and protect the environment. Participants might
+              create applications that help reduce waste, conserve energy,
+              monitor the health of ecosystems, or streamline recycling
+              processes or applications that would help in tracking wildlife populations, monitor
+              habitats, prevent illegal wildlife trade, or even provide early
+              warning systems for natural calamities such as forest fires or
+              floods that can significantly impact wildlife and their
+              habitats.
             </div>
           </div>
-          <div class="mt-2">
-            <h2 class="mb-0" id="headingTwo">
-              <button
-                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-                type="button"
-                data-te-collapse-init
-                data-te-collapse-collapsed
-                data-te-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                ENVIRONMENT
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingTwo"
-              data-te-parent="#accordionExample"
-            >
-              <div
-                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
-              >
-                This track focuses on building software solutions that promote
-                sustainability and protect the environment. Participants might
-                create applications that help reduce waste, conserve energy,
-                monitor the health of ecosystems, or streamline recycling
-                processes. The possibilities are endless, and the goal is to
-                develop innovative solutions that contribute to a cleaner and
-                more sustainable future.
-              </div>
-            </div>
-          </div>
-          <div class="mt-2">
+        </div>
+        <!-- <div class="mt-2">
             <h2 class="accordion-header mb-0" id="headingThree">
               <button
                 class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
@@ -554,81 +433,46 @@
                 
               </div>
             </div>
-          </div>
-          <div class="mt-2">
-            <h2 class="accordion-header mb-0" id="headingFour">
-              <button
-                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-                type="button"
-                data-te-collapse-init
-                data-te-collapse-collapsed
-                data-te-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                INCLUSIVITY
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingFour"
-              data-te-parent="#accordionExample"
-            >
-              <div
-                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
-              >
-                The Gender Inclusivity Track at Status Code 0 focuses on
-                building software solutions that promote gender equality and
-                inclusiveness, addressing various issues affecting women and
-                girls. Participants are encouraged to create applications that
-                combat gender-based violence, improve access to healthcare, and
-                promote equal opportunities for women in the workplace.
-                Furthermore, the track encourages participants to build
-                solutions that support the LGBTQIA+ community and non-binary
-                individuals. This includes creating applications that address
-                discrimination, promote equal rights, and provide support for
-                their mental health and overall well-being. The goal is to
-                leverage technology to create a more equitable and inclusive
-                society, free from all forms of discrimination and bias.
-              </div>
+          </div> -->
+        <div class="mt-2">
+          <h2 class="accordion-header mb-0" id="headingFour">
+            <button
+              class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              Auth 0
+            </button>
+          </h2>
+          <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+            data-te-parent="#accordionExample">
+            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+              Participate in the Auth0 Special Track at Status Code 0 and create a product
+              using Auth0 for a chance to win $20 Amazon Gift Cards for all members of your team.
             </div>
           </div>
-          <div class="mt-2">
-            <h2 class="accordion-header mb-0" id="headingFive">
-              <button
-                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-                type="button"
-                data-te-collapse-init
-                data-te-collapse-collapsed
-                data-te-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                EDUCATION
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingFive"
-              data-te-parent="#accordionExample"
-            >
-              <div
-                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
-              >
-                The education track encourages participants to build software
-                solutions that enhance the quality of education. Participants
-                might develop applications that provide personalized learning
-                experiences, improve access to education for disadvantaged
-                communities, or help teachers and students collaborate more
-                effectively.
-              </div>
+        </div>
+        <div class="mt-2">
+          <h2 class="accordion-header mb-0" id="headingFive">
+            <button
+              class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive"
+              aria-expanded="false" aria-controls="collapseFive">
+              EDUCATION
+            </button>
+          </h2>
+          <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive"
+            data-te-parent="#accordionExample">
+            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+              The education track encourages participants to build software
+              solutions that enhance the quality of education. Participants
+              might develop applications that provide personalized learning
+              experiences, improve access to education for disadvantaged
+              communities, or help teachers and students collaborate more
+              effectively.
             </div>
           </div>
-          <div class="mt-2">
+        </div>
+        <!-- <div class="mt-2">
             <h2 class="accordion-header mb-0" id="headingSix">
               <button
                 class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
@@ -659,40 +503,28 @@
                 positions.
               </div>
             </div>
-          </div>
-          <div class="mt-2">
-            <h2 class="accordion-header mb-0" id="headingSeven">
-              <button
-                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-                type="button"
-                data-te-collapse-init
-                data-te-collapse-collapsed
-                data-te-target="#collapseSeven"
-                aria-expanded="false"
-                aria-controls="collapseSeven"
-              >
-                FINTECH
-              </button>
-            </h2>
-            <div
-              id="collapseSeven"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingSeven"
-              data-te-parent="#accordionExample"
-            >
-              <div
-                class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
-              >
-                The fintech track encourages participants to build software
-                solutions that support financial innovation and inclusion.
-                Participants might develop applications that make financial
-                services more accessible, improve financial literacy, or support
-                financial inclusion for underbanked communities.
-              </div>
+          </div> -->
+        <div class="mt-2">
+          <h2 class="accordion-header mb-0" id="headingSeven">
+            <button
+              class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
+              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSeven"
+              aria-expanded="false" aria-controls="collapseSeven">
+              WEB 3.0
+            </button>
+          </h2>
+          <div id="collapseSeven" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSeven"
+            data-te-parent="#accordionExample">
+            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+              As part of this track, participants may explore decentralized finance (DeFi) applications,
+              enabling seamless peer-to-peer financial transactions,
+              decentralized marketplaces, and novel governance models.
+              One can design secure and transparent systems that empower users with
+              greater control over their digital assets.
             </div>
           </div>
-          <div class="mt-2">
+        </div>
+        <!-- <div class="mt-2">
             <h2 class="accordion-header mb-0" id="headingEight">
               <button
                 class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
@@ -722,240 +554,242 @@
                 organizations protect their data and networks.
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="prize" class="mt-10 mx-5 xl:mx-16">
-      <div class="hidden md:justify-center md:items-center">
-        <img
-          class="h-[8rem] md:h-[20rem]"
-          src="data:image/gif;base64,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"
-          alt="shape pattern"
-        />
-      </div>
-      <div class="prize">
-        <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl">
-          $ <span id="heading-prizes"></span>
-        </h1>
-        <div class="mt-10">
-          <h1 class="text-3xl text-[#9E9E9E]">
-            > ANNOUNCEMENT COMING
-
-            <span class="text-[red]">SOON</span>
-          </h1>
-        </div>
-
-        <div class="text-white text-[1.4rem] md:text-3xl mt-5 hidden">
-          <h2>
-            &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
-            &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-            <span class="text-[#CCCC6C]">20000</span><br />
-            &nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runner-up:
-            <span class="text-[#CCCC6C]">10000</span><br />
-            &nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;second-runner-up:
-            <span class="text-[#CCCC6C]">5000</span><br />
-            &nbsp;5 <br />
-            &nbsp;6 <span class="text-[#CD3838]">Track-1:</span> <br />
-            &nbsp;7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-            <span class="text-[#CCCC6C]">5000</span><br />
-            &nbsp;8 <br />
-            &nbsp;9 <span class="text-[#CD3838]">Track-2:</span> <br />
-            10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
-            <span class="text-[#CCCC6C]">5000</span>
-          </h2>
-        </div>
-      </div>
-    </div>
-
-    <div id="sponsers" class="mt-10 mx-5 xl:mx-16" >
-      <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
-        $ <span id="heading-sponsors"></span>
-      </h1>
-      <div class="-tranlate-y-[20rem]">
-
-      <!-- Sponsor Border -->
-
-      <div class="relative border border-none h-[20rem] mt-0 mb-0">
-        <div
-          class="  bg-[#68ACB0]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]"
-        ></div>
-        <div
-          class="bg-[#68ACB0] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
-        ></div>
-        <div
-          class="bg-[#68ACB0] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
-        ></div>
-
-        <div
-          class="bg-[#68ACB0] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
-        ></div>
-        <div
-          class="bg-[#68ACB0] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
-        ></div>
-
-        <div
-          class="bg-[#68ACB0] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[13.25rem] xl:h-[11.25rem]"
-        ></div>
-        <div
-          class="bg-[#68ACB0] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[13.25rem] xl:h-[11.25rem]"
-        ></div>
-
-        <div
-          class="bg-[#68ACB0] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
-        ></div>
-
-        <div
-          class="bg-[#68ACB0] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
-        ></div>
-        <div
-          class="bg-[#68ACB0] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
-        ></div>
-        <div
-          class="bg-[#68ACB0] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
-        ></div>
-
-        <div
-          class="bg-[#68ACB0] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
-        ></div>
-
-        <div class="overlay -translate-y-60">
-          <div
-            class="transform -translate-y-10 xl:transform flex items-center justify-center"
-          >
-            <h1
-              class=" transform -translate-y-[4.2rem] xl:-translate-y-7  text-1xl xl:font-bold xl:text-4xl text-center w-[6rem] xl:w-[20rem] bg-[rgb(30,30,30)] tracking-widest text-[#68ACB0] xl:mt-4 h-[2rem] xl:h-[38px] mt-4  xl:m-0 p-2 xl:p-0"
-            >
-              PLATINUM
-            </h1> 
-          </div>
-          <!-- Sponsor Content -->
-
-          <div
-            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 transform -translate-y-10 xl:-translate-y-0"
-          >
-            <a href="https://devfolio.co/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/assets/Devfolio-59bc2ef0.svg"
-                alt="DEVFOLIO LOGO"
-                class="xl:mr-10 w-[10.25rem] xl:w-[16.25rem] ml-[0.988rem]"
-              />
-            </a>
-            <a href="https://polygon.technology/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/assets/Polygon-ea36b098.svg"
-                alt="POLYGON LOGO"
-                class="w-44 xl:w-[18.75rem] ml-[0.5rem] xl:ml-10"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Sponsor Border -->
-      <div class="border border-none h-[30rem] xl:h-[27.5rem] mt-0  xl:mt-0">
-        
-        <div
-        class="  bg-[#BE9BE5]   p-1 mt-10 max-w-full ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem] h-3"></div>
-      <div
-        class="bg-[#BE9BE5] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
-      ></div>
-      <div
-        class="bg-[#BE9BE5] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
-      ></div>
-
-      <div
-        class="bg-[#BE9BE5] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
-      ></div>
-      <div
-        class="bg-[#BE9BE5] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
-      ></div>
-
-      <div
-        class="bg-[#BE9BE5] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[20.75rem] xl:h-[17.5rem]"
-      ></div>
-      <div
-        class="bg-[#BE9BE5] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[20.75rem] xl:h-[17.5rem]"
-      ></div>
-
-      <div
-        class="bg-[#BE9BE5] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
-      ></div>
-
-      <div
-        class="bg-[#BE9BE5] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
-      ></div>
-      <div
-        class="bg-[#BE9BE5] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
-      ></div>
-      <div
-        class="bg-[#BE9BE5] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
-      ></div>
-
-      <div
-        class="bg-[#BE9BE5] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
-      ></div>
-
-        <div class="overlay -translate-y-80">
-          <div
-            class="transform -translate-y-28 xl:-translate-y-24 xl:transform flex items-center justify-center"
-          >
-            <h1
-              class="font-bold transform -translate-y-7 xl:-translate-y-14 text-2xl xl:text-4xl text-center w-[6rem] xl:w-[20rem] h-12 xl:h-15 bg-[#1E1E1E] tracking-widest text-[#BE9BE5] mt-0 xl:mt-20 p-4 xl:p-0 "
-            > 
-              GOLD
-            </h1>
-          </div>
-          <!-- Sponsor content -->
-
-          <div
-            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-0 transform -translate-y-[5rem] xl:transform xl:-translate-y-[4rem]"
-          >
-            <a href="https://solana.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/assets/Solana-89c4a448.svg"
-                alt="SOLANA LOGO "
-                class="w-[10.25rem] xl:w-[17.5rem] ml-17 xl:ml-5 xl:mr-20 
-                xl:-translate-y-4"
-              />
-            </a>
-            <a href="https://auth0.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/assets/autho_white-419585af.png"
-                alt="Auth0 LOGO "
-                class="w-[10.25rem] xl:w-[11.5rem] ml-[3.2rem] xl:ml-5 mr-14 xl:mr-36 rounded-2xl 
-                 xl:-translate-y-4  "
-              />
-            </a>
-            <a href="https://filecoin.io/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <img
-                src="/assets/Filecoin-070ad9c9.svg"
-                alt="FILECOIN LOGO"
-                class="w-[10.25rem] xl:w-[13rem] mr-18 xl:mr-14  mt-0 -translate-y-5"
-              />
-              
-            </a>
-            </div>
-            <div
-            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-12 transform -translate-y-[4rem] xl:transform xl:-translate-y-[4rem] "
-          >
-            <a href="https://replit.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-               <img
-                src="/assets/Replit-474a611c.svg"
-                alt="REPLIT LOGO"
-                class="w-[13.375rem] xl:w-[16.875rem]"
-              />
-            </a>
-            </div>
-          
-          </div>
-        </div>
+          </div> -->
       </div>
     </div>
   </div>
 
-    <!-- TEAMS -->
-    <!-- <section>
+  <div id="prize" class="mt-10 mx-5 xl:mx-16" style="padding-bottom: 60px;">
+    <div class="hidden md:justify-center md:items-center">
+      <img class="h-[8rem] md:h-[20rem]" src="data:image/gif;base64,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" alt="shape pattern" />
+    </div>
+    <div class="prize">
+      <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl">
+        $ <span id="heading-prizes"></span>
+      </h1>
+      <div class="mt-10">
+        <h1 class="text-3xl text-[#9E9E9E]">
+          > ANNOUNCEMENT COMING
+
+          <span class="text-[red]">SOON</span>
+        </h1>
+      </div>
+
+      <div class="text-white text-[1.4rem] md:text-3xl mt-5 hidden">
+        <h2>
+          &nbsp;1 <span class="text-[#CD3838]">Overall:</span> <br />
+          &nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+          <span class="text-[#CCCC6C]">20000</span><br />
+          &nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runner-up:
+          <span class="text-[#CCCC6C]">10000</span><br />
+          &nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;second-runner-up:
+          <span class="text-[#CCCC6C]">5000</span><br />
+          &nbsp;5 <br />
+          &nbsp;6 <span class="text-[#CD3838]">Track-1:</span> <br />
+          &nbsp;7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+          <span class="text-[#CCCC6C]">5000</span><br />
+          &nbsp;8 <br />
+          &nbsp;9 <span class="text-[#CD3838]">Track-2:</span> <br />
+          10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winner:
+          <span class="text-[#CCCC6C]">5000</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="sponsers" class="mt-10 mx-5 xl:mx-16" >
+    <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
+      $ <span id="heading-sponsors"></span>
+    </h1>
+    <div class="-tranlate-y-[20rem]">
+
+    <!-- Sponsor Border -->
+
+    <div class="relative border border-none h-[20rem] mt-0 mb-0">
+      <div
+        class="  bg-[#68ACB0]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]"
+      ></div>
+      <div
+        class="bg-[#68ACB0] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
+      ></div>
+      <div
+        class="bg-[#68ACB0] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
+      ></div>
+
+      <div
+        class="bg-[#68ACB0] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
+      ></div>
+      <div
+        class="bg-[#68ACB0] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
+      ></div>
+
+      <div
+        class="bg-[#68ACB0] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[15.25rem] xl:h-[11.25rem]"
+      ></div>
+      <div
+        class="bg-[#68ACB0] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[15.25rem] xl:h-[11.25rem]"
+      ></div>
+
+      <div
+        class="bg-[#68ACB0] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
+      ></div>
+
+      <div
+        class="bg-[#68ACB0] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
+      ></div>
+      <div
+        class="bg-[#68ACB0] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
+      ></div>
+      <div
+        class="bg-[#68ACB0] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
+      ></div>
+
+      <div
+        class="bg-[#68ACB0] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
+      ></div>
+
+      <div class="overlay -translate-y-[17.1rem] xl:-translate-y-60">
+        <div
+          class="transform -translate-y-10 xl:transform flex items-center justify-center"
+        >
+          <h1
+            class=" transform -translate-y-[4.2rem] xl:-translate-y-7  text-1xl xl:font-bold xl:text-4xl text-center w-[6rem] xl:w-[20rem] bg-[rgb(30,30,30)] tracking-widest text-[#68ACB0] xl:mt-4 h-[2rem] xl:h-[38px] mt-4  xl:m-0 p-2 xl:p-0"
+          >
+            PLATINUM
+          </h1> 
+        </div>
+        <!-- Sponsor Content -->
+
+        <div
+          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 transform -translate-y-14 xl:-translate-y-0"
+        >
+          <a href="https://devfolio.co/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/Devfolio-59bc2ef0.svg"
+              alt="DEVFOLIO LOGO"
+              class="xl:mr-10 w-[10.25rem] xl:w-[16.25rem] ml-[0.988rem] "
+            />
+          </a>
+          <a href="https://www.echo3d.com/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/echo3D_brand_logo_2-08e1c2fa.webp"
+              alt="ECHO3d LOGO"
+              class="xl:mr-10 w-[9.8rem] xl:w-[16.25rem] ml-[1.2rem] xl:ml-[4.0rem] rounded-2xl"
+            />
+          </a>
+          <a href="https://polygon.technology/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/Polygon-ea36b098.svg"
+              alt="POLYGON LOGO"
+              class="w-44 xl:w-[18.75rem] ml-[0.5rem] xl:ml-10"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsor Border -->
+    <div class="border border-none h-[30rem] xl:h-[27.5rem] mt-20  xl:mt-0">
+      
+      <div
+      class="  bg-[#BE9BE5]   p-1 mt-10 max-w-full ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem] h-3"></div>
+    <div
+      class="bg-[#BE9BE5] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
+    ></div>
+    <div
+      class="bg-[#BE9BE5] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
+    ></div>
+
+    <div
+      class="bg-[#BE9BE5] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
+    ></div>
+    <div
+      class="bg-[#BE9BE5] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
+    ></div>
+
+    <div
+      class="bg-[#BE9BE5] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[20.75rem] xl:h-[17.5rem]"
+    ></div>
+    <div
+      class="bg-[#BE9BE5] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[20.75rem] xl:h-[17.5rem]"
+    ></div>
+
+    <div
+      class="bg-[#BE9BE5] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
+    ></div>
+
+    <div
+      class="bg-[#BE9BE5] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
+    ></div>
+    <div
+      class="bg-[#BE9BE5] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
+    ></div>
+    <div
+      class="bg-[#BE9BE5] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
+    ></div>
+
+    <div
+      class="bg-[#BE9BE5] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
+    ></div>
+
+      <div class="overlay -translate-y-80">
+        <div
+          class="transform -translate-y-28 xl:-translate-y-24 xl:transform flex items-center justify-center"
+        >
+          <h1
+            class="font-bold transform -translate-y-7 xl:-translate-y-14 text-2xl xl:text-4xl text-center w-[6rem] xl:w-[20rem] h-12 xl:h-15 bg-[#1E1E1E] tracking-widest text-[#BE9BE5] mt-0 xl:mt-20 p-4 xl:p-0 "
+          > 
+            GOLD
+          </h1>
+        </div>
+        <!-- Sponsor content -->
+
+        <div
+          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-0 transform -translate-y-[5rem] xl:transform xl:-translate-y-[4rem]"
+        >
+          <a href="https://solana.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/Solana-89c4a448.svg"
+              alt="SOLANA LOGO "
+              class="w-[10.25rem] xl:w-[17.5rem] ml-17 xl:ml-5 xl:mr-20 
+              xl:-translate-y-4"
+            />
+          </a>
+          <a href="https://auth0.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/autho_white-419585af.png"
+              alt="Auth0 LOGO "
+              class="w-[10.25rem] xl:w-[11.5rem] ml-[3.2rem] xl:ml-5 mr-14 xl:mr-36 rounded-2xl 
+               xl:-translate-y-4  "
+            />
+          </a>
+          <a href="https://filecoin.io/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/assets/Filecoin-070ad9c9.svg"
+              alt="FILECOIN LOGO"
+              class="w-[10.25rem] xl:w-[13rem] mr-18 xl:mr-14  mt-0 -translate-y-5"
+            />
+            
+          </a>
+          </div>
+          <div
+          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-12 transform -translate-y-[4rem] xl:transform xl:-translate-y-[4rem] "
+        >
+          <a href="https://replit.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+             <img
+              src="/assets/Replit-474a611c.svg"
+              alt="REPLIT LOGO"
+              class="w-[13.375rem] xl:w-[16.875rem]"
+            />
+          </a>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- TEAMS -->
+  <!--<section>
       <div id="team" class="mt-10 mx-5 xl:mx-16">
         <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
           $ <span id="heading-teams"></span>
@@ -1274,253 +1108,177 @@
       </div>
     </section> -->
 
-    <!-- FAQ -->
-    <div id="faq" class="mt-0 xl:mt-0 mx-5 xl:mx-16 -translate-y-[0rem]">
-      <div class="mb-10">
-        <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
-          $ <span id="heading-rules"></span>
-        </h1>
+  <!-- FAQ -->
+  <div id="faq" class="mt-0 xl:mt-0 mx-5 xl:mx-16 -translate-y-[0rem]" style="padding-bottom: 60px;">
+    <div class="mb-10">
+      <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
+        $ <span id="heading-rules"></span>
+      </h1>
+    </div>
+    <div class="bg-[#2E2E2E]">
+      <div class="flex justify-end pt-2 pr-2">
+        <img class="h-3" src="/assets/terminate-icon-b9724f85.svg" />
       </div>
-      <div class="bg-[#2E2E2E]">
-        <div class="flex justify-end pt-2 pr-2">
-          <img class="h-3" src="/assets/terminate-icon-b9724f85.svg" />
-        </div>
 
-        <div class="mx-4 xl:mx-7 pt-0 pb-10">
-          <div class="mt-6">
-            <div id="accordionFaq">
-              <div>
-                <h1 id="headingOne" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingOne">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
+      <div class="mx-4 xl:mx-7 pt-0 pb-10">
+        <div class="mt-6">
+          <div id="accordionFaq">
+            <div>
+              <h1 id="headingOne" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingOne">
+                <button onclick="Toggle(this)"
+                  class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                  type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
                   [+]
                 </button>
                 How many team members do I need?
-                </h1>
-              </div>
-              <div
-              id="collapseOne"
-              class="!visible hidden"
-              data-te-collapse-item
-              data-te-collapse-collapsed
-              aria-labelledby="headingOne"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              You can participate individually or in teams of 3 to 5 members. If you
-              are participating in the hackathon individually and looking
-              for a team, we will help you in connecting to other individual
-              participants to get you a team.
+              </h1>
+            </div>
+            <div id="collapseOne" class="!visible hidden" data-te-collapse-item data-te-collapse-collapsed
+              aria-labelledby="headingOne" data-te-parent="#accordionFaq">
+              <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+                You can participate individually or in teams of 3 to 5 members. If you
+                are participating in the hackathon individually and looking
+                for a team, we will help you in connecting to other individual
+                participants to get you a team.
               </div>
             </div>
-              <div>
-                <h1 id="headingTwo" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingTwo">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
+            <div>
+              <h1 id="headingTwo" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingTwo">
+                <button onclick="Toggle(this)"
+                  class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                  type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
                   [+]
                 </button>
                 Will the hackathon be in person or online?
-                </h1>
-              </div>
-              <div
-              id="collapseTwo"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingTwo"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              The Status Code 0 hackathon will be conducted in complete
-              offline/in person mode.
+              </h1>
+            </div>
+            <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+              data-te-parent="#accordionFaq">
+              <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+                The Status Code 0 hackathon will be conducted in complete
+                offline/in person mode.
               </div>
             </div>
-              <div>
-                <h1 id="headingThree" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingThree">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
+            <div>
+              <h1 id="headingThree" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingThree">
+                <button onclick="Toggle(this)"
+                  class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                  type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
                   [+]
                 </button>
                 How much are the participation fees?
-                </h1>
-              </div>
-              <div
-              id="collapseThree"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingThree"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              Participation is absolutely free inclusive of resources.
+              </h1>
+            </div>
+            <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+              data-te-parent="#accordionFaq">
+              <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+                Participation is absolutely free inclusive of resources.
               </div>
             </div>
-              <div>
-                <h1 id="headingFour" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFour">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                  [+]
-                </button>
-                What are the prerequisites to participate in this hackathon?
-                </h1>
-              </div>
-              <div
-              id="collapseFour"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingFour"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              No prerequisites are needed. Even a novice can excel in this
-              event.
-              </div>
-            </div>
-              <div>
-                <h1 id="headingFive" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFive">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                  [+]
-                </button>
-                How do I register?
-                </h1>
-              </div>
-              <div
-              id="collapseFive"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingFive"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              Register your team @ <a target="_blank" class="text-blue-600 underline hover:text-blue-500" href="https://statuscode0.devfolio.co/?ref=3b650b8ad9">Devfolio</a>
-              </div>
-            </div>
-              <div>
-                <h1 id="headingSix" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingSix">
-                  <button
-                    onclick="Toggle(this)"
-                    class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                  [+]
-                </button>
-                What is the venue for Status Code 0?
-                </h1>
-              </div>
-              <div
-              id="collapseSix"
-              class="!visible hidden"
-              data-te-collapse-item
-              aria-labelledby="headingSix"
-              data-te-parent="#accordionFaq"
-            >
-              <div
-                class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
-              >
-              IISER KOLKATA
-              </div>
-            </div>
+
+            <h1 id="headingFour" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFour">
+              <button onclick="Toggle(this)"
+                class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour">
+                [+]
+              </button>
+              What are the prerequisites to participate in this hackathon?
+            </h1>
+          </div>
+          <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+            data-te-parent="#accordionFaq">
+            <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+              No prerequisites are required to participate in this hackathon. 
+              This event is open to participants of all skill levels.
             </div>
           </div>
+          <div>
+            <h1 id="headingFive" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingFive">
+              <button onclick="Toggle(this)"
+                class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive"
+                aria-expanded="false" aria-controls="collapseFive">
+                [+]
+              </button>
+              How do I register?
+            </h1>
+          </div>
+          <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive"
+            data-te-parent="#accordionFaq">
+            <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+              Register your team @ <a target="_blank" class="text-blue-600 underline hover:text-blue-500"
+                href="https://statuscode0.devfolio.co/">Devfolio</a>
+            </div>
+          </div>
+          <div>
+            <h1 id="headingSix" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingSix">
+              <button onclick="Toggle(this)"
+                class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix">
+                [+]
+              </button>
+              What is the venue for Status Code 0?
+            </h1>
+          </div>
+          <div id="collapseSix" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSix"
+            data-te-parent="#accordionFaq">
+            <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+              APC Ray Lecture
+              Hall Complex, IISER KOLKATA
+            </div>
+          </div>
+          <div>
+            <h1 id="headingSeven" class="text-white text-xl sm:text-2xl xl:text-3xl m-0 flex headingSeven">
+              <button onclick="Toggle(this)"
+                class="faq-collapsible text-[#E5B567] mr-2 h-[50%] group relative flex items-center justify-center rounded-none border-0 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#169B81]"
+                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSeven"
+                aria-expanded="false" aria-controls="collapseSeven">
+                [+]
+              </button>
+              Is the food and accommodation provided free of charge or are there any associated costs?
+            </h1>
+          </div>
+          <div id="collapseSeven" class="!visible hidden" data-te-collapse-item aria-labelledby="headingSeven"
+            data-te-parent="#accordionFaq">
+            <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
+              We've got you covered when it comes to food, water, and coffee – they're on us.
+              However, any additional snacks can be purchased separately. As for accommodation,
+              we will provide arrangements similar to those found in other hackathons, which typically
+              involve a set of mattresses in a common hall.
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <div
-      id="footer"
-      class="bg-[url('/assets/footer.png')] bg-cover footer mt-10 px-5 xl:px-16"
-    >
-      <div
-        class="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%] justify-evenly align-middle gap-5"
-      >
+  <!-- Footer -->
+  <!-- Footer -->
+  <div id="footer" class="bg-[url('/assets/footer.png')] bg-cover footer mt-10 px-5 xl:px-16">
+    <div class="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%] justify-evenly align-middle gap-5">
+      <div class="flex flex-col lg:flex-row justify-evenly align-middle gap-5">
+        <div class="resources footerelements flex flex-col justify-center">
+          <a href="#">
+            <img class="w-32 md:w-64 hidden xl:block" src="/assets/iupgz4ve 1-2aa14036.png" alt="" />
+          </a>
+        </div>
         <div
-          class="flex flex-col lg:flex-row justify-evenly align-middle gap-5"
-        >
-          <div class="resources footerelements flex flex-col justify-center">
-            <a href="#">
-              <img
-                class="w-32 md:w-64 hidden xl:block"
-                src="/assets/iupgz4ve 1-2aa14036.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-           
-            class="address footerelements flex flex-col justify-center items-center text-center flex flex-col justify-center items-center text-center"
-          
-          >
-            <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
-              ADDRESS
-            </h1>
-            <p
-              class="footercontent text-xl md:text-2xl addresscontent text-[#BEBEBE] hover:text-white"
-            >
-            <a href="https://goo.gl/maps/PPd7UW3EXEUvu7po7" target="_blank" rel="noopener noreferrer">APC Ray Lecture Hall Complex</a>
-            </p>
-            <p
-              class="text-xl md:text-2xl mb-2 addresscontent text-[#BEBEBE] hover:text-white"
-            >
-              <a href="https://goo.gl/maps/PPd7UW3EXEUvu7po7" target="_blank" rel="noopener noreferrer">IISER Kolkata</a>
-            </p>
-            <iframe
+          class="address footerelements flex flex-col justify-center items-center text-center flex flex-col justify-center items-center text-center">
+          <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
+            ADDRESS
+          </h1>
+          <p class="footercontent text-xl md:text-2xl addresscontent text-[#BEBEBE] hover:text-white">
+            <a href="https://goo.gl/maps/PPd7UW3EXEUvu7po7" target="_blank" rel="noopener noreferrer">
+              <span>APC Ray Lecture Hall Complex <br></span><span>IISER Kolkata</span> </a>
+          </p>
+          <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1836.8022340987916!2d88.5251829!3d22.9647895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8bf0c2b493059%3A0x2f36e18b6cddfa22!2sA%20P%20C%20Ray%20Lecture%20Hall%20Complex!5e0!3m2!1sen!2sin!4v1686240183108!5m2!1sen!2sin"
               width="400"
               height="200"
@@ -1529,113 +1287,89 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               class="w-72 h-32 xl:w-96 xl:h-32 footercontent"
-            ></iframe>
-          </div>
-          <div class="resources footerelements text-center">
-            <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
-            <a
-              href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
-              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
-              target="_blank" rel="noopener noreferrer"
-            >
-              Sponsorship Brochure<br />
-            </a>
-            <a
-              href="https://docs.google.com/document/d/1c85ZRXPozQHFb0ZIOD_O3LIo5bBBam-fpgMqihxXcuU/edit?usp=sharing"
-              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
-              target="_blank" rel="noopener noreferrer"
-            >
-              Code Of Conduct
-            </a>
-          </div>
-          <div class="social text-center xl:text-left">
-            <h1
-              class="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2"
-            >
-              STAY CONNECTED
-            </h1>
-            <div class="flex justify-center xl:justify-between gap-7 md:gap-10">
-              <a href="https://www.instagram.com/status._code/" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="sociallogos insta_logo brightness-0 invert-[1] hover:filter-none"
-                  src="data:image/png;base64,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"
-                  alt="insta_logo"
-                />
-              </a>
-              <a href="https://twitter.com/Status_Code_" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="twitter_logo sociallogos brightness-0 invert-[1] hover:filter-none"
-                  src="data:image/png;base64,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"
-                  alt="twitter_logo"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/status-code-0-613784278/" target="_blank" rel="noopener noreferrer"
-                class="relative w-[40px]"
-              >
-              <img
-              class="sociallogos linkedin_logo absolute w-[40px] peer z-10 brightness-0 invert-[1] hover:filter-none"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAC9ElEQVRYw+1Yz0/TYBh+vq4DtgHyW0mAjGQhkmkMoKAH4/QiREm4GYkHTUy4EBOMFw4e/APUeJGDVy8aSMTL4smCwYRdiCQLHIAtS2A1g43I1kHXfp8H1lnGIBspriR7k6b5+vVrnz7v8z59W6AUpShukOwDN0YnL5ZbeU/RgXEIfH899I3PnuChegDrRLEBMsoEAP8Aep5+bEGlg6dUrTFTijMAmd32gRCun7NwptIgZ/YiKQE0TIP5xN1rrS3jw93r3vkQD4AN9LWpnrFpZhqA48Pd6wDQ39sKAMx0DGZMlBClpMGTAPw6F3CYukjeTC7GPWPTJZs5MYMP77gujQy6/f5gtBZAzZ6sNjyf+OkDgBcPrlTcv+7cy17jD0Y5t7OO+oPRzL1mfm3gs7CaMhzgyKDbzxgjAFRCSGBHkhu0ufbz1XKuNW5nHU3vD1R+vlLhTyiLOGPMEk+mljNA2uvy9kV/cIvzLUes8WQKU7NrKcMAen2hCgBaGm0A4pmbBqIkG6T2lqm0WQEArx5ftfZ0NCluZz0FQMNbCX5qds3wIiFps07ku15VKVSVoqejKZNmxhhneBUP9Lbt7mMjGlOO4z4ftEjKKpKyivklUX8OMxyg1xeq1Y+r7GV/Clnf13mB6V6X7DR8cBuARRvsSPIB1tIVDgBYWIkcuvb8ktikHzfXOxSjAXIAVB2DhXY0Ef3DhLcSvNEaVPXa2ZHkMj2BhBDGGOMBoMvVSHNcolGfYsMZ9PpCPACLlsoqe5l8lA8urERysVOtY5A3nME0exRAVZpBm84HOa1XPMZCVgvtKQsFSNObZtbKEQ0t7XI15po7d6pFMtDbxsSYVC7GJDkcTTSLMemyNifGJABAOLqfth+LG4fSt7m9a89DBrn/zdx6NuUlFr7fPI0WE4S3Q7fPTstPlIon4FKdVJFfmrJhFd7fEwGIN0c/bZ7Zjvq/KI8qXwjHCwD5bUqAipycmZt49O5IBi2E3wRjQrEAUjkVxFmKv8eLIOBk+SIuAAAAAElFTkSuQmCC"
-              alt="linkedin_logo"
-              />
-              <div class="w-[70%] h-[75%] absolute top-2 left-2 peer-hover:bg-white"></div>
-              </a>
-              <a href="https://discord.gg/UHwPBzy7UF" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="sociallogos discord_logo brightness-0 invert-[1] hover:filter-none"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEfklEQVRYw+3YW4iUZRgH8N98O7sedndcXdFoXVGxIsyioojsPqKDdB7ICoLJbgqiG68Kuiqom4yoBgrJaC6K6IQdCKQLg+jGCDpoapp0cqudtdU9Thc+X3ytMzuzq61e+Nx8zHzf8z7/93mfw/99OCenJrnpXhZLQzlqeczDSszHcmzBCB7EwUq5MFksVfOZ9WqVcmG8WKomofdyrPEUfsVxHDyxRm68Uu6uzRhgsVRtwwJcG0YeQA860BcGbsIB5HEploX6b/gK41iF92ONwxjFX3gl1tiFY5VyYaIlgMVSNYdFuBX9uAG9WIO21EM4gjIGMhvpi/eHU8OhW8LSjL0J7AvdHTiEtzFYKRf+4818A9CLsQlrA2Suzjc9uBdjsc6yCAG4CJeEB9vj2+wabbgg1j8fe7ET1dh8fQ+G9xbjETyMJXOUC39gK57Dn1kvJlM+7MA63Be7nivpCZvrAoOTAIb3unBznSOZi2rSE7a7AstJHuzAetwZSTLXABeF7fVZLyYZ76X17bw6Rz8XkoTtLVieejHJ7GBh1KyOM9g4OgLDwvQEk0DaiavRPcdHW++ouwNLZ7FUzSXxZ29k0ZKzAOCSwNKLXHrE7Vgd/fJMy7zA0p7GYBJHXJtaxc+QpDg6keQjvTe2WFrG8HOmhfW1kPGT0ZvHosUtjnqbNCk5G3Eon4m/3iYAR/ElPsTfEcwbo27lp9nQ13gHQ3F8V+H6yNRGAFNMb+TDnRPxbARwBLvxLD6K3wvwPR4NqjWvDrhv8Azew3B4/Zqod1dME/P/YkpaOKJakMwn8DGGK+XCOI6G4cfjfW2KzhG8EB4/eoLv5UbwBZ7EL01iPoe2JDpIexOAo0FMh1OmEc/h+H+0DsBhfJ7leMGcj4fO2DQAc4GpPwmm3Cz+UpfXk4kGhiaDsNZmoJMFuByPJbg821pOs0yeYttbnQQLzrVY5es1+HolI22fGxpka6vOqCUtFOfsFaA/ZRnx7Mc9dVpkyu/uwoq43WV1NsWaTYHmiqXqt3E/SJrE4ABewltR07pxOzY3iOFaUPkXZ6AzNTz25GfQxJfGPaUvro09uA2FJgV3JjonSX6GgVuIm1z2dvZ/6Mwa4IwNnIJO3VvdWSetenDidHhjNmvlm5CEGgaDjQxEabgjsnE2MoQ3I7sXRUY3uuLm0JbH87gsDNf7uC2ysYrXgz51Re1rpZ4N4t3ov4PBim6JqtDoBKv4BLvyYXRnsIv7p8xi0o5wHS7G79gehgrY38IEYgifBmntjk3dGJvunLK5WgyStuMDfJftCr1RQO8OkD11jntfTLv2pgwlOwVoJJVyoRbfrY1p1po6Xj+GH1CJhjBQKRdq+Qx1OlIsVbcGj9uAK2NK1ZYhrT8GTcqlLXLquKxJsR+LNVZkyOoE9gS4HXitUi5U62ZxpVyoFkvVV/FZUPPNMVbrj8DeFskym8tV2i634cKIwZ8ibMrBvneTO96UVcR0dX7c8lfGOGIUD2F/pVyYFY0K0rAqxmxdeDqmrAcwEkz9nJxW+QdrVUbABatGvQAAAABJRU5ErkJggg=="
-                  alt="discord_logo"
-                />
-              </a>
-            </div>
-          </div>
+            ></iframe> -->
         </div>
-        <div class="copyright flex items-center justify-center mx-5">
-          <h1 class="m-0 text-xl xl:text-2xl">© 2023 IIIT Kalyani</h1>
+        <div class="resources footerelements text-center">
+          <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
+          <a href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
+            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
+            target="_blank" rel="noopener noreferrer">
+            Sponsorship Brochure<br />
+          </a>
+          <a href="https://docs.google.com/document/d/1c85ZRXPozQHFb0ZIOD_O3LIo5bBBam-fpgMqihxXcuU/edit?usp=sharing"
+            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+            target="_blank" rel="noopener noreferrer">
+            Code Of Conduct
+          </a>
+        </div>
+        <div class="social text-center xl:text-left">
+          <h1 class="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2">
+            STAY CONNECTED
+          </h1>
+          <div class="flex justify-center xl:justify-between gap-7 md:gap-10">
+            <a href="https://www.instagram.com/status._code/" target="_blank" rel="noopener noreferrer">
+              <img class="sociallogos insta_logo brightness-0 invert-[1] hover:filter-none"
+                src="data:image/png;base64,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" alt="insta_logo" />
+            </a>
+            <a href="https://twitter.com/Status_Code_" target="_blank" rel="noopener noreferrer">
+              <img class="twitter_logo sociallogos brightness-0 invert-[1] hover:filter-none"
+                src="data:image/png;base64,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" alt="twitter_logo" />
+            </a>
+            <a href="https://www.linkedin.com/in/status-code-0-613784278/" target="_blank" rel="noopener noreferrer"
+              class="relative w-[40px]">
+              <img
+                class="sociallogos linkedin_logo absolute w-[40px] peer z-10 brightness-0 invert-[1] hover:filter-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAC9ElEQVRYw+1Yz0/TYBh+vq4DtgHyW0mAjGQhkmkMoKAH4/QiREm4GYkHTUy4EBOMFw4e/APUeJGDVy8aSMTL4smCwYRdiCQLHIAtS2A1g43I1kHXfp8H1lnGIBspriR7k6b5+vVrnz7v8z59W6AUpShukOwDN0YnL5ZbeU/RgXEIfH899I3PnuChegDrRLEBMsoEAP8Aep5+bEGlg6dUrTFTijMAmd32gRCun7NwptIgZ/YiKQE0TIP5xN1rrS3jw93r3vkQD4AN9LWpnrFpZhqA48Pd6wDQ39sKAMx0DGZMlBClpMGTAPw6F3CYukjeTC7GPWPTJZs5MYMP77gujQy6/f5gtBZAzZ6sNjyf+OkDgBcPrlTcv+7cy17jD0Y5t7OO+oPRzL1mfm3gs7CaMhzgyKDbzxgjAFRCSGBHkhu0ufbz1XKuNW5nHU3vD1R+vlLhTyiLOGPMEk+mljNA2uvy9kV/cIvzLUes8WQKU7NrKcMAen2hCgBaGm0A4pmbBqIkG6T2lqm0WQEArx5ftfZ0NCluZz0FQMNbCX5qds3wIiFps07ku15VKVSVoqejKZNmxhhneBUP9Lbt7mMjGlOO4z4ftEjKKpKyivklUX8OMxyg1xeq1Y+r7GV/Clnf13mB6V6X7DR8cBuARRvsSPIB1tIVDgBYWIkcuvb8ktikHzfXOxSjAXIAVB2DhXY0Ef3DhLcSvNEaVPXa2ZHkMj2BhBDGGOMBoMvVSHNcolGfYsMZ9PpCPACLlsoqe5l8lA8urERysVOtY5A3nME0exRAVZpBm84HOa1XPMZCVgvtKQsFSNObZtbKEQ0t7XI15po7d6pFMtDbxsSYVC7GJDkcTTSLMemyNifGJABAOLqfth+LG4fSt7m9a89DBrn/zdx6NuUlFr7fPI0WE4S3Q7fPTstPlIon4FKdVJFfmrJhFd7fEwGIN0c/bZ7Zjvq/KI8qXwjHCwD5bUqAipycmZt49O5IBi2E3wRjQrEAUjkVxFmKv8eLIOBk+SIuAAAAAElFTkSuQmCC" alt="linkedin_logo" />
+              <div class="w-[70%] h-[75%] absolute top-2 left-2 peer-hover:bg-white"></div>
+            </a>
+            <a href="https://discord.gg/UHwPBzy7UF" target="_blank" rel="noopener noreferrer">
+              <img class="sociallogos discord_logo brightness-0 invert-[1] hover:filter-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEfklEQVRYw+3YW4iUZRgH8N98O7sedndcXdFoXVGxIsyioojsPqKDdB7ICoLJbgqiG68Kuiqom4yoBgrJaC6K6IQdCKQLg+jGCDpoapp0cqudtdU9Thc+X3ytMzuzq61e+Nx8zHzf8z7/93mfw/99OCenJrnpXhZLQzlqeczDSszHcmzBCB7EwUq5MFksVfOZ9WqVcmG8WKomofdyrPEUfsVxHDyxRm68Uu6uzRhgsVRtwwJcG0YeQA860BcGbsIB5HEploX6b/gK41iF92ONwxjFX3gl1tiFY5VyYaIlgMVSNYdFuBX9uAG9WIO21EM4gjIGMhvpi/eHU8OhW8LSjL0J7AvdHTiEtzFYKRf+4818A9CLsQlrA2Suzjc9uBdjsc6yCAG4CJeEB9vj2+wabbgg1j8fe7ET1dh8fQ+G9xbjETyMJXOUC39gK57Dn1kvJlM+7MA63Be7nivpCZvrAoOTAIb3unBznSOZi2rSE7a7AstJHuzAetwZSTLXABeF7fVZLyYZ76X17bw6Rz8XkoTtLVieejHJ7GBh1KyOM9g4OgLDwvQEk0DaiavRPcdHW++ouwNLZ7FUzSXxZ29k0ZKzAOCSwNKLXHrE7Vgd/fJMy7zA0p7GYBJHXJtaxc+QpDg6keQjvTe2WFrG8HOmhfW1kPGT0ZvHosUtjnqbNCk5G3Eon4m/3iYAR/ElPsTfEcwbo27lp9nQ13gHQ3F8V+H6yNRGAFNMb+TDnRPxbARwBLvxLD6K3wvwPR4NqjWvDrhv8Azew3B4/Zqod1dME/P/YkpaOKJakMwn8DGGK+XCOI6G4cfjfW2KzhG8EB4/eoLv5UbwBZ7EL01iPoe2JDpIexOAo0FMh1OmEc/h+H+0DsBhfJ7leMGcj4fO2DQAc4GpPwmm3Cz+UpfXk4kGhiaDsNZmoJMFuByPJbg821pOs0yeYttbnQQLzrVY5es1+HolI22fGxpka6vOqCUtFOfsFaA/ZRnx7Mc9dVpkyu/uwoq43WV1NsWaTYHmiqXqt3E/SJrE4ABewltR07pxOzY3iOFaUPkXZ6AzNTz25GfQxJfGPaUvro09uA2FJgV3JjonSX6GgVuIm1z2dvZ/6Mwa4IwNnIJO3VvdWSetenDidHhjNmvlm5CEGgaDjQxEabgjsnE2MoQ3I7sXRUY3uuLm0JbH87gsDNf7uC2ysYrXgz51Re1rpZ4N4t3ov4PBim6JqtDoBKv4BLvyYXRnsIv7p8xi0o5wHS7G79gehgrY38IEYgifBmntjk3dGJvunLK5WgyStuMDfJftCr1RQO8OkD11jntfTLv2pgwlOwVoJJVyoRbfrY1p1po6Xj+GH1CJhjBQKRdq+Qx1OlIsVbcGj9uAK2NK1ZYhrT8GTcqlLXLquKxJsR+LNVZkyOoE9gS4HXitUi5U62ZxpVyoFkvVV/FZUPPNMVbrj8DeFskym8tV2i634cKIwZ8ibMrBvneTO96UVcR0dX7c8lfGOGIUD2F/pVyYFY0K0rAqxmxdeDqmrAcwEkz9nJxW+QdrVUbABatGvQAAAABJRU5ErkJggg==" alt="discord_logo" />
+            </a>
+          </div>
         </div>
       </div>
+      <div class="copyright flex items-center justify-center mx-5">
+        <h1 class="m-0 text-xl xl:text-2xl">© 2023 IIIT Kalyani</h1>
+      </div>
     </div>
+  </div>
 
-    <script>
-      function Menu(e) {
-        let list = document.querySelector('ul');
-        e.name === 'menu'
-          ? ((e.name = 'close'),
-            list.classList.add('top-[80px]'),
-            list.classList.add('opacity-100'))
-          : ((e.name = 'menu'),
-            list.classList.remove('top-[80px]'),
-            list.classList.remove('opacity-100'));
-      }
-      //toggle end
-      // Faq toggle
-      const collection = document.getElementsByClassName('faq-collapsible');
-      function Toggle(e) {
-        for (let i = 0; i < collection.length; i++) {
-          let element = collection[i];
-          let hidden = element.getAttribute('data-te-collapse-collapsed');
-          if (hidden == null) {
-            element.innerText = '[-]';
-          }
-          else {
-            element.innerText = '[+]';
-          }
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu'
+        ? ((e.name = 'close'),
+          list.classList.add('top-[80px]'),
+          list.classList.add('opacity-100'))
+        : ((e.name = 'menu'),
+          list.classList.remove('top-[80px]'),
+          list.classList.remove('opacity-100'));
+    }
+    //toggle end
+    // Faq toggle
+    const collection = document.getElementsByClassName('faq-collapsible');
+    function Toggle(e) {
+      for (let i = 0; i < collection.length; i++) {
+        let element = collection[i];
+        let hidden = element.getAttribute('data-te-collapse-collapsed');
+        if (hidden == null) {
+          element.innerText = '[-]';
         }
-      }    
+        else {
+          element.innerText = '[+]';
+        }
+      }
+    }
 
       // Faq toggle end
-    </script>
+  </script>
 
-    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    
-    
-  </body>
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  
+</body>
+
 </html>
