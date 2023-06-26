@@ -83,3 +83,24 @@ body {
     align-content: center;
   }
 } 
+
+/* .timeline-wrapper{
+  overflow: hidden;
+}
+
+.cp{
+  animation: loop 12s linear infinite;
+} 
+
+.container{
+  overflow: hidden;
+}
+
+@keyframes loop {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-40%,0)
+  }
+} */
