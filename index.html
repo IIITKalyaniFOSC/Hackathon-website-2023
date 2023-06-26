@@ -100,8 +100,7 @@
             <li><span id=""></span>:</li>
             <li><span id=""></span>sec</li>
           </ul>
-          <div class="apply-button" data-hackathon-slug="statuscode0" data-button-theme="dark"
-            style="height: 44px; width: 312px;"></div>
+          <div class="apply-button" data-hackathon-slug="statuscode0" data-button-theme="dark"></div>
         </div>
       </div>
     </div>
@@ -110,66 +109,88 @@
   </div>
 
   <!-- SCHEDULE -->
+
+
   <div id="schedule" class="mt-10 mx-5 xl:mx-16" style="padding-bottom: 60px;">
-    <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
+    <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl" style="padding-bottom: 60px;">
       $ <span id="heading-schedule"></span>
     </h1>
-    <div class="flex flex-col xl:flex-row xl:gap-[20rem] 2xl:gap-[30rem]">
-      <div class="relative mb-10 w-[90vw] xl:w-[30vw]">
-        <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="./assets/ladder.png" alt="" />
-        <img class="mt-5 h-[60rem] w-auto relative xl:hidden" src="./assets/laddermobile.png" alt="" />
-        <div class="absolute top-[5rem] xl:top-[4.5rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
-            Registration Begin
-          </h1>
-          <p class="xl:text-2xl">15 April 2023, 12:00 am</p>
-        </div>
-        <div class="absolute top-[12.8rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#CCCC6C]">
-            Registration Closes
-          </h1>
-          <p class="xl:text-2xl">20 July 2023, 12:00 am</p>
-        </div>
-        <div class="absolute top-[20.5rem] xl:top-[21rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
-            Opening Ceremony
-          </h1>
-          <p class="xl:text-2xl">12 August 2023, 10:00 am</p>
-        </div>
-        <div class="absolute top-[28.7rem] xl:top-[29.3rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
-            API Workshop
-          </h1>
-          <p class="xl:text-2xl">12 August 2023, 12:30 pm</p>
+    <div class="timeline mx-30 flex justify-center">
+      <button class="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px]">
+        <img src="./assets/left_key.svg" alt="" />
+      </button>
+
+      <div class="contents mx-30 flex mx-auto ">
+        <div class="timeline-wrapper max-w-[990px] flex overflow-x-auto no-scrollbar">
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">Apr 15</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:00 AM</h3>
+            <img src='./assets/red_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Registration</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Begins</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">July 20</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:00 AM</h3>
+            <img src='./assets/orange_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Registration</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Closes</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">10:00 AM</h3>
+            <img src='./assets/pink_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Opening</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Ceremony</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#BC81FF] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:30 PM</h3>
+            <img src='./assets/purple_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">API</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Workshop</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#78BEFF] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">04:00 PM</h3>
+            <img src='./assets/blue_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Auth0</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Workshop</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">Aug 13</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">11:00 PM</h3>
+            <img src='./assets/red_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Mid</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Evaluation</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">Aug 13</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">03:30 PM</h3>
+            <img src='./assets/orange_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Final </h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Evaluation</h3>
+          </div>
+
+          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
+            <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">Aug 13</h1>
+            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">05:15 PM</h3>
+            <img src='./assets/pink_add.svg' alt="" />
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Closing</h3>
+            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Ceremony"</h3>
+          </div>
         </div>
       </div>
-      <div class="absolute xl:relative mb-10 w-[90vw] xl:w-[30vw]">
-        <img class="mt-5 h-[30rem] w-auto relative hidden xl:block" src="./assets/ladder.png" alt="" />
-        <div class="absolute top-[36rem] left-[6rem] xl:top-[4.5rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
-            Auth0 Workshop
-          </h1>
-          <p class="xl:text-2xl">12 August 2023, 04:00 pm</p>
-        </div>
-        <div class="absolute top-[44rem] left-[6rem] xl:top-[12.8rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#CD3838]">
-            Mid Evaluation
-          </h1>
-          <p class="xl:text-2xl">13 August 2023, 11:00 pm</p>
-        </div>
-        <div class="absolute top-[51.5rem] xl:top-[21rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#50BE62]">
-            Final Evaluation
-          </h1>
-          <p class="xl:text-2xl">13 August 2023, 03:30 pm</p>
-        </div>
-        <div class="absolute top-[59.5rem] xl:top-[29.3rem] left-[6rem]">
-          <h1 class="text-3xl xl:text-4xl m-0 text-[#6164AD]">
-            Closing Ceremony
-          </h1>
-          <p class="xl:text-2xl">13 August 2023, 05:15 pm hrs</p>
-        </div>
-      </div>
+      <button class="next ml-10 opacity-50 hover:opacity-100 min-w-[30px]">
+        <img src="./assets/right_key.svg" alt="" />
+      </button>
     </div>
   </div>
 
@@ -433,23 +454,6 @@
             </div>
           </div> -->
         <div class="mt-2">
-          <h2 class="accordion-header mb-0" id="headingFour">
-            <button
-              class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
-              type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
-              aria-expanded="false" aria-controls="collapseFour">
-              Auth 0
-            </button>
-          </h2>
-          <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
-            data-te-parent="#accordionExample">
-            <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
-              Participate in the Auth0 Special Track at Status Code 0 and create a product
-              using Auth0 for a chance to win $20 Amazon Gift Cards for all members of your team.
-            </div>
-          </div>
-        </div>
-        <div class="mt-2">
           <h2 class="accordion-header mb-0" id="headingFive">
             <button
               class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
@@ -467,6 +471,23 @@
               experiences, improve access to education for disadvantaged
               communities, or help teachers and students collaborate more
               effectively.
+            </div>
+          </div>
+          <div class="mt-2">
+            <h2 class="accordion-header mb-0" id="headingFour">
+              <button
+                class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-left text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
+                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour">
+                Auth 0
+              </button>
+            </h2>
+            <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+              data-te-parent="#accordionExample">
+              <div class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg">
+                Participate in the Auth0 Special Track at Status Code 0 and create a product
+                using Auth0 for a chance to win $20 Amazon Gift Cards for all members of your team.
+              </div>
             </div>
           </div>
         </div>
@@ -595,197 +616,168 @@
     </div>
   </div>
 
-  <div id="sponsers" class="mt-10 mx-5 xl:mx-16" >
+  <div id="sponsers" class="mt-10 mx-5 xl:mx-16">
     <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
       $ <span id="heading-sponsors"></span>
     </h1>
-    <div class="-tranlate-y-[20rem]">
+    <div class="">
 
-    <!-- Sponsor Border -->
+      <!-- Sponsor Border -->
 
-    <div class="relative border border-none h-[20rem] mt-0 mb-0">
-      <div
-        class="  bg-[#68ACB0]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]"
-      ></div>
-      <div
-        class="bg-[#68ACB0] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
-      ></div>
-      <div
-        class="bg-[#68ACB0] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
-      ></div>
-
-      <div
-        class="bg-[#68ACB0] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
-      ></div>
-      <div
-        class="bg-[#68ACB0] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
-      ></div>
-
-      <div
-        class="bg-[#68ACB0] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[15.25rem] xl:h-[11.25rem]"
-      ></div>
-      <div
-        class="bg-[#68ACB0] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[15.25rem] xl:h-[11.25rem]"
-      ></div>
-
-      <div
-        class="bg-[#68ACB0] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
-      ></div>
-
-      <div
-        class="bg-[#68ACB0] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
-      ></div>
-      <div
-        class="bg-[#68ACB0] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
-      ></div>
-      <div
-        class="bg-[#68ACB0] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
-      ></div>
-
-      <div
-        class="bg-[#68ACB0] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
-      ></div>
-
-      <div class="overlay -translate-y-[17.1rem] xl:-translate-y-60">
+      <div class="relative border border-none h-[20rem]">
         <div
-          class="transform -translate-y-10 xl:transform flex items-center justify-center"
-        >
-          <h1
-            class=" transform -translate-y-[4.2rem] xl:-translate-y-7  text-1xl xl:font-bold xl:text-4xl text-center w-[6rem] xl:w-[20rem] bg-[rgb(30,30,30)] tracking-widest text-[#68ACB0] xl:mt-4 h-[2rem] xl:h-[38px] mt-4  xl:m-0 p-2 xl:p-0"
-          >
-            PLATINUM
-          </h1> 
+          class="  bg-[#68ACB0]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]">
         </div>
-        <!-- Sponsor Content -->
+        <div class="bg-[#68ACB0] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"></div>
+        <div class="bg-[#68ACB0] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"></div>
+
+        <div class="bg-[#68ACB0] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"></div>
+        <div class="bg-[#68ACB0] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"></div>
+
+        <div class="bg-[#68ACB0] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[15.25rem] xl:h-[11.25rem]">
+        </div>
+        <div class="bg-[#68ACB0] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[15.25rem] xl:h-[11.25rem]"></div>
+
+        <div class="bg-[#68ACB0] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"></div>
+
+        <div class="bg-[#68ACB0] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"></div>
+        <div class="bg-[#68ACB0] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"></div>
+        <div class="bg-[#68ACB0] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"></div>
 
         <div
-          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 transform -translate-y-14 xl:-translate-y-0"
-        >
-          <a href="https://devfolio.co/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/Devfolio.svg"
-              alt="DEVFOLIO LOGO"
-              class="xl:mr-10 w-[10.25rem] xl:w-[16.25rem] ml-[0.988rem] "
-            />
-          </a>
-          <a href="https://www.echo3d.com/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/echo3D_brand_logo_2.webp"
-              alt="ECHO3d LOGO"
-              class="xl:mr-10 w-[9.8rem] xl:w-[16.25rem] ml-[1.2rem] xl:ml-[4.0rem] rounded-2xl"
-            />
-          </a>
-          <a href="https://polygon.technology/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-            <img
-              src="assets/Polygon.svg"
-              alt="POLYGON LOGO"
-              class="w-44 xl:w-[18.75rem] ml-[0.5rem] xl:ml-10"
-            />
-          </a>
+          class="bg-[#68ACB0] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  ">
+        </div>
+
+        <div class="overlay -translate-y-[21.1rem] xl:-translate-y-60">
+          <div class="transform -translate-y-19 xl:transform flex items-center justify-center">
+            <h1
+              class=" transform -translate-y-[2.2rem] xl:-translate-y-16  text-1xl xl:font-bold xl:text-4xl text-center w-[6rem] xl:w-[20rem] bg-[rgb(30,30,30)] tracking-widest text-[#68ACB0] xl:mt-4 h-[2rem] xl:h-[38px] mt-4  xl:m-0 p-2 xl:p-0">
+              PLATINUM
+            </h1>
+          </div>
+          <!-- Sponsor Content -->
+
+          <div
+            class="flex flex-col xl:flex-row items-center justify-around">
+            <a href="https://devfolio.co/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Devfolio.svg" alt="DEVFOLIO LOGO"
+                class="" />
+            </a>
+            <a href="https://www.echo3d.com/" class="cursor-pointer w-52" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/echo3D_brand_logo_2.webp" alt="ECHO3d LOGO"
+                class="xl:mr-10 w-[9.8rem] xl:w-[16.25rem] ml-[1.2rem] xl:ml-[4.0rem] rounded-2xl" />
+            </a>
+            <a href="https://polygon.technology/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="assets/Polygon.svg" alt="POLYGON LOGO" class="w-44 xl:w-[18.75rem] my-10 ml-[0.5rem] xl:ml-10" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Sponsor Border -->
-    <div class="border border-none h-[30rem] xl:h-[27.5rem] mt-20  xl:mt-0">
-      
-      <div
-      class="  bg-[#BE9BE5]   p-1 mt-10 max-w-full ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem] h-3"></div>
-    <div
-      class="bg-[#BE9BE5] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"
-    ></div>
-    <div
-      class="bg-[#BE9BE5] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"
-    ></div>
+      <!-- Sponsor Border -->
+      <div class="border border-none h-[30rem] xl:h-[27.5rem] mt-20 xl:mt-0">
 
-    <div
-      class="bg-[#BE9BE5] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"
-    ></div>
-    <div
-      class="bg-[#BE9BE5] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"
-    ></div>
-
-    <div
-      class="bg-[#BE9BE5] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[20.75rem] xl:h-[17.5rem]"
-    ></div>
-    <div
-      class="bg-[#BE9BE5] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[20.75rem] xl:h-[17.5rem]"
-    ></div>
-
-    <div
-      class="bg-[#BE9BE5] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"
-    ></div>
-
-    <div
-      class="bg-[#BE9BE5] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"
-    ></div>
-    <div
-      class="bg-[#BE9BE5] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"
-    ></div>
-    <div
-      class="bg-[#BE9BE5] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"
-    ></div>
-
-    <div
-      class="bg-[#BE9BE5] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  "
-    ></div>
-
-      <div class="overlay -translate-y-80">
         <div
-          class="transform -translate-y-28 xl:-translate-y-24 xl:transform flex items-center justify-center"
-        >
-          <h1
-            class="font-bold transform -translate-y-7 xl:-translate-y-14 text-2xl xl:text-4xl text-center w-[6rem] xl:w-[20rem] h-12 xl:h-15 bg-[#1E1E1E] tracking-widest text-[#BE9BE5] mt-0 xl:mt-20 p-4 xl:p-0 "
-          > 
-            GOLD
-          </h1>
+          class="  bg-[#DA77D6]   p-1 mt-10 max-w-full ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem] h-3">
         </div>
-        <!-- Sponsor content -->
+        <div class="bg-[#DA77D6] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"></div>
+        <div class="bg-[#DA77D6] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"></div>
+
+        <div class="bg-[#DA77D6] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"></div>
+        <div class="bg-[#DA77D6] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"></div>
+
+        <div class="bg-[#DA77D6] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[20.75rem] xl:h-[17.5rem]">
+        </div>
+        <div class="bg-[#DA77D6] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[20.75rem] xl:h-[17.5rem]"></div>
+
+        <div class="bg-[#DA77D6] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"></div>
+
+        <div class="bg-[#DA77D6] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"></div>
+        <div class="bg-[#DA77D6] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"></div>
+        <div class="bg-[#DA77D6] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"></div>
 
         <div
-          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-0 transform -translate-y-[5rem] xl:transform xl:-translate-y-[4rem]"
-        >
-          <a href="https://solana.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/Solana.svg"
-              alt="SOLANA LOGO "
-              class="w-[10.25rem] xl:w-[17.5rem] ml-17 xl:ml-5 xl:mr-20 
-              xl:-translate-y-4"
-            />
-          </a>
-          <a href="https://auth0.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/autho_white.png"
-              alt="Auth0 LOGO "
-              class="w-[10.25rem] xl:w-[11.5rem] ml-[3.2rem] xl:ml-5 mr-14 xl:mr-36 rounded-2xl 
-               xl:-translate-y-4  "
-            />
-          </a>
-          <a href="https://filecoin.io/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/Filecoin.svg"
-              alt="FILECOIN LOGO"
-              class="w-[10.25rem] xl:w-[13rem] mr-18 xl:mr-14  mt-0 -translate-y-5"
-            />
-            
-          </a>
+          class="bg-[#DA77D6] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  ">
+        </div>
+
+        <div class="overlay -translate-y-80">
+          <div class="transform -translate-y-28 xl:-translate-y-24 xl:transform flex items-center justify-center">
+            <h1
+              class="font-bold transform -translate-y-7 xl:-translate-y-14 text-2xl xl:text-4xl text-center w-[6rem] xl:w-[20rem] h-12 xl:h-15 bg-[#1E1E1E] tracking-widest text-[#DA77D6] mt-0 xl:mt-20 p-4 xl:p-0 ">
+              GOLD
+            </h1>
+          </div>
+          <!-- Sponsor content -->
+
+          <div
+            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-0 transform -translate-y-[5rem] xl:transform xl:-translate-y-[4rem]">
+            <a href="https://solana.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Solana.svg" alt="SOLANA LOGO " class="w-[10.25rem] xl:w-[17.5rem] ml-17 xl:ml-5 xl:mr-20 
+              xl:-translate-y-4" />
+            </a>
+            <a href="https://auth0.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/autho_white.png" alt="Auth0 LOGO " class="w-[10.25rem] xl:w-[11.5rem] ml-[3.2rem] xl:ml-5 mr-14 xl:mr-36 rounded-2xl 
+               xl:-translate-y-4  " />
+            </a>
+            <a href="https://filecoin.io/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Filecoin.svg" alt="FILECOIN LOGO"
+                class="w-[10.25rem] xl:w-[13rem] mr-18 xl:mr-14  mt-0 -translate-y-5" />
+
+            </a>
           </div>
           <div
-          class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-12 transform -translate-y-[4rem] xl:transform xl:-translate-y-[4rem] "
-        >
-          <a href="https://replit.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
-             <img
-              src="./assets/Replit.svg"
-              alt="REPLIT LOGO"
-              class="w-[13.375rem] xl:w-[16.875rem]"
-            />
-          </a>
+            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 xl:mt-12 transform -translate-y-[4rem] xl:transform xl:-translate-y-[4rem] ">
+            <a href="https://replit.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Replit.svg" alt="REPLIT LOGO" class="w-[13.375rem] xl:w-[16.875rem]" />
+            </a>
           </div>
-        
+
+
         </div>
       </div>
+      <!-- silver-tier -->
+      <div class="relative border border-none h-[20rem] mt-0 mb-20">
+        <div
+          class="  bg-[#BABABA]   p-1 mt-10 max-w-full  h-3 ml-[3.938rem] xl:ml-[3.225rem] mr-[3.938rem] xl:mr-[3.95rem]">
+        </div>
+        <div class="bg-[#BABABA] mt-0 p-2 w-2 float-right mr-[2.688rem] xl:mr-[2.813rem] mb-0"></div>
+        <div class="bg-[#BABABA] mt-1 p-2 xl:p-2 w-2 ml-[2.813rem] xl:ml-[2.188rem]"></div>
+
+        <div class="bg-[#BABABA] mt-0 xl:mt-0 p-2 w-2 float-right mr-[29px] xl:mr-[1.75rem] mb-0"></div>
+        <div class="bg-[#BABABA] mt-1 xl:mt-[0.125rem] p-2 w-2 ml-[1.75rem] xl:ml-[1rem] mr-[105.625rem]"></div>
+
+        <div class="bg-[#BABABA] float-right p-2 w-2 xl:w-2 mr-[0.713rem] xl:mr-[.77rem] h-[15.25rem] xl:h-[11.25rem]">
+        </div>
+        <div class="bg-[#BABABA] p-2 w-2 mt-[0.063rem] ml-[0.713rem] xl:ml-[0rem] h-[15.25rem] xl:h-[11.25rem]"></div>
+        <div class="bg-[#BABABA] p-2 w-2 float-right mr-[2.0rem] xl:mr-[1.95rem]"></div>
+        <div class="bg-[#BABABA] mt-[2px] p-2 w-2 ml-[1.75rem] xl:ml-[1.25rem]"></div>
+        <div class="bg-[#BABABA] float-right p-2 xl:p-2 w-1 xl:w-2 mr-[3.17rem] xl:mr-[2.938rem]"></div>
+        <div class="bg-[#BABABA] mt-1 xl:mt-1 p-2 w-2 ml-[2.688rem] xl:ml-[2.188rem]"></div>
+        <div
+          class="bg-[#BABABA] relative w-1text-white p-1 xl:p-1 mt-0 xl:mt-0 max-w-full ml-[3.938rem] xl:ml-[3.325rem] mr-[4.27rem] xl:mr-16 h-3  ">
+        </div>
+        <div class="overlay -translate-y-[17.1rem] xl:-translate-y-60">
+          <div class="transform -translate-y-10 xl:transform flex items-center justify-center">
+            <h1
+              class=" transform -translate-y-[4.2rem] xl:-translate-y-7  text-1xl xl:font-bold xl:text-4xl text-center w-[6rem] xl:w-[20rem] bg-[rgb(30,30,30)] tracking-widest text-[#BABABA] xl:mt-4 h-[2rem] xl:h-[38px] mt-4  xl:m-0 p-2 xl:p-0">
+              SILVER
+            </h1>
+          </div>
+          <!-- Sponsor Content -->
+          <div
+            class="flex flex-col xl:flex-row items-center gap-10 justify-around mt-0 transform -translate-y-14 xl:-translate-y-0">
+            <a href="https://github.com/" class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/GitHub_Logo_White.png" alt="Github-Logo" class="xl:mr-10 w-[10.25rem] xl:w-[16.25rem] ml-[0.988rem] "/>
+            </a>
+          </div>
+          
+
+        </div>
+      </div>
+
+
     </div>
   </div>
-</div>
+  </div>
   <!-- TEAMS -->
   <!--<section>
       <div id="team" class="mt-10 mx-5 xl:mx-16">
@@ -1190,7 +1182,7 @@
           <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
             data-te-parent="#accordionFaq">
             <div class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12">
-              No prerequisites are required to participate in this hackathon. 
+              No prerequisites are required to participate in this hackathon.
               This event is open to participants of all skill levels.
             </div>
           </div>
@@ -1294,7 +1286,7 @@
             target="_blank" rel="noopener noreferrer">
             Sponsorship Brochure<br />
           </a>
-          <a href="https://docs.google.com/document/d/1c85ZRXPozQHFb0ZIOD_O3LIo5bBBam-fpgMqihxXcuU/edit?usp=sharing"
+          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
             target="_blank" rel="noopener noreferrer">
             Code Of Conduct
@@ -1359,6 +1351,18 @@
         }
       }
     }
+
+    document.querySelector(".timeline-wrapper").scrollBy({ left: 82, behavior: "smooth" });
+    var timelineElementWidth = 338;
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      var leftPosition = (timelineElementWidth / 4 ) + Math.max(0, Math.floor((document.querySelector(".timeline-wrapper").scrollLeft - timelineElementWidth) / timelineElementWidth) * timelineElementWidth);
+      document.querySelector(".timeline-wrapper").scrollTo({ left: leftPosition, behavior: "smooth" });
+    });
+    document.querySelector('.next').addEventListener('click', () => {
+      var leftPosition = (timelineElementWidth / 4 ) + Math.max(0, Math.floor((document.querySelector(".timeline-wrapper").scrollLeft + timelineElementWidth) / timelineElementWidth) * timelineElementWidth);
+      document.querySelector(".timeline-wrapper").scrollTo({ left: leftPosition, behavior: "smooth" });
+    });
 
       // Faq toggle end
   </script>
