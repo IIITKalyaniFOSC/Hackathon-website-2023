@@ -95,12 +95,23 @@ body {
 .container{
   overflow: hidden;
 }
+*/
 
-@keyframes loop {
+.d_contents{
+  overflow: hidden;
+}
+/* @keyframes loop {
   0% {
     transform: translate(0,0);
   }
+
   100% {
-    transform: translate(-40%,0)
+    transform: translate(70%,0)
+  }
+} 
+
+@media screen and (max-width: 900px) {
+  .d_contents{
+    animation: loop 10s linear infinite;
   }
 } */
