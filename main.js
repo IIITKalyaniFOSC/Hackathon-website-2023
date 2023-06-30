@@ -5,15 +5,20 @@ initTE({ Collapse });
 initTE({ Tab });
 
 // Redirect to https
-// if (window.location.protocol === 'http:') {
-//     window.location.replace('https://' + window.location.host + window.location.pathname);
-// }
+if (!window.location.host.startsWith('localhost') && !window.location.host.startsWith('127.0.0.1')){
+    if (window.location.protocol === 'http:') {
+        window.location.replace('https://' + window.location.host + window.location.pathname);
+    }
 
-// window.addEventListener('load', function() {
-//   var script = document.createElement('script');
-//   script.src = 'https://apply.devfolio.co/v2/sdk.js';
-//   script.async = true;
-//   script.defer = true;
-//   // Append the script to the <body> section
-//   document.body.appendChild(script);
-// });
+    function isElementEmpty(elementId) {
+        var element = document.getElementById(elementId);
+        return element.innerHTML.trim() === '';
+    }
+    
+    // Function to reload the page if the element is empty
+    window.onload = function reloadPageIfEmpty() {
+        if (isElementEmpty('apply-button')) {
+                location.reload();
+            }
+    }
+}
