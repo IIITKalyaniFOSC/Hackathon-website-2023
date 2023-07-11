@@ -1,5 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  theme: {
+    extend: {
+      screens: {
+        'mascot-break': '1760px',
+        '3xl': '2200px',
+      },
+    },
+  },
   content: [
     './index.html',
     './src/**/*.{html,js}',
