@@ -217,3 +217,7 @@ document.body.appendChild(script);
 window.addEventListener('beforeunload', () => {
   document.body.removeChild(script);
 });
+
+// change devolio button size
+// let button = document.querySelector(".devfolio-button-iframe");
+// button.style = "padding: 0px; border: 0px; margin: 0px; height: 44px; width: 312px;"
