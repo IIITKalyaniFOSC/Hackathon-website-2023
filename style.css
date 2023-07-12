@@ -139,76 +139,76 @@ body {
 
 .platform {
   position: absolute;
-  width: 120rem;
-  top: -17rem;
-  left: 0rem;
+  width: 100vw;
+  top: -26vh;
+  left: 0vw;
   z-index: -1;
-  height: 82.083rem;
+  height: 126vh;
 }
 
 .card_border1 {
   position: absolute;
-  width: 14rem;
-  top: 46.1rem;
-  left: 90rem;
+  width: 12vw;
+  top: 70.5vh;
+  left: 75vw;
 }
 
 .card_border2 {
   position: absolute;
-  width: 13rem;
-  top: 52.4rem;
-  left: 23.7rem;
+  width: 11vw;
+  top: 80.4vh;
+  left: 19.7vw;
 }
 
 .card_border3 {
   position: absolute;
-  width: 14rem;
-  top: 10rem;
-  left: 20rem;
+  width: 12vw;
+  top: 15vh;
+  left: 16.5vw;
 }
 
 .card_border4 {
   position: absolute;
-  width: 13rem;
-  top: 0.5rem;
-  left: 72rem;
+  width: 11vw;
+  top: 0.5vh;
+  left: 60vw;
 }
 
 .card1text {
   position: absolute;
-  top: 47rem;
-  left: 94.8rem;
+  top: 72vh;
+  left: 79.2vw;
 }
 
 .card1heading1 {
   position: relative;
   font-family: 'Inconsolata', monospace;
   margin: 0;
-  top: 0.6rem;
+  top: 0.7vh;
   font-size: 0.8rem;
-  left: 0.5rem;
+  left: 0.3vw;
 }
 
 .card1heading2 {
   margin: 0;
   position: relative;
-  top: 1rem;
+  top: 1.5vh;
   font-family: 'Inconsolata', monospace;
-  left: -2.1rem;
+  left: -2vw;
   font-size: 1.2rem;
 }
 
 .card1Button {
   position: relative;
-  left: -1.3rem;
-  top: 2rem;
-  width: 7rem;
+  left: -1.1vw;
+  top: 3.2vh;
+  width: 6vw;
 }
 
 .card2text {
   position: absolute;
-  top: 51rem;
-  left: 25rem;
+  top: 78.5vh;
+  left: 20.8vw;
   z-index: 2;
 }
 
@@ -217,8 +217,8 @@ body {
   font-family: 'Inconsolata', monospace;
   margin: 0;
   font-size: 0.8rem;
-  top: 2.8rem;
-  left: 3.4rem;
+  top: 3.8vh;
+  left: 3vw;
 }
 
 .card2heading2 {
@@ -226,149 +226,355 @@ body {
   position: relative;
   font-family: 'Inconsolata', monospace;
   font-size: 1.1rem;
-  top: 3.3rem;
-  left: 0.4rem;
+  top: 4.3vh;
+  left: 0.4vw;
 }
 
 .card2Button {
   position: absolute;
-  width: 7rem;
-  top: 6.4rem;
-  left: 1.6rem;
+  width: 6vw;
+  top: 9.4vh;
+  left: 1.6vw;
 }
 
 .card3text {
-  width: 15rem;
+  width: 12.5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  left: 19.5rem;
-  top: 11.5rem;
+  left: 16.3vw;
+  top: 17.5vh;
 }
 
 .card3heading1 {
   font-family: 'Inconsolata', monospace;
   margin: 0;
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1vh;
 }
 
 .card3heading2 {
   margin: 0;
   font-family: 'Inconsolata', monospace;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9vw;
 }
 
 .card3Button {
-  width: 7rem;
+  width: 6vw;
 }
 
 .card4text {
-  width: 15rem;
+  width: 12.6vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 2rem;
-  left: 71rem;
+  top: 3vh;
+  left: 59.3vw;
 }
 
 .card4heading1 {
   font-family: 'Inconsolata', monospace;
   margin: 0;
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8vh;
 }
 
 .card4heading2 {
   margin: 0;
   font-family: 'Inconsolata', monospace;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2vh;
 }
 
 .card4Button {
-  width: 7rem;
+  width: 6vw;
 }
 
 .roller1 {
-  top: 23rem;
+  top: 36vh;
   position: absolute;
-  left: 15.9rem;
-  width: 18rem;
+  left: 12.9vw;
+  width: 15vw;
 }
 
 .roller2 {
-  width: 18rem;
+  width: 15vw;
   position: absolute;
-  top: 57rem;
-  left: 111rem;
+  top: 88vh;
+  left: 93vw;
 }
 
 .roller3 {
   position: absolute;
-  top: 4rem;
-  width: 18rem;
-  left: 84.3rem;
+  top: 6vh;
+  width: 15vw;
+  left: 70.3vw;
 }
 
 .box {
-  width: 5rem;
+  width: 4vw;
 }
 
 .box_group_1 {
   position: absolute;
-  top: 24.7rem;
-  left: 60rem;
+  top: 37.7vh;
+  left: 50vw;
   display: flex;
 }
 
 .box_group_2 {
   position: absolute;
-  top: 41rem;
-  left: 54rem;
+  top: 63vh;
+  left: 45vw;
   display: flex;
 }
 
 .box3 {
-  width: 5rem;
-  top: 28rem;
+  width: 4vw;
+  top: 44vh;
   position: absolute;
-  left: 97rem;
+  left: 81vw;
 }
 
 .box4 {
-  width: 5rem;
+  width: 4vw;
   position: absolute;
-  top: 16rem;
-  left: 105rem;
+  top: 25vh;
+  left: 88vw;
 }
 
 .skull1 {
   position: absolute;
-  top: 46rem;
-  left: 4rem;
-  width: 4rem;
+  top: 75vh;
+  left: 4vw;
+  width: 3vw;
 }
 
 .skull2 {
   position: absolute;
-  width: 4rem;
-  top: 6rem;
-  left: 113rem;
+  width: 3vw;
+  top: 9vh;
+  left: 94vw;
 }
 
 .home-button {
   font-size: 5rem;
   text-decoration: none;
   color: #6e6a6e;
-  top: 1rem;
+  top: 2vh;
   position: absolute;
-  left: 17.7rem;
+  left: 14.7vw;
 }
 
 .home-button:hover {
   color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .platform {
+    opacity: 0;
+  }
+
+  .skull1,
+  .skull2,
+  .roller1,
+  .roller2,
+  .roller3,
+  .box_group_1,
+  .box_group_2,
+  .box3,
+  .box4 {
+    opacity: 0;
+  }
+
+  .card_border1 {
+    position: absolute;
+    width: 53vw;
+    top: 20.5vh;
+    left: 23vw;
+  }
+
+  .card1text {
+    position: absolute;
+    top: 23vh;
+    left: 30.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    top: 0;
+    font-size: 0.8rem;
+    left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .card1heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    top: 0;
+    font-family: 'Inconsolata', monospace;
+    left: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+  }
+
+  .card1Button {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 27vw;
+  }
+
+  .card_border2 {
+    position: absolute;
+    width: 53vw;
+    top: 39.4vh;
+    left: 23vw;
+  }
+
+  .card2text {
+    position: absolute;
+    top: 41.7vh;
+    left: 28.8vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card2heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .card2heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.1rem;
+    top: 0;
+    left: 0;
+    margin-bottom: 0.5vh;
+  }
+
+  .card2Button {
+    position: relative;
+    width: 6vw;
+    top: 1vh;
+    left: 0;
+    width: 27vw;
+  }
+
+  .card_border3 {
+    position: absolute;
+    width: 53vw;
+    top: 58vh;
+    left: 23vw;
+  }
+
+  .card3text {
+    width: 39.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 30.3vw;
+    top: 60.5vh;
+  }
+
+  .card3heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    margin-bottom: 1vh;
+  }
+
+  .card3heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+  }
+
+  .card3Button,
+  .card4Button {
+    width: 27vw;
+  }
+
+  .card_border4 {
+    position: absolute;
+    width: 53vw;
+    top: 76.5vh;
+    left: 23vw;
+  }
+
+  .card4text {
+    width: 47.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 79vh;
+    left: 26.3vw;
+  }
+
+  .card4heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 0.8rem;
+    margin-bottom: 0.8vh;
+  }
+
+  .card4heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 1.2vh;
+  }
+
+  .statuscodelogo {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: 7vw;
+    width: 9rem;
+  }
+
+  .home-button {
+    font-size: 5rem;
+    text-decoration: none;
+    color: #6e6a6e;
+    top: 2vh;
+    position: absolute;
+    left: 58.7vw;
+  }
+
+  .challenges-text {
+    color: #6e6a6e;
+    display: inline-block;
+    transform: scaleX(1.4);
+    left: 14vw;
+    position: absolute;
+    top: 5rem;
+    font-size: 1.6rem;
+  }
 }
