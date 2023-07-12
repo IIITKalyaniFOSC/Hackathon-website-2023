@@ -322,12 +322,14 @@ body {
   position: absolute;
   top: 24.7rem;
   left: 60rem;
+  display: flex;
 }
 
 .box_group_2 {
   position: absolute;
   top: 41rem;
   left: 54rem;
+  display: flex;
 }
 
 .box3 {
@@ -342,4 +344,31 @@ body {
   position: absolute;
   top: 16rem;
   left: 105rem;
+}
+
+.skull1 {
+  position: absolute;
+  top: 46rem;
+  left: 4rem;
+  width: 4rem;
+}
+
+.skull2 {
+  position: absolute;
+  width: 4rem;
+  top: 6rem;
+  left: 113rem;
+}
+
+.home-button {
+  font-size: 5rem;
+  text-decoration: none;
+  color: #6e6a6e;
+  top: 1rem;
+  position: absolute;
+  left: 17.7rem;
+}
+
+.home-button:hover {
+  color: #e5e7eb;
 }
