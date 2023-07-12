@@ -361,12 +361,12 @@ body {
 }
 
 .home-button {
-  font-size: 5rem;
+  font-size: 4rem;
   text-decoration: none;
   color: #6e6a6e;
-  top: 2vh;
+  top: 2.5vh;
   position: absolute;
-  left: 14.7vw;
+  left: 88.7vw;
 }
 
 .home-button:hover {
