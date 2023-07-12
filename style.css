@@ -176,47 +176,48 @@ body {
 
 .card1text {
   position: absolute;
-  top: 72vh;
-  left: 79.2vw;
+  top: 70.5vh;
+  left: 75vw;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card1heading1 {
-  position: relative;
   font-family: 'Inconsolata', monospace;
   margin: 0;
-  top: 0.7vh;
-  font-size: 0.8rem;
-  left: 0.3vw;
+  font-size: 1.3vmin;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
 }
 
 .card1heading2 {
   margin: 0;
-  position: relative;
-  top: 1.5vh;
   font-family: 'Inconsolata', monospace;
-  left: -2vw;
-  font-size: 1.2rem;
+  font-size: 2.1vmin;
+  margin-bottom: 1.5vh;
 }
 
 .card1Button {
-  position: relative;
-  left: -1.1vw;
-  top: 3.2vh;
   width: 6vw;
 }
 
 .card2text {
   position: absolute;
   top: 78.5vh;
-  left: 20.8vw;
+  left: 20.5vw;
   z-index: 2;
+  width: 11vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .card2heading1 {
   position: relative;
   font-family: 'Inconsolata', monospace;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1.3vmin;
   top: 3.8vh;
   left: 3vw;
 }
@@ -225,7 +226,7 @@ body {
   margin: 0;
   position: relative;
   font-family: 'Inconsolata', monospace;
-  font-size: 1.1rem;
+  font-size: 1.8vmin;
   top: 4.3vh;
   left: 0.4vw;
 }
@@ -238,27 +239,28 @@ body {
 }
 
 .card3text {
-  width: 12.5vw;
+  width: 12vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  left: 16.3vw;
-  top: 17.5vh;
+  left: 16.5vw;
+  top: 15vh;
 }
 
 .card3heading1 {
   font-family: 'Inconsolata', monospace;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1.3vmin;
   margin-bottom: 1vh;
+  margin-top: 3vh;
 }
 
 .card3heading2 {
   margin: 0;
   font-family: 'Inconsolata', monospace;
-  font-size: 1.2rem;
-  margin-bottom: 0.9vw;
+  font-size: 2.1vmin;
+  margin-bottom: 1.5vh;
 }
 
 .card3Button {
@@ -266,26 +268,27 @@ body {
 }
 
 .card4text {
-  width: 12.6vw;
+  width: 11vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 3vh;
-  left: 59.3vw;
+  top: 0.5vh;
+  left: 60vw;
 }
 
 .card4heading1 {
   font-family: 'Inconsolata', monospace;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1.3vmin;
   margin-bottom: 0.8vh;
+  margin-top: 2vh;
 }
 
 .card4heading2 {
   margin: 0;
   font-family: 'Inconsolata', monospace;
-  font-size: 1.2rem;
+  font-size: 2.1vmin;
   margin-bottom: 1.2vh;
 }
 
@@ -361,7 +364,7 @@ body {
 }
 
 .home-button {
-  font-size: 4rem;
+  font-size: 7vmin;
   text-decoration: none;
   color: #6e6a6e;
   top: 2.5vh;
@@ -399,11 +402,9 @@ body {
 
   .card1text {
     position: absolute;
-    top: 23vh;
-    left: 30.2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 20.5vh;
+    left: 23vw;
+    width: 53vw;
   }
 
   .card1heading1 {
@@ -411,9 +412,10 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     top: 0;
-    font-size: 0.8rem;
+    font-size: 3.5vmin;
     left: 0;
     margin-bottom: 1vh;
+    margin-top: 3vh;
   }
 
   .card1heading2 {
@@ -423,7 +425,7 @@ body {
     top: 0;
     font-family: 'Inconsolata', monospace;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 4.1vmin;
     margin-bottom: 1vh;
   }
 
@@ -449,6 +451,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 53vw;
+    left: 22.8vw;
   }
 
   .card2heading1 {
@@ -456,7 +460,7 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     margin-bottom: 0px;
-    font-size: 0.8rem;
+    font-size: 3.1vmin;
     top: 0;
     left: 0;
     margin-bottom: 1vh;
@@ -467,7 +471,7 @@ body {
     margin-bottom: 0px;
     position: relative;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.1rem;
+    font-size: 4.5vmin;
     top: 0;
     left: 0;
     margin-bottom: 0.5vh;
@@ -502,7 +506,7 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     margin-bottom: 0px;
-    font-size: 0.8rem;
+    font-size: 3.1vmin;
     margin-bottom: 1vh;
   }
 
@@ -510,7 +514,7 @@ body {
     margin: 0;
     margin-bottom: 0px;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
+    font-size: 4.5vmin;
     margin-bottom: 1vh;
   }
 
@@ -540,7 +544,7 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     margin-bottom: 0px;
-    font-size: 0.8rem;
+    font-size: 3.1vmin;
     margin-bottom: 0.8vh;
   }
 
@@ -548,7 +552,7 @@ body {
     margin: 0;
     margin-bottom: 0px;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
+    font-size: 4.5vmin;
     margin-bottom: 1.2vh;
   }
 
@@ -560,12 +564,12 @@ body {
   }
 
   .home-button {
-    font-size: 5rem;
+    font-size: 17vmin;
     text-decoration: none;
     color: #6e6a6e;
-    top: 2vh;
+    top: 4vh;
     position: absolute;
-    left: 58.7vw;
+    left: 63.7vw;
   }
 
   .challenges-text {
