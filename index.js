@@ -170,6 +170,14 @@ new TypeIt('#heading-sponsors', {
   .type('ar.gz', { instant: true })
   .go();
 
+  new TypeIt('#heading-rules', {
+    speed: 125,
+    waitUntilVisible: true,
+  })
+    .type(
+      './<span class="text-white">FAQ</span>'
+    )
+    .go();
 //   new TypeIt('#heading-teams', {
 //   speed: 125,
 //   waitUntilVisible: true,
@@ -188,23 +196,8 @@ new TypeIt('#heading-sponsors', {
 //   .move(3, { instant: true })
 //   .go();
 
-new TypeIt('#heading-Community-Partner', {
-  speed: 75,
-  waitUntilVisible: true,
-})
-  .type(
-    './<span class="text-white">COMMUNITY PARTNERS</span>'
-  )
-  .go();
 
-new TypeIt('#heading-rules', {
-  speed: 125,
-  waitUntilVisible: true,
-})
-  .type(
-    './<span class="text-white">FAQ</span>'
-  )
-  .go();
+
 
 //devfolio
 
