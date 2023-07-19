@@ -306,10 +306,11 @@ body {
 }
 
 .roller2 {
-  width: 15vw;
+  width: 8vw;
   position: absolute;
-  top: 88vh;
-  left: 93vw;
+  top: 85.3vh;
+  left: 92vw;
+  height: 14.7vh;
 }
 
 .roller3 {
