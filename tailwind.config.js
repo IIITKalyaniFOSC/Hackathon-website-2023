@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'tracks-break': '1650px',
         'mascot-break': '1760px',
         '3xl': '2200px',
       },
