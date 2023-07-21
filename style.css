@@ -116,18 +116,16 @@ body {
   }
 } */
 
-.swiper {
-  width: 50%;
-  height: 100%;
+#box{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border-radius: 215px; */
+  transition: 0.5s;
+  /* width: 16rem;
+  height: 16rem; */
+  box-shadow: 5px 5px 5px 5px black;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  height: 100%;
+#box:hover{
+  box-shadow: none;
 }
