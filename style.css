@@ -112,6 +112,21 @@ body {
   }
 } */
 
+#box{
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
+  border-radius: 200px;
+  /* transition: 0.5s; */
+  /* width: 16rem;
+  height: 16rem; */
+  /* box-shadow: 5px 5px 5px 5px black; */
+  /* background: none; */
+}
+
+#box:hover{
+  box-shadow: none;
+}
+
 /* The lines below contain the styles for the challenges page */
 
 .challenges-body {

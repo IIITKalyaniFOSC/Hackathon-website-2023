@@ -170,6 +170,14 @@ new TypeIt('#heading-sponsors', {
   .type('ar.gz', { instant: true })
   .go();
 
+  new TypeIt('#heading-rules', {
+    speed: 125,
+    waitUntilVisible: true,
+  })
+    .type(
+      './<span class="text-white">FAQ</span>'
+    )
+    .go();
 //   new TypeIt('#heading-teams', {
 //   speed: 125,
 //   waitUntilVisible: true,

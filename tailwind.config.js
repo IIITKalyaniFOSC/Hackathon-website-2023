@@ -11,6 +11,7 @@ module.exports = {
   },
   content: [
     './index.html',
+    './cp.html',
     './src/**/*.{html,js}',
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
