@@ -1,0 +1,801 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ti-cursor-color: white;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  color: #ffffff;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #1e1e1e;
+  z-index: 99999999;
+}
+
+#loadingImage {
+  animation-delay: 0ms;
+  transition-delay: 0ms;
+  height: 35vh;
+  margin-left: 5%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loadingText {
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  #preloader {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #loadingText {
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #loadingImage {
+    height: 35vh;
+    align-content: center;
+  }
+}
+
+.timeline-wrapper {
+  overflow: hidden;
+}
+
+/* .cp{
+  animation: loop 12s linear infinite;
+} 
+
+.container{
+  overflow: hidden;
+}
+*/
+
+.d_contents {
+  overflow: hidden;
+}
+/* @keyframes loop {
+  0% {
+    transform: translate(0,0);
+  }
+
+  100% {
+    transform: translate(70%,0)
+  }
+} 
+
+@media screen and (max-width: 900px) {
+  .d_contents{
+    animation: loop 10s linear infinite;
+  }
+} */
+
+/* The lines below contain the styles for the challenges page */
+
+.challenges-body {
+  background-color: #1e1e1e;
+  margin: 0;
+}
+
+.statuscodelogo {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-left: 4rem;
+  width: 9rem;
+}
+
+.challenges-text {
+  color: #6e6a6e;
+  display: inline-block;
+  transform: scaleX(1.4);
+  left: 5.7rem;
+  position: absolute;
+  top: 5rem;
+  font-size: 1.6rem;
+}
+
+.platform {
+  position: absolute;
+  width: 100vw;
+  top: -26vh;
+  left: 0vw;
+  z-index: -1;
+  height: 126vh;
+}
+
+.card_border1 {
+  position: absolute;
+  width: 12vw;
+  top: 70.5vh;
+  left: 75vw;
+  height: 15vh;
+}
+
+.card_border2 {
+  position: absolute;
+  width: 11vw;
+  top: 80.4vh;
+  left: 19.7vw;
+  height: 15vh;
+}
+
+.card_border3 {
+  position: absolute;
+  width: 12vw;
+  top: 15vh;
+  left: 16.5vw;
+  height: 15vh;
+}
+
+.card_border4 {
+  position: absolute;
+  width: 11vw;
+  top: 0.5vh;
+  left: 60vw;
+  height: 15vh;
+}
+
+.card1text {
+  position: absolute;
+  top: 70.5vh;
+  left: 75vw;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+}
+
+.card1heading1 {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  font-size: 1.3vmin;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.card1heading2 {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2.1vmin;
+  margin-bottom: 1.5vh;
+}
+
+.card1Button {
+  width: 6vw;
+}
+
+.card2text {
+  position: absolute;
+  top: 82.5vh;
+  left: 19.3vw;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13.5vh;
+}
+
+.card2heading1 {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  font-size: 1.3vmin;
+  margin-bottom: 1vh;
+}
+
+.card2heading2 {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.8vmin;
+  margin-bottom: 1.5vh;
+}
+
+.card2Button {
+  width: 6vw;
+}
+
+.card3text {
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 16.5vw;
+  top: 15vh;
+  height: 14.9vh;
+}
+
+.card3heading1 {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  font-size: 1.3vmin;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+}
+
+.card3heading2 {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2.1vmin;
+  margin-bottom: 1.5vh;
+}
+
+.card3Button {
+  width: 6vw;
+}
+
+.card4text {
+  width: 11vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0.5vh;
+  left: 60vw;
+  height: 13.3vh;
+}
+
+.card4heading1 {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  font-size: 1.3vmin;
+  margin-bottom: 0.8vh;
+  margin-top: 2vh;
+}
+
+.card4heading2 {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2.1vmin;
+  margin-bottom: 1.2vh;
+}
+
+.card4Button {
+  width: 6vw;
+}
+
+.roller1 {
+  top: 36vh;
+  position: absolute;
+  left: 12.9vw;
+  width: 15vw;
+  height: 28vh;
+}
+
+.roller2 {
+  width: 8vw;
+  position: absolute;
+  top: 85.3vh;
+  left: 92vw;
+  height: 14.7vh;
+}
+
+.roller3 {
+  position: absolute;
+  top: 6vh;
+  width: 15vw;
+  left: 70.3vw;
+  height: 28vh;
+}
+
+.box {
+  width: 4vw;
+}
+
+.box_group_1 {
+  position: absolute;
+  top: 37.7vh;
+  left: 50vw;
+  display: flex;
+}
+
+.box_group_2 {
+  position: absolute;
+  top: 63vh;
+  left: 45vw;
+  display: flex;
+}
+
+.box3 {
+  width: 4vw;
+  top: 44vh;
+  position: absolute;
+  left: 81vw;
+}
+
+.box4 {
+  width: 4vw;
+  position: absolute;
+  top: 25vh;
+  left: 88vw;
+}
+
+.skull1 {
+  position: absolute;
+  top: 75vh;
+  left: 4vw;
+  width: 3vw;
+}
+
+.skull2 {
+  position: absolute;
+  width: 3vw;
+  top: 9vh;
+  left: 94vw;
+}
+
+.home-button {
+  font-size: 7vmin;
+  text-decoration: none;
+  color: #6e6a6e;
+  top: 2.5vh;
+  position: absolute;
+  left: 88.7vw;
+}
+
+.home-button:hover {
+  color: #e5e7eb;
+}
+
+.card1heading2,
+.card2heading2,
+.card3heading2,
+.card4heading2 {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .platform {
+    opacity: 0;
+  }
+
+  .skull1,
+  .skull2,
+  .roller1,
+  .roller2,
+  .roller3,
+  .box_group_1,
+  .box_group_2,
+  .box3,
+  .box4 {
+    opacity: 0;
+  }
+
+  .card_border1 {
+    position: absolute;
+    width: 53vw;
+    top: 20.5vh;
+    left: 23vw;
+  }
+
+  .card1text {
+    position: absolute;
+    top: 20.5vh;
+    left: 23vw;
+    width: 53vw;
+  }
+
+  .card1heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    top: 0;
+    font-size: 3.5vmin;
+    left: 0;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+  }
+
+  .card1heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    top: 0;
+    font-family: 'Inconsolata', monospace;
+    left: 0;
+    font-size: 4.1vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card1Button {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 27vw;
+  }
+
+  .card_border2 {
+    position: absolute;
+    width: 53vw;
+    top: 39.4vh;
+    left: 23vw;
+  }
+
+  .card2text {
+    position: absolute;
+    top: 41.7vh;
+    left: 28.8vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 53vw;
+    left: 22.8vw;
+  }
+
+  .card2heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    top: 0;
+    left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .card2heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    top: 0;
+    left: 0;
+    margin-bottom: 0.5vh;
+  }
+
+  .card2Button {
+    position: relative;
+    width: 6vw;
+    top: 1vh;
+    left: 0;
+    width: 27vw;
+  }
+
+  .card_border3 {
+    position: absolute;
+    width: 53vw;
+    top: 58vh;
+    left: 23vw;
+  }
+
+  .card3text {
+    width: 39.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 30.3vw;
+    top: 60.5vh;
+  }
+
+  .card3heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card3heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card3Button,
+  .card4Button {
+    width: 27vw;
+  }
+
+  .card_border4 {
+    position: absolute;
+    width: 53vw;
+    top: 76.5vh;
+    left: 23vw;
+  }
+
+  .card4text {
+    width: 47.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 79vh;
+    left: 26.3vw;
+  }
+
+  .card4heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    margin-bottom: 0.8vh;
+  }
+
+  .card4heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    margin-bottom: 1.2vh;
+  }
+
+  .statuscodelogo {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: 7vw;
+    width: 9rem;
+  }
+
+  .home-button {
+    font-size: 17vmin;
+    text-decoration: none;
+    color: #6e6a6e;
+    top: 4vh;
+    position: absolute;
+    left: 63.7vw;
+  }
+
+  .challenges-text {
+    color: #6e6a6e;
+    display: inline-block;
+    transform: scaleX(1.4);
+    left: 14vw;
+    position: absolute;
+    top: 5rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .platform {
+    opacity: 0;
+  }
+
+  .skull1,
+  .skull2,
+  .roller1,
+  .roller2,
+  .roller3,
+  .box_group_1,
+  .box_group_2,
+  .box3,
+  .box4 {
+    opacity: 0;
+  }
+
+  .card_border1 {
+    position: absolute;
+    width: 53vw;
+    top: 20.5vh;
+    left: 23vw;
+  }
+
+  .card1text {
+    position: absolute;
+    top: 20.5vh;
+    left: 23vw;
+    width: 53vw;
+  }
+
+  .card1heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    top: 0;
+    font-size: 3.5vmin;
+    left: 0;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+  }
+
+  .card1heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    top: 0;
+    font-family: 'Inconsolata', monospace;
+    left: 0;
+    font-size: 4.1vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card1Button {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 27vw;
+  }
+
+  .card_border2 {
+    position: absolute;
+    width: 53vw;
+    top: 39.4vh;
+    left: 23vw;
+  }
+
+  .card2text {
+    position: absolute;
+    top: 41.7vh;
+    left: 28.8vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 53vw;
+    left: 22.8vw;
+  }
+
+  .card2heading1 {
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    top: 0;
+    left: 0;
+    margin-bottom: 1vh;
+  }
+
+  .card2heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    top: 0;
+    left: 0;
+    margin-bottom: 0.5vh;
+  }
+
+  .card2Button {
+    position: relative;
+    width: 6vw;
+    top: 1vh;
+    left: 0;
+    width: 27vw;
+  }
+
+  .card_border3 {
+    position: absolute;
+    width: 53vw;
+    top: 58vh;
+    left: 23vw;
+  }
+
+  .card3text {
+    width: 39.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 30.3vw;
+    top: 60.5vh;
+  }
+
+  .card3heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card3heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    margin-bottom: 1vh;
+  }
+
+  .card3Button,
+  .card4Button {
+    width: 27vw;
+  }
+
+  .card_border4 {
+    position: absolute;
+    width: 53vw;
+    top: 76.5vh;
+    left: 23vw;
+  }
+
+  .card4text {
+    width: 47.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 79vh;
+    left: 26.3vw;
+  }
+
+  .card4heading1 {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 3.1vmin;
+    margin-bottom: 0.8vh;
+  }
+
+  .card4heading2 {
+    margin: 0;
+    margin-bottom: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4.5vmin;
+    margin-bottom: 1.2vh;
+  }
+
+  .statuscodelogo {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: 7vw;
+    width: 9rem;
+  }
+
+  .home-button {
+    font-size: 5rem;
+    text-decoration: none;
+    color: #6e6a6e;
+    top: 3vh;
+    position: absolute;
+    left: 71.7vw;
+  }
+
+  .challenges-text {
+    color: #6e6a6e;
+    display: inline-block;
+    transform: scaleX(1.4);
+    left: 11vw;
+    position: absolute;
+    top: 5rem;
+    font-size: 1.6rem;
+  }
+}
