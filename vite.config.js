@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        main: resolve(__dirname, 'index.html','cp.html'),
         nested: resolve(__dirname, 'challenges', 'index.html'),
       },
     },
