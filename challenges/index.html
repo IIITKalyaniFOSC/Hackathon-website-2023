@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" href="/challenges/assets/AnimatedButton.jpg">
   <title>Status Code 0 | Challenges</title>
 </head>
 <body class="challenges-body">
@@ -22,25 +23,26 @@
     <div class="card1text">
       <p class=card1heading1>Challenge</p>
       <p class=card1heading2>Name the MASCOT</p>
-      <a href="https://forms.gle/irzy6zXT4or6x6ps6"><img class="card1Button" src="assets/Button.png" alt="Button"></a>
+      <a href="https://forms.gle/irzy6zXT4or6x6ps6" target="_blank" class="pressedButton1"><img class="card1Button" src="/Button.png" alt="Button"></a>
+      <a href="https://forms.gle/irzy6zXT4or6x6ps6"><img class="card1ButtonHidden" src="/AnimatedButton.jpg" alt="Button"></a>
     </div>
     <img class="card_border2" src="assets/card_border.png" alt="card">
     <div class="card2text">
       <p class=card2heading1>Challenge</p>
       <p class=card2heading2>Most Active Hacker</p>
-      <a href="https://forms.gle/irzy6zXT4or6x6ps6"><img class="card2Button" src="assets/Button.png" alt="Button"></a>
+      <a href="https://forms.gle/irzy6zXT4or6x6ps6" target="_blank" class="pressedButton2"><img class="card2Button" src="/Button.png" alt="Button"></a>
     </div>
     <img class="card_border3" src="assets/card_border.png" alt="card">
     <div class="card3text">
       <p class=card3heading1>Challenge</p>
       <p class=card3heading2>Meme Contest</p>
-      <a href="https://forms.gle/irzy6zXT4or6x6ps6"><img class="card3Button" src="assets/Button.png" alt="Button"></a>
+      <a href="https://forms.gle/irzy6zXT4or6x6ps6" target="_blank" class="pressedButton3"><img class="card3Button" src="/Button.png" alt="Button"></a>
     </div>
     <img class="card_border4" src="assets/card_border.png" alt="card">
     <div class="card4text">
       <p class=card4heading1>Challenge</p>
       <p class=card4heading2>Avatar Profile</p>
-      <a href="https://forms.gle/irzy6zXT4or6x6ps6"><img class="card4Button" src="assets/Button.png" alt="Button"></a>
+      <a href="https://forms.gle/irzy6zXT4or6x6ps6" target="_blank" class="pressedButton4"><img class="card4Button" src="/Button.png" alt="Button"></a>
     </div>
 
     <img class="roller1" src="assets/NewRoller.gif" alt="Roller">
@@ -66,6 +68,67 @@
     <img src="assets/Skull.gif" alt="skull" class="skull2">
 
     <a class="home-button" href="/">HOME</a>
+
+    <script>
+      const image1 = document.querySelector('.card1Button');
+      const image2 = document.querySelector('.card2Button');
+      const image3 = document.querySelector('.card3Button');
+      const image4 = document.querySelector('.card4Button');
+      const oldImageSrc = "/Button.png";
+      const newImageSrc = "/AnimatedButton.jpg";
+
+      function changeImage1() {
+        image1.src = newImageSrc;
+      }
+
+      function revertImage1() {
+        image1.src = oldImageSrc;
+      }
+
+      const imageLink1 = document.querySelector('.pressedButton1');
+
+      imageLink1.addEventListener('mousedown', changeImage1);
+      imageLink1.addEventListener('mouseup', revertImage1);
+
+      function changeImage2() {
+        image2.src = newImageSrc;
+      }
+
+      function revertImage2() {
+        image2.src = oldImageSrc;
+      }
+
+      const imageLink2 = document.querySelector('.pressedButton2');
+
+      imageLink2.addEventListener('mousedown', changeImage2);
+      imageLink2.addEventListener('mouseup', revertImage2);
+
+      function changeImage3() {
+        image3.src = newImageSrc;
+      }
+
+      function revertImage3() {
+        image3.src = oldImageSrc;
+      }
+
+      const imageLink3 = document.querySelector('.pressedButton3');
+
+      imageLink3.addEventListener('mousedown', changeImage3);
+      imageLink3.addEventListener('mouseup', revertImage3);
+
+      function changeImage4() {
+        image4.src = newImageSrc;
+      }
+
+      function revertImage4() {
+        image4.src = oldImageSrc;
+      }
+
+      const imageLink4 = document.querySelector('.pressedButton4');
+
+      imageLink4.addEventListener('mousedown', changeImage4);
+      imageLink4.addEventListener('mouseup', revertImage4);
+    </script>
   </div>
 </body>
 </html>
