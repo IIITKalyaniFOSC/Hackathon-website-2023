@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@esbuild/linux-arm64@0.18.11":
+"@esbuild/linux-x64@0.18.11":
   version "0.18.11"
-  resolved "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.18.11.tgz"
-  integrity sha512-c6Vh2WS9VFKxKZ2TvJdA7gdy0n6eSy+yunBvv4aqNCEhSWVor1TU43wNRp2YLO9Vng2G+W94aRz+ILDSwAiYog==
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.18.11.tgz"
+  integrity sha512-xcncej+wF16WEmIwPtCHi0qmx1FweBqgsRtEL1mSHLFR6/mb3GEZfLQnx+pUDfRDEM4DQF8dpXIW7eDOZl1IbA==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
