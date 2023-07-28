@@ -814,3 +814,16 @@ body {
     font-size: 1.6rem;
   }
 }
+
+.card:hover .inner {
+  transform: rotateY(-180deg);
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden; /*Safari*/
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
