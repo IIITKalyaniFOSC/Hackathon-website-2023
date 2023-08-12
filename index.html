@@ -56,7 +56,9 @@
           <a href="#">
             <img class="w-32 md:w-36" src="assets/iupgz4ve 1.png" alt="" />
           </a>
-          <div class="ml-2 mr-2 md:ml-5 md:mr-5 h-14 md:h-16 w-0.5 bg-[#2E2E2E]"></div>
+          <div
+            class="ml-2 mr-2 md:ml-5 md:mr-5 h-14 md:h-16 w-0.5 bg-[#2E2E2E]"
+          ></div>
           <a href="https://iiitkalyani.ac.in/" target="_blank">
             <img
               class="h-14 md:h-16"
@@ -66,35 +68,40 @@
           </a>
         </div>
 
+        <span id="check" class="cursor-pointer xl:hidden block">
+          <ion-icon
+            class="text-3xl mr-10 md:text-5xl"
+            name="menu"
+            onclick="Menu(this)"
+          ></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="xl:flex xl:mr-60 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]"
+      >
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="./challenges/index.html" class="text-3xl 2xl:text-4xl"
+            >CHALLENGES</a
+          >
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
+        </li>
+      </ul>
+    </nav>
 
-      <span id="check" class="cursor-pointer xl:hidden block">
-        <ion-icon class="text-3xl mr-10 md:text-5xl " name="menu" onclick="Menu(this)"></ion-icon>
-      </span>
-    </div>
-    <ul
-      class="xl:flex xl:mr-60 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]">
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="./challenges/index.html" class="text-3xl 2xl:text-4xl">CHALLENGES</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
-      </li>
-
-    </ul>
-  </nav>
-    
     <div
       class="absolute top-[35%] left-20 w-18 hidden py-8 px-4 rounded-md xl:flex flex-col items-center justify-center xl:justify-evenly gap-7 md:gap-10"
     >
@@ -174,29 +181,16 @@
           tech revolution. Welcome to Status Code 0 - where innovation knows no
           boundaries.
         </p>
-        <p class="text-[#F7D7AC] lg:text-base xl:text-2xl 2xl:w-[140%]">
-          Registration button not visible? Kindly refresh the page.
-        </p>
 
         <div
-          class="container my-12 flex-col items-center justify-center 2xl:w-[170%]"
+          class="container my-12 flex flex-col items-center justify-center 2xl:w-[170%]"
           style="color: #f21212"
         >
-          <h1 class="text-5xl hidden m-0 text-white" id="headline">
-            Countdown to the main event
+          <h1 class="md:text-4xl text-3xl text-white" id="headline">
+            Hacking ends in!
           </h1>
-          <div id="countdown " class="flex flex-col items-center">
-            <ul
-              class="flex gap-6 justify-evenly text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              <li><span id="days"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="hours"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="minutes"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="seconds"></span></li>
-            </ul>
+          <div class="countdown text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <p class="md:ml-10 ml-0" id="demo"></p>
             <ul
               class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
               style="padding-bottom: 60px"
@@ -209,11 +203,6 @@
               <li><span id=""></span>:</li>
               <li><span id=""></span>sec</li>
             </ul>
-            <div
-              class="apply-button"
-              data-hackathon-slug="statuscode0"
-              data-button-theme="dark"
-            ></div>
           </div>
         </div>
       </div>
@@ -226,88 +215,176 @@
     </div>
 
     <!-- SCHEDULE -->
-    <div id="schedule" class="mt-10 mx-5 xl:mx-16 xl:px-48 2xl:px-56" style="padding-bottom: 60px;">
-      <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl" style="padding-bottom: 60px;">
+    <div
+      id="schedule"
+      class="mt-10 mx-5 xl:mx-16 xl:px-48 2xl:px-56"
+      style="padding-bottom: 60px"
+    >
+      <h1
+        class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl"
+        style="padding-bottom: 60px"
+      >
         $ <span id="heading-schedule"></span>
       </h1>
-    <div class="timeline mx-30 flex justify-center">
-      <button class="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px]">
-        <img src="./assets/left_key.svg" alt="" />
-      </button>
+      <div class="timeline mx-30 flex justify-center">
+        <button class="prev mr-10 opacity-50 hover:opacity-100 min-w-[30px]">
+          <img src="./assets/left_key.svg" alt="" />
+        </button>
 
-      <div class="contents mx-30 flex mx-auto ">
-        <div class="timeline-wrapper max-w-[990px] flex overflow-x-auto no-scrollbar">
+        <div class="contents mx-30 flex mx-auto">
+          <div
+            class="timeline-wrapper max-w-[990px] flex overflow-x-auto no-scrollbar"
+          >
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">
+                Apr 15
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                12:00 AM
+              </h3>
+              <img src="./assets/red_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Registration
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Begins
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">Apr 15</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:00 AM</h3>
-            <img src='./assets/red_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Registration</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Begins</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">
+                Aug 1
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                12:00 AM
+              </h3>
+              <img src="./assets/orange_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Registration
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Closes
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">Aug 1</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:00 AM</h3>
-            <img src='./assets/orange_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Registration</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Closes</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">
+                Aug 12
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                10:00 AM
+              </h3>
+              <img src="./assets/pink_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Opening
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Ceremony
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">10:00 AM</h3>
-            <img src='./assets/pink_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Opening</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Ceremony</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#BC81FF] text-3xl md:text-4xl xl:text-4xl">
+                Aug 12
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                12:30 PM
+              </h3>
+              <img src="./assets/purple_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                API
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Workshop
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#BC81FF] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">12:30 PM</h3>
-            <img src='./assets/purple_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">API</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Workshop</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#78BEFF] text-3xl md:text-4xl xl:text-4xl">
+                Aug 12
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                04:00 PM
+              </h3>
+              <img src="./assets/blue_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Auth0
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Workshop
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#78BEFF] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">04:00 PM</h3>
-            <img src='./assets/blue_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Auth0</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Workshop</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">
+                Aug 12
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                11:00 PM
+              </h3>
+              <img src="./assets/red_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Mid
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Evaluation
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">Aug 12</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">11:00 PM</h3>
-            <img src='./assets/red_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Mid</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Evaluation</h3>
-          </div>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">
+                Aug 13
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                03:30 PM
+              </h3>
+              <img src="./assets/orange_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Final
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Evaluation
+              </h3>
+            </div>
 
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">Aug 13</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">03:30 PM</h3>
-            <img src='./assets/orange_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Final </h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Evaluation</h3>
-          </div>
-
-          <div class="flex flex-col justify-center items-center min-w-[330px] m-1">
-            <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">Aug 13</h1>
-            <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">05:15 PM</h3>
-            <img src='./assets/pink_add.svg' alt="" />
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Closing</h3>
-            <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">Ceremony</h3>
+            <div
+              class="flex flex-col justify-center items-center min-w-[330px] m-1"
+            >
+              <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">
+                Aug 13
+              </h1>
+              <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
+                05:15 PM
+              </h3>
+              <img src="./assets/pink_add.svg" alt="" />
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Closing
+              </h3>
+              <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
+                Ceremony
+              </h3>
+            </div>
           </div>
         </div>
+        <button class="next ml-10 opacity-50 hover:opacity-100 min-w-[30px]">
+          <img src="./assets/right_key.svg" alt="" />
+        </button>
       </div>
-      <button class="next ml-10 opacity-50 hover:opacity-100 min-w-[30px]">
-        <img src="./assets/right_key.svg" alt="" />
-      </button>
     </div>
-  </div>
 
     <!-- TRACKS -->
     <div
@@ -943,38 +1020,73 @@
       <img class="h-[8rem] md:h-[20rem]" src="./assets/flyingComputer.gif" alt="shape pattern" />
     </div> -->
       <div class="prize">
-        <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl mb-5 sm:mb-20">
+        <h1
+          class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl mb-5 sm:mb-20"
+        >
           $ <span id="heading-prizes"></span>
         </h1>
         <div class="lg:mt-10 text-lg md:text-sm p-2 font-dogica">
           <div class="flex flex-col sm:grid grid-cols-10 max-sm:mx-8 gap-2">
             <!-- First Row -->
             <!--             <div class="col-start-3 col-span-2 -translate-x-[12.5%] flex flex-col justify-end m-2 mb-4"> -->
-            <div class="col-start-3 col-span-2 sm:-translate-x-[12.5%] m-6 sm:mx-4 mb-4">
+            <div
+              class="col-start-3 col-span-2 sm:-translate-x-[12.5%] m-6 sm:mx-4 mb-4"
+            >
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <img src="./assets/trophy_silver.png" alt="">
+                  <img src="./assets/trophy_silver.png" alt="" />
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/trophy_silver_back.png" alt="" class="absolute">
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/trophy_silver_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                     <div class="absolute">You Won</div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <div class="col-span-2 sm:h-[110%] sm:w-[110%] sm:-translate-x-[15%] sm:-translate-y-[17.5%]  m-6 sm:mx-4 mb-4 max-sm:order-first" style="transform-style: preserve-3d; perspective: 1000px;">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center" style="transform-style: preserve-3d;">
+
+            <div
+              class="col-span-2 sm:h-[110%] sm:w-[110%] sm:-translate-x-[15%] sm:-translate-y-[17.5%] m-6 sm:mx-4 mb-4 max-sm:order-first"
+              style="transform-style: preserve-3d; perspective: 1000px"
+            >
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center"
+                style="transform-style: preserve-3d"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <img src="./assets/trophy_gold.png" alt="">
+                  <img src="./assets/trophy_gold.png" alt="" />
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="sm:hidden invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="sm:hidden invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/trophy_gold_back.png" alt="" class="absolute">
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/trophy_gold_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                     <div class="absolute">You Won</div>
                   </div>
                 </div>
@@ -982,33 +1094,46 @@
             </div>
             <div class="col-span-2 m-6 sm:mx-4 mb-4">
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <img src="./assets/trophy_bronze.png" alt="">
+                  <img src="./assets/trophy_bronze.png" alt="" />
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/trophy_bronze_back.png" alt="" class="absolute">
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/trophy_bronze_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                     <div class="absolute">You Won</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            
             <!-- Second Row -->
             <!-- <div class="card col-start-2 col-span-2 flex flex-col justify-end m-2 my-4">
               <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
                 <div class="front absolute w-full flex items-end">
                   <div class="relative h-full w-full flex items-center justify-center"> -->
-                    <!-- <img src="./assets/trophy_tracks.png" alt="" class="invisible"> placeholder to set height -->
-                    <!-- <img src="./assets/trophy_tracks.png" alt="" class="absolute">
+            <!-- <img src="./assets/trophy_tracks.png" alt="" class="invisible"> placeholder to set height -->
+            <!-- <img src="./assets/trophy_tracks.png" alt="" class="absolute">
                     <div class="absolute font-bold text-[15px] px-8 md:px-4 translate-y-1 text-center text-[#1E1E1E]">BEST ALL FEMALE TEAM</div>
                   </div>
                 </div> -->
-                <!-- <img src="./assets/trophy_silver.png" alt="" class="invisible"> placeholder to set height -->
-                <!-- <div class="back absolute text-4xl text-center h-full w-full">
+            <!-- <img src="./assets/trophy_silver.png" alt="" class="invisible"> placeholder to set height -->
+            <!-- <div class="back absolute text-4xl text-center h-full w-full">
                   <div class="relative h-full w-full flex items-center justify-center">
                     <img src="./assets/trophy_tracks_back.png" alt="" class="absolute">
                     <div class="absolute px-2">Best All Female Team</div>
@@ -1019,166 +1144,423 @@
             </div> -->
             <div class="card col-start-2 col-span-2 m-6 sm:m-2 my-4">
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
                     <!-- <img src="./assets/trophy_tracks.png" alt="" class="invisible"> placeholder to set height -->
-                    <img src="./assets/tracks_fresher.png" alt="" class="absolute">
+                    <img
+                      src="./assets/tracks_fresher.png"
+                      alt=""
+                      class="absolute"
+                    />
                     <!-- <div class="absolute font-bold px-8 md:px-4 translate-y-1 text-center text-[#1E1E1E]">BEST FRESHER TEAM</div> -->
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_fresher_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_fresher_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2 my-4">
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
                     <!-- <img src="./assets/trophy_tracks.png" alt="" class="invisible"> placeholder to set height -->
-                    <img src="./assets/tracks_hardware.png" alt="" class="absolute">
+                    <img
+                      src="./assets/tracks_hardware.png"
+                      alt=""
+                      class="absolute"
+                    />
                     <!-- <div class="absolute font-bold translate-y-1 text-center text-[#1E1E1E]">BEST HARDWARE HACK</div> -->
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_hardware_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_hardware_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2 my-4">
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_auth0.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_auth0_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_auth0.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_auth0_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-lg text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_auth0_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_auth0_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2 my-4">
               <!-- <img src="./assets/trophy_silver.png" alt=""> -->
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_postman.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_postman_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_postman.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_postman_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_postman_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_postman_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
-        
+
             <!-- Third Row -->
             <div class="card col-span-2 m-6 sm:m-2">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_github.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_github_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_github.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_github_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_github_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_github_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_mongodb.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_mongodb_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_mongodb.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_mongodb_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_mongodb_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_mongodb_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_godaddy.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_godaddy_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_godaddy.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_godaddy_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-4xl text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_godaddy_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_godaddy_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_streamlit.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_streamlit_mobilepng.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_streamlit.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_streamlit_mobilepng.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_streamlit_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_streamlit_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
             <div class="card col-span-2 m-6 sm:m-2">
-              <div class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3" style="transform-style: preserve-3d;  perspective: 1000px;">
+              <div
+                class="inner relative h-full w-full transition-transform duration-500 flex justify-center items-center max-sm:order-3"
+                style="transform-style: preserve-3d; perspective: 1000px"
+              >
                 <div class="front absolute w-full flex items-end">
-                  <div class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_mathworks.png" alt="" class="max-sm:hidden">
-                    <img src="./assets/tracks_mathworks_mobile.png" alt="" class="sm:hidden">
-                    <a class="w-full h-[20%] absolute" href="https://hack.mlh.io/prizes" target="_blank"></a>
+                  <div
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_mathworks.png"
+                      alt=""
+                      class="max-sm:hidden"
+                    />
+                    <img
+                      src="./assets/tracks_mathworks_mobile.png"
+                      alt=""
+                      class="sm:hidden"
+                    />
+                    <a
+                      class="w-full h-[20%] absolute"
+                      href="https://hack.mlh.io/prizes"
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
-                <img src="./assets/trophy_silver.png" alt="" class="invisible"> <!-- placeholder to set height -->
+                <img
+                  src="./assets/trophy_silver.png"
+                  alt=""
+                  class="invisible"
+                />
+                <!-- placeholder to set height -->
                 <div class="back absolute text-sm text-center h-full w-full">
-                  <a href="https://hack.mlh.io/prizes" target="_blank" class="relative h-full w-full flex items-center justify-center">
-                    <img src="./assets/tracks_mathworks_back.png" alt="" class="absolute">
+                  <a
+                    href="https://hack.mlh.io/prizes"
+                    target="_blank"
+                    class="relative h-full w-full flex items-center justify-center"
+                  >
+                    <img
+                      src="./assets/tracks_mathworks_back.png"
+                      alt=""
+                      class="absolute"
+                    />
                   </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="flex justify-center">
-            <p class="text-[#9E9E9E] mt-8">* Goodies and prize money are subject to a maximum value of the specified amount.</p>
+            <p class="text-[#9E9E9E] mt-8">
+              * Goodies and prize money are subject to a maximum value of the
+              specified amount.
+            </p>
           </div>
         </div>
       </div>
@@ -1191,92 +1573,184 @@
       <div class="outer-container m-10">
         <!-- diamond tier -->
         <div class="mx-auto">
-          <div class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px]  max-h-[40px] bg-[#1E1E1E] flex justify-center text-[#68ACB0] text-1xl xl:text-3xl  z-1 relative -top-2 ">
-              DIAMOND</h1>
-          </div>
-          <div class="diamond flex justify-between ">
-            
-              <img class="" src="assets/l_d_border.svg" alt="">
-            
-              <div class="d_contents grid justify-around sm:justify-between  grid-cols-1 place-items-center  min-[400px]:grid-cols-2 min-[900px]:grid-cols-3
-                min-[500px]:gap-x-28 min-[640px]:gap-x-5 xl:gap-x-0  min-[1280px]:grid-cols-2 min-[1450px]:grid-cols-3 gap-x-0 ">
-                <a target="_blank" href="https://mlh.io/">
-                <img class="max-w-[100px] -my-3 mt-4 xl:mt-8 sm:max-w-[150px]  lg:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] xl:mx-10 xl:mt-10 min-[1450px]:mt-0" src="assets/mlh-logo-white.svg" alt=""></a>
-                <a target="_blank" href="https://www.postman.com/">
-                  <img class="max-w-[100px] my-1 mt-4 sm:max-w-[150px]  xl:max-w-[150px] min-[900px]:max-w-[150px] min-[640px]:ml-6  min-[640px]:translate-x-0 min-[1450px]:-ml-10 min-[1450px]:translate-x-10 xl:mx-14 xl:mt-2" src="assets/postman.svg" alt=""></a>
-                <a target="_blank" href="https://aws.amazon.com/">
-                <img class="max-w-[100px] my-1  sm:max-h-[100px] sm:-ml-4 sm:max-w-[150px] min-[900px]:max-w-[150px] sm:mx-14 xl:max-w-[150px] sm:mt-0 sm:translate-x-10 sm:my-6 xl:-ml-8" src="assets/AWS_logo_white_v2-1024x612.png" alt=""></a>
-              </div>
-              <img class="h-full" src="assets/d_border.svg" alt="">
-            </div>
-            <div class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7 xl:-mt-2"></div>
-        </div>
-        <!-- platinum tier -->
-        <div class=" mt-10">
-          <div class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BE9BE5] text-1xl xl:text-3xl z-1 relative -top-2">
-              PLATINUM</h1>
+          <div
+            class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[40px] bg-[#1E1E1E] flex justify-center text-[#68ACB0] text-1xl xl:text-3xl z-1 relative -top-2"
+            >
+              DIAMOND
+            </h1>
           </div>
           <div class="diamond flex justify-between">
-              <img src="assets/l_p_border.svg" alt="">
-              <div class="d_contents grid justify-around sm:flex justify-between sm:mt-7">
-                <a target="_blank" href="https://devfolio.co/">
-                <img class="max-w-[140px] mx-20 sm:mx-14 xl:ml-40 my-3 mt-6 sm:max-w-[200px] xl:max-w-[180px] min-[1280px]:translate-x-0 sm:translate-x-10 2xl:max-w-[200px] xl:mx-2 xl:mt-3" src="assets/Devfolio.svg" alt=""></a>
-                <a target="_blank" href="https://polygon.technology/">
-                <img class="max-w-[140px] mx-20 sm:mx-14 my-3 sm:-translate-x-10 sm:max-w-[200px] min-[1280px]:translate-x-0 xl:max-w-[170px] 2xl:max-w-[200px] xl:mr-40" src="assets/Polygon.svg" alt=""></a>
-              </div>
-              <img src="assets/r_p_border.svg" alt="">
+            <img class="" src="assets/l_d_border.svg" alt="" />
+
+            <div
+              class="d_contents grid justify-around sm:justify-between grid-cols-1 place-items-center min-[400px]:grid-cols-2 min-[900px]:grid-cols-3 min-[500px]:gap-x-28 min-[640px]:gap-x-5 xl:gap-x-0 min-[1280px]:grid-cols-2 min-[1450px]:grid-cols-3 gap-x-0"
+            >
+              <a target="_blank" href="https://mlh.io/">
+                <img
+                  class="max-w-[100px] -my-3 mt-4 xl:mt-8 sm:max-w-[150px] lg:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] xl:mx-10 xl:mt-10 min-[1450px]:mt-0"
+                  src="assets/mlh-logo-white.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://www.postman.com/">
+                <img
+                  class="max-w-[100px] my-1 mt-4 sm:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] min-[640px]:ml-6 min-[640px]:translate-x-0 min-[1450px]:-ml-10 min-[1450px]:translate-x-10 xl:mx-14 xl:mt-2"
+                  src="assets/postman.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://aws.amazon.com/">
+                <img
+                  class="max-w-[100px] my-1 sm:max-h-[100px] sm:-ml-4 sm:max-w-[150px] min-[900px]:max-w-[150px] sm:mx-14 xl:max-w-[150px] sm:mt-0 sm:translate-x-10 sm:my-6 xl:-ml-8"
+                  src="assets/AWS_logo_white_v2-1024x612.png"
+                  alt=""
+              /></a>
             </div>
-            <div class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"></div>
-        </div> 
-        <!-- gold tier -->
-        <div class=" mt-10">
-          <div class="bg-[#DA77D6] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#DA77D6] text-2xl xl:text-3xl z-1 relative -top-2">
-              GOLD</h1>
+            <img class="h-full" src="assets/d_border.svg" alt="" />
           </div>
-          <div class="flex justify-between ">
-              <img src="assets/l_g_border.svg" alt="">
-              <div class="d_contents justify-around max-w-full  max-h-full grid grid-cols-1 place-items-center  min-[500px]:grid-cols-2 min-[500px]:gap-x-8   min-[640px]:grid-cols-3 min-[640px]:place-items-center min-[640px]:gap-x-7  min-[1000px]:grid-cols-4 min-[1280px]:grid-cols-2  min-[1280px]:gap-y-1 min-[1200px]:gap-y-0 min-[1400px]:grid-cols-3 min-[2000px]:grid-cols-4 ">
-                <a target="_blank" href="https://solana.com/">
-                <div><img class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px]  2xl:mx-14  min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]" src="assets/Solana.svg" alt=""></div></a>  
-                <a target="_blank" href="https://auth0.com/">
-                <div><img class="max-w-[160px] min-[1000px]:max-w-[180px]2xl:max-w-[200px] -m-5 sm:-m-0 mt-0.5 sm:mt-7 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:mx-7" src="assets/Auth0_by_Okta_White.png" alt=""></div></a>   
-                
-                <a target="_blank" href="https://replit.com/">
-                <div><img class="max-w-[180px]  2xl:my-4 2xl:max-w-[200px] -mx-4 sm:-mx-0 sm:mt-5 2xl:mx-14 2xl:mt-10 md:mt-4 min-[1280px]:-mt-7 min-[1400px]:-mt-2 min-[2100px]:-mt-2 min-[2000px]:max-w-[270px]   min-[2100px]:max-w-[300px]" src="assets/Replit.svg" alt=""></div></a>
-                <a target="_blank" href="https://www.echo3d.com/">
-                <div><img class="max-w-[140px] sm:max-w-[160px] sm:translate-x-2 min-[1000px]:-translate-x-2 min-[1400px]:translate-x-2 min-[1000px]:max-w-[170px] min-[1000px]:mt-10 my-8 xl:max-h-[60px] 2xl:max-w-[200px] min-[1280px]:mt-0  2xl:my-12 min-[2100px]:max-w-[280px] min-[2000px]:max-w-[240px] min-[2000px]:mt-2 min-[2100px]:mt-4 " src="assets/echo3D_brand_logo_2.png" alt=""></div></a>
-                <a target="_blank" href="https://filecoin.io/blog/posts/filecoin-network-economics/">
-                  <div><img class="max-w-[130px] mt-0 sm:max-w-[160px] min-[1000px]:max-w-[180px] my-2 2xl:max-w-[200px] 2xl:ml-2 2xl:mx-0 2xl:mt-12 min-[1400px]:-mt-5 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:-mt-2 min-[2100px]:-mt-2  " src="assets/Filecoin.svg" alt=""></div></a>
-              </div>
-              <img src="assets/r_g_border.svg" alt=""> 
-            </div>
-            <div class="bg-[#DA77D6] xl:max-w-full h-2.5 max-w-[1900px] ml-7 mr-7"></div>
-        </div> 
-        <!-- silver tier -->
-        <div class=" mt-10">
-          <div class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BABABA] text-2xl xl:text-3xl z-1 relative -top-2">
-              SILVER</h1>
-          </div>
-          <div class=" flex justify-between overflow-x-auto no-scrollbar">
-              <img src="assets/l_s_border.svg" alt="">
-              <div class="d_contents grid justify-around sm:flex justify-between">
-                <a target="_blank" href="https://github.com">
-                <img class="max-w-[100px] my-1 mt-4 xl:mt-8 sm:max-w-[200px] xl:max-w-[150px] xl:mx-14" src="assets/GitHub_Logo_White.png" alt=""></a>
-                <a target="_blank" href="https://jina.ai">
-                <img class="max-w-[100px] my-1 sm:max-w-[160px] sm:max-h-[100px] sm:mx-14 sm:my-6" src="assets/jina.png" alt=""></a>
-              </div>
-              <img src="assets/r_s_border.svg" alt="">
-            </div>
-            <div class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
+          <div
+            class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7 xl:-mt-2"
+          ></div>
         </div>
-      
-  
+        <!-- platinum tier -->
+        <div class="mt-10">
+          <div
+            class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BE9BE5] text-1xl xl:text-3xl z-1 relative -top-2"
+            >
+              PLATINUM
+            </h1>
+          </div>
+          <div class="diamond flex justify-between">
+            <img src="assets/l_p_border.svg" alt="" />
+            <div
+              class="d_contents grid justify-around sm:flex justify-between sm:mt-7"
+            >
+              <a target="_blank" href="https://devfolio.co/">
+                <img
+                  class="max-w-[140px] mx-20 sm:mx-14 xl:ml-40 my-3 mt-6 sm:max-w-[200px] xl:max-w-[180px] min-[1280px]:translate-x-0 sm:translate-x-10 2xl:max-w-[200px] xl:mx-2 xl:mt-3"
+                  src="assets/Devfolio.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://polygon.technology/">
+                <img
+                  class="max-w-[140px] mx-20 sm:mx-14 my-3 sm:-translate-x-10 sm:max-w-[200px] min-[1280px]:translate-x-0 xl:max-w-[170px] 2xl:max-w-[200px] xl:mr-40"
+                  src="assets/Polygon.svg"
+                  alt=""
+              /></a>
+            </div>
+            <img src="assets/r_p_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          ></div>
+        </div>
+        <!-- gold tier -->
+        <div class="mt-10">
+          <div
+            class="bg-[#DA77D6] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#DA77D6] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              GOLD
+            </h1>
+          </div>
+          <div class="flex justify-between">
+            <img src="assets/l_g_border.svg" alt="" />
+            <div
+              class="d_contents justify-around max-w-full max-h-full grid grid-cols-1 place-items-center min-[500px]:grid-cols-2 min-[500px]:gap-x-8 min-[640px]:grid-cols-3 min-[640px]:place-items-center min-[640px]:gap-x-7 min-[1000px]:grid-cols-4 min-[1280px]:grid-cols-2 min-[1280px]:gap-y-1 min-[1200px]:gap-y-0 min-[1400px]:grid-cols-3 min-[2000px]:grid-cols-4"
+            >
+              <a target="_blank" href="https://solana.com/">
+                <div>
+                  <img
+                    class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px] 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                    src="assets/Solana.svg"
+                    alt=""
+                  /></div
+              ></a>
+              <a target="_blank" href="https://auth0.com/">
+                <div>
+                  <img
+                    class="max-w-[160px] min-[1000px]:max-w-[180px]2xl:max-w-[200px] -m-5 sm:-m-0 mt-0.5 sm:mt-7 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:mx-7"
+                    src="assets/Auth0_by_Okta_White.png"
+                    alt=""
+                  /></div
+              ></a>
+
+              <a target="_blank" href="https://replit.com/">
+                <div>
+                  <img
+                    class="max-w-[180px] 2xl:my-4 2xl:max-w-[200px] -mx-4 sm:-mx-0 sm:mt-5 2xl:mx-14 2xl:mt-10 md:mt-4 min-[1280px]:-mt-7 min-[1400px]:-mt-2 min-[2100px]:-mt-2 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                    src="assets/Replit.svg"
+                    alt=""
+                  /></div
+              ></a>
+              <a target="_blank" href="https://www.echo3d.com/">
+                <div>
+                  <img
+                    class="max-w-[140px] sm:max-w-[160px] sm:translate-x-2 min-[1000px]:-translate-x-2 min-[1400px]:translate-x-2 min-[1000px]:max-w-[170px] min-[1000px]:mt-10 my-8 xl:max-h-[60px] 2xl:max-w-[200px] min-[1280px]:mt-0 2xl:my-12 min-[2100px]:max-w-[280px] min-[2000px]:max-w-[240px] min-[2000px]:mt-2 min-[2100px]:mt-4"
+                    src="assets/echo3D_brand_logo_2.png"
+                    alt=""
+                  /></div
+              ></a>
+              <a
+                target="_blank"
+                href="https://filecoin.io/blog/posts/filecoin-network-economics/"
+              >
+                <div>
+                  <img
+                    class="max-w-[130px] mt-0 sm:max-w-[160px] min-[1000px]:max-w-[180px] my-2 2xl:max-w-[200px] 2xl:ml-2 2xl:mx-0 2xl:mt-12 min-[1400px]:-mt-5 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:-mt-2 min-[2100px]:-mt-2"
+                    src="assets/Filecoin.svg"
+                    alt=""
+                  /></div
+              ></a>
+            </div>
+            <img src="assets/r_g_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#DA77D6] xl:max-w-full h-2.5 max-w-[1900px] ml-7 mr-7"
+          ></div>
+        </div>
+        <!-- silver tier -->
+        <div class="mt-10">
+          <div
+            class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BABABA] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              SILVER
+            </h1>
+          </div>
+          <div class="flex justify-between overflow-x-auto no-scrollbar">
+            <img src="assets/l_s_border.svg" alt="" />
+            <div class="d_contents grid justify-around sm:flex justify-between">
+              <a target="_blank" href="https://github.com">
+                <img
+                  class="max-w-[100px] my-1 mt-4 xl:mt-8 sm:max-w-[200px] xl:max-w-[150px] xl:mx-14"
+                  src="assets/GitHub_Logo_White.png"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://jina.ai">
+                <img
+                  class="max-w-[100px] my-1 sm:max-w-[160px] sm:max-h-[100px] sm:mx-14 sm:my-6"
+                  src="assets/jina.png"
+                  alt=""
+              /></a>
+            </div>
+            <img src="assets/r_s_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          ></div>
+        </div>
+
         <!-- Hiring Partners -->
-  
+
         <!-- <div class=" mt-10">
           <div class="bg-[#6460ff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
             <h1 class=" mx-auto  pl-2 min-[410px]:pl-0 max-w-[100px] min-[400px]:max-w-[200px]  max-h-[30px]  bg-[#1E1E1E]  flex justify-center text-[#6460ff]  min-[400px]:text-2xl xl:text-3xl z-1 relative -top-2">
@@ -1292,26 +1766,37 @@
             </div>
             <div class="bg-[#6460ff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
         </div> -->
-  
-         <!-- Digital Media -->
-         <div class=" mt-10">
-          <div class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[120px] pl-2 min-[410px]:pl-0 min-[410px]:max-w-[200px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#ffffff] text-2xl xl:text-3xl z-1 relative -top-2">
-              DIGITAL MEDIA</h1>
+
+        <!-- Digital Media -->
+        <div class="mt-10">
+          <div
+            class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[120px] pl-2 min-[410px]:pl-0 min-[410px]:max-w-[200px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#ffffff] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              DIGITAL MEDIA
+            </h1>
           </div>
           <div class="flex justify-between overflow-x-auto no-scrollbar">
-              <img src="assets/l_m_border.svg" alt="">
-              <div class="d_contents flex justify-between overflow-x-auto">
-                <a target="_blank" href="https://www.telegraphindia.com/edugraph">
-                <img class="max-w-[700px] max-h-[80px] my-8" src="assets\edugraph-og.png" alt=""></a>
-              </div>
-              <img src="assets/r_m_border.svg" alt="">
+            <img src="assets/l_m_border.svg" alt="" />
+            <div class="d_contents flex justify-between overflow-x-auto">
+              <a target="_blank" href="https://www.telegraphindia.com/edugraph">
+                <img
+                  class="max-w-[700px] max-h-[80px] my-8"
+                  src="assets\edugraph-og.png"
+                  alt=""
+              /></a>
             </div>
-            <div class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
+            <img src="assets/r_m_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          ></div>
         </div>
       </div>
     </div>
-    
+
     <!-- FAQ -->
     <div
       id="faq"
@@ -1679,30 +2164,41 @@
               referrerpolicy="no-referrer-when-downgrade"
               class="w-72 h-32 xl:w-96 xl:h-32 footercontent"
             ></iframe> -->
-
-        </div>
-        <div class="resources footerelements text-center">
-          <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
-          <a href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
-            target="_blank" rel="noopener noreferrer">
-            Sponsorship Brochure<br />
-          </a>
-          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
-            target="_blank" rel="noopener noreferrer">
-            Code Of Conduct <br>
-          </a>
-          <a href="./cp.html"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white" rel="noopener noreferrer">
-            Community Partners<br />
-          </a>
-          <a href="https://statuscode0.notion.site/Status-Code-0-Hacker-Guide-2e3862d425684151adaa0098defd6ecc"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
-            target="_blank" rel="noopener noreferrer">
-            Hacker guide <br>
-          </a>
-        </div>
+          </div>
+          <div class="resources footerelements text-center">
+            <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
+            <a
+              href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sponsorship Brochure<br />
+            </a>
+            <a
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code Of Conduct <br />
+            </a>
+            <a
+              href="./cp.html"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              rel="noopener noreferrer"
+            >
+              Community Partners<br />
+            </a>
+            <a
+              href="https://statuscode0.notion.site/Status-Code-0-Hacker-Guide-2e3862d425684151adaa0098defd6ecc"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hacker guide <br />
+            </a>
+          </div>
           <div class="social text-center xl:text-left">
             <h1
               class="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2"
@@ -1829,26 +2325,27 @@
           .scrollTo({ left: leftPosition, behavior: 'smooth' });
       });
       document.querySelector('.next').addEventListener('click', () => {
-  var timelineWrapperWidth =
-    document.querySelector('.timeline-wrapper').clientWidth;
-  var defaultShiftWidth =
-    timelineWrapperWidth < timelineElementWidth
-      ? timelineElementWidth / 4
-      : 0;
-  var leftPosition =
-    defaultShiftWidth +
-    Math.min(
-      document.querySelector('.timeline-wrapper').scrollWidth - timelineWrapperWidth,
-      Math.ceil(
-        (document.querySelector('.timeline-wrapper').scrollLeft +
-          timelineElementWidth) /
-          timelineElementWidth
-      ) * timelineElementWidth
-    );
-  document
-    .querySelector('.timeline-wrapper')
-    .scrollTo({ left: leftPosition, behavior: 'smooth' });
-});
+        var timelineWrapperWidth =
+          document.querySelector('.timeline-wrapper').clientWidth;
+        var defaultShiftWidth =
+          timelineWrapperWidth < timelineElementWidth
+            ? timelineElementWidth / 4
+            : 0;
+        var leftPosition =
+          defaultShiftWidth +
+          Math.min(
+            document.querySelector('.timeline-wrapper').scrollWidth -
+              timelineWrapperWidth,
+            Math.ceil(
+              (document.querySelector('.timeline-wrapper').scrollLeft +
+                timelineElementWidth) /
+                timelineElementWidth
+            ) * timelineElementWidth
+          );
+        document
+          .querySelector('.timeline-wrapper')
+          .scrollTo({ left: leftPosition, behavior: 'smooth' });
+      });
 
       // Faq toggle end
     </script>
@@ -1864,5 +2361,6 @@
     ></script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./index.js"></script>
+    <script defer src="./timer.js"></script>
   </body>
 </html>
