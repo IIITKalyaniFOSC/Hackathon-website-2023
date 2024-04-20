@@ -46,12 +46,12 @@ new TypeIt('#heading-tracks', {
   .move(3, { instant: true })
   .go();
 
-new TypeIt('#heading-prizes', {
-  speed: 150,
-  waitUntilVisible: true,
-})
-  .type('vi <span class="text-white">PRIZE</span>.yml')
-  .go();
+// new TypeIt('#heading-prizes', {
+//   speed: 150,
+//   waitUntilVisible: true,
+// })
+//   .type('vi <span class="text-white">PRIZE</span>.yml')
+//   .go();
 
 new TypeIt('#heading-sponsors', {
   speed: 125,

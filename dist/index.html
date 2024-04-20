@@ -15,12 +15,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <title>Status Code 0 | IIIT Kalyani</title>
-    <script type="module" crossorigin src="/assets/main-f63cabf2.js"></script>
-    <link rel="stylesheet" href="/assets/index-e77cf03c.css">
+    <title>Status Code 1 | IIIT Kalyani</title>
+    <script type="module" crossorigin src="/assets/main-4b3a4713.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/cp-e493b9f6.js">
+    <link rel="stylesheet" href="/assets/cp-74440e9a.css">
   </head>
 
-  <a
+  <!-- <a
     id="mlh-trust-badge"
     style="
       display: block;
@@ -39,14 +40,14 @@
       alt="Major League Hacking 2024 Hackathon Season"
       style="width: 100%"
     />
-  </a>
+  </a> -->
 
   <body class="bg-[#1E1E1E]">
     <div id="preloader">
       <img id="loadingImage" src="/assets/preloader-db1393e0.gif" />
 
       <h1 id="loadingText">
-        Status Code 0 loading <span id="blinking"></span>
+        Status Code 1 loading <span id="blinking"></span>
       </h1>
     </div>
 
@@ -54,39 +55,56 @@
       class="py-5 bg-[#1E1E1E] fixed w-full xl:flex xl:items-center xl:justify-between z-50 xl:mx-16 mx-5"
     >
       <div class="flex justify-between items-center">
-        <a href="#">
-          <img class="w-32 md:w-36" src="/assets/iupgz4ve 1-2aa14036.png" alt="" />
-        </a>
+        <div class="flex">
+          <!-- <a href="#">
+            <img class="w-32 md:w-36" src="assets/iupgz4ve 1.png" alt="" />
+          </a>
+          <div
+            class="ml-2 mr-2 md:ml-5 md:mr-5 h-14 md:h-16 w-0.5 bg-[#2E2E2E]"
+          ></div> -->
+          <a href="https://iiitkalyani.ac.in/" target="_blank">
+            <img
+              class="h-14 md:h-16"
+              src="/assets/iiit_kalyani_logo-cd292579.png"
+              alt="IIIT Kalyani Logo"
+            />
+          </a>
+        </div>
 
+        <span id="check" class="cursor-pointer xl:hidden block">
+          <ion-icon
+            class="text-3xl mr-10 md:text-5xl"
+            name="menu"
+            onclick="Menu(this)"
+          ></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="xl:flex xl:mr-40 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]"
+      >
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
+        </li>
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
+        </li>
+        <!-- <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
+        </li> -->
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
+        </li>
+        <!-- <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="./challenges/index.html" class="text-3xl 2xl:text-4xl"
+            >CHALLENGES</a
+          >
+        </li> -->
+        <li class="mx-4 my-6 xl:my-0 hover:text-white">
+          <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
+        </li>
+      </ul>
+    </nav>
 
-      <span id="check" class="cursor-pointer xl:hidden block">
-        <ion-icon class="text-3xl mr-10 md:text-5xl " name="menu" onclick="Menu(this)"></ion-icon>
-      </span>
-    </div>
-    <ul
-      class="xl:flex xl:mr-60 xl:items-center lkmvi z-[49] xl:static absolute w-full left-0 xl:w-auto xl:py-0 py-4 xl:pl-0 pl-7 opacity-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 bg-[#1E1E1E] text-[#BABABA]">
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#schedule" class="text-3xl 2xl:text-4xl">SCHEDULE</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#tracks" class="text-3xl 2xl:text-4xl">TRACKS</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#prize" class="text-3xl 2xl:text-4xl">PRIZE</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#sponsers" class="text-3xl 2xl:text-4xl">SPONSORS</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="./challenges/index.html" class="text-3xl 2xl:text-4xl">CHALLENGES</a>
-      </li>
-      <li class="mx-4 my-6 xl:my-0 hover:text-white">
-        <a href="#faq" class="text-3xl 2xl:text-4xl">FAQs</a>
-      </li>
-
-    </ul>
-  </nav>
-    
     <div
       class="absolute top-[35%] left-20 w-18 hidden py-8 px-4 rounded-md xl:flex flex-col items-center justify-center xl:justify-evenly gap-7 md:gap-10"
     >
@@ -141,54 +159,38 @@
       </a>
     </div>
     <div
-      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[13rem] mascot-break:gap-[25rem] mx-5 xl:mx-16 py-32 xl:px-72"
+      class="hero flex justify-between items-center md:gap-[5rem] lg:gap-[10rem] 2xl:gap-[13rem] mascot-break:gap-[25rem] mx-5 xl:mx-16 py-32 xl:px-48 2xl:px-56"
     >
       <div class="hero-text">
         <h1
           class="text-[#9E9E9E] m-0 tracking-wider text-3xl md:text-4xl xl:text-5xl"
         >
           $ man <span class="text-white z-10" id="element"> StatusCode</span
-          ><span class="text-red-600">0</span>
+          ><span class="text-red-600">1</span>
         </h1>
         <p
-          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] 2xl:w-[140%] mascot-break:w-[180%] 3xl:w-[150%]"
+          class="text-[#D9D9D9] lg:text-base xl:text-2xl mt-10 w-full md:w-[100%] xl:w-[120%] 2xl:w-[150%] mascot-break:w-[180%] 3xl:w-[150%]"
         >
-          Unleash your creativity and join Status Code 0, an official
-          <span class="text-[#f74b03]"> M</span
-          ><span class="text-[#3173b7]">L</span
-          ><span class="text-[#ffdc20]">H</span> Member Event and the ultimate
+          Unleash your creativity and join Status Code 1, the ultimate
           36-hour hackathon extravaganza! Compete across diverse categories,
           showcasing your skills, ingenuity, and collaborative spirit alongside
           like-minded individuals. Discover the perfect platform to challenge
           yourself, acquire new skills, and craft awe-inspiring products with
           the potential to make a significant impact. Don't miss this
           unparalleled opportunity to showcase your talent and be part of the
-          tech revolution. Welcome to Status Code 0 - where innovation knows no
+          tech revolution. Welcome to Status Code 1 - where innovation knows no
           boundaries.
-        </p>
-        <p class="text-[#F7D7AC] lg:text-base xl:text-2xl 2xl:w-[140%]">
-          Registration button not visible? Kindly refresh the page.
         </p>
 
         <div
-          class="container my-12 flex-col items-center justify-center 2xl:w-[170%]"
+          class="container my-12 flex flex-col items-center justify-center 2xl:w-[170%]"
           style="color: #f21212"
         >
-          <h1 class="text-5xl hidden m-0 text-white" id="headline">
-            Countdown to the main event
+          <h1 class="md:text-4xl text-3xl text-white" id="headline">
+            Hacking ends in!
           </h1>
-          <div id="countdown " class="flex flex-col items-center">
-            <ul
-              class="flex gap-6 justify-evenly text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              <li><span id="days"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="hours"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="minutes"></span></li>
-              <li><span id=""></span>:</li>
-              <li><span id="seconds"></span></li>
-            </ul>
+          <div class="countdown text-4xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <p class="md:ml-10 ml-0" id="demo"></p>
             <ul
               class="flex gap-3 justify-evenly text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-[#D9D9D9]"
               style="padding-bottom: 60px"
@@ -201,16 +203,11 @@
               <li><span id=""></span>:</li>
               <li><span id=""></span>sec</li>
             </ul>
-            <div
-              class="apply-button"
-              data-hackathon-slug="statuscode0"
-              data-button-theme="dark"
-            ></div>
           </div>
         </div>
       </div>
       <img
-        class="md:h-[30vh] xl:h-[40vh] 2xl:h-[60vh] hidden md:block xl:hidden 2xl:block"
+        class="md:h-[30vh] xl:h-[45vh] 2xl:h-[60vh] hidden md:block"
         style="margin: 0 0em 10em 0"
         src="/assets/mascot-9cf2466a.gif"
         alt=""
@@ -220,7 +217,7 @@
     <!-- SCHEDULE -->
     <div
       id="schedule"
-      class="mt-10 mx-5 xl:mx-16 xl:px-72"
+      class="mt-10 mx-5 xl:mx-16 xl:px-48 2xl:px-56"
       style="padding-bottom: 60px"
     >
       <h1
@@ -242,7 +239,7 @@
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">
-                Apr 15
+                May 5
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 12:00 AM
@@ -260,7 +257,7 @@
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">
-                Aug 1
+                Aug 17
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 12:00 AM
@@ -278,21 +275,21 @@
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">
-                Aug 12
+                Aug 24
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
-                10:00 AM
+                11:00 AM
               </h3>
               <img src="/assets/pink_add-112d7d41.svg" alt="" />
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
-                Opening
+                Hacking
               </h3>
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
-                Ceremony
+                Starts
               </h3>
             </div>
 
-            <div
+            <!-- <div
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#BC81FF] text-3xl md:text-4xl xl:text-4xl">
@@ -301,16 +298,16 @@
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 12:30 PM
               </h3>
-              <img src="/assets/purple_add-92002ffa.svg" alt="" />
+              <img src="./assets/purple_add.svg" alt="" />
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
                 API
               </h3>
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
                 Workshop
               </h3>
-            </div>
+            </div> -->
 
-            <div
+            <!-- <div
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#78BEFF] text-3xl md:text-4xl xl:text-4xl">
@@ -319,20 +316,20 @@
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 04:00 PM
               </h3>
-              <img src="/assets/blue_add-0e80fced.svg" alt="" />
+              <img src="./assets/blue_add.svg" alt="" />
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
                 Auth0
               </h3>
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
                 Workshop
               </h3>
-            </div>
+            </div> -->
 
             <div
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#FF6D75] text-3xl md:text-4xl xl:text-4xl">
-                Aug 13
+                Aug 24
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 11:00 PM
@@ -350,10 +347,10 @@
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#FFC977] text-3xl md:text-4xl xl:text-4xl">
-                Aug 13
+                Aug 25
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
-                03:30 PM
+                04:00 PM
               </h3>
               <img src="/assets/orange_add-dd2a9cfe.svg" alt="" />
               <h3 class="text-[#FFFFFF] text-2xl md:text-3xl xl:text-3xl">
@@ -368,7 +365,7 @@
               class="flex flex-col justify-center items-center min-w-[330px] m-1"
             >
               <h1 class="text-[#DA77D6] text-3xl md:text-4xl xl:text-4xl">
-                Aug 13
+                Aug 25
               </h1>
               <h3 class="text-[#00FFDF] text-1xl md:text-2xl xl:text-2xl">
                 05:15 PM
@@ -392,7 +389,7 @@
     <!-- TRACKS -->
     <div
       id="tracks"
-      class="mt-10 mx-5 xl:mx-16 xl:px-72"
+      class="mt-10 mx-5 xl:mx-16 xl:px-48 2xl:px-56"
       style="padding-bottom: 60px"
     >
       <h1 class="text-[#9E9E9E] m-0 text-3xl md:text-4xl xl:text-5xl">
@@ -462,7 +459,7 @@
           <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-05"
-              class="flex items-center bg-[#9E9E9E] px-5 xl:px-2 2xl:px-5 pb-3.5 pt-4 text-3xl h-full font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              class="flex items-center justify-center bg-[#9E9E9E] px-5 xl:px-2 2xl:px-5 pb-3.5 pt-4 text-3xl h-full font-medium uppercase leading-tight text-[#1E1E1E] data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
               id="pills-contact-tab01"
               data-te-toggle="pill"
               data-te-target="#pills-05"
@@ -472,10 +469,10 @@
               >Education</a
             >
           </li>
-          <li role="contact" class="flex-auto text-center">
+          <!-- <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-06"
-              class="flex items-center bg-[#9E9E9E] px-5 xl:px-2 2xl:px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] h-full data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
+              class="flex items-center justify-center bg-[#9E9E9E] px-5 xl:px-2 2xl:px-5 pb-3.5 pt-4 text-3xl font-medium uppercase leading-tight text-[#1E1E1E] h-full data-[te-nav-active]:!bg-[#1E1E1E] data-[te-nav-active]:text-[#FFFFFF] md:mr-0"
               id="pills-contact-tab01"
               data-te-toggle="pill"
               data-te-target="#pills-06"
@@ -484,7 +481,7 @@
               aria-selected="false"
               >Auth0</a
             >
-          </li>
+          </li> -->
           <li role="contact" class="flex-auto text-center">
             <a
               href="#pills-07"
@@ -590,7 +587,7 @@
             role="tabpanel"
             aria-labelledby="pills-contact-tab01"
           >
-            The Gender Inclusivity Track at Status Code 0 focuses on building
+            The Gender Inclusivity Track at Status Code 1 focuses on building
             software solutions that promote gender equality and inclusiveness,
             addressing various issues affecting women and girls. Participants
             are encouraged to create applications that combat gender-based
@@ -615,16 +612,16 @@
             improve access to education for disadvantaged communities, or help
             teachers and students collaborate more effectively.
           </div>
-          <div
+          <!-- <div
             class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
             id="pills-06"
             role="tabpanel"
             aria-labelledby="pills-contact-tab01"
           >
-            Participate in the Auth0 Special Track at Status Code 0 and create a
+            Participate in the Auth0 Special Track at Status Code 1 and create a
             product using Auth0 for a chance to win $20 Amazon Gift Cards for
             all members of your team.
-          </div>
+          </div> -->
           <div
             class="hidden bg-[#1E1E1E] w-full text-[#D9D9D9] opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block px-10 py-10 text-2xl"
             id="pills-07"
@@ -817,7 +814,7 @@
                 effectively.
               </div>
             </div>
-            <div class="mt-2">
+            <!-- <div class="mt-2">
               <h2 class="accordion-header mb-0" id="headingFour">
                 <button
                   class="group relative flex w-full items-center justify-center rounded-none border-0 bg-[#9E9E9E] px-5 py-4 text-center text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-[#1E1E1E] [&:not([data-te-collapse-collapsed])]:text-white text-3xl md:text-4xl"
@@ -841,12 +838,12 @@
                 <div
                   class="px-10 py-4 text-[#D9D9D9] bg-[#1E1E1E] text-center text-lg"
                 >
-                  Participate in the Auth0 Special Track at Status Code 0 and
+                  Participate in the Auth0 Special Track at Status Code 1 and
                   create a product using Auth0 for a chance to win $20 Amazon
                   Gift Cards for all members of your team.
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- <div class="mt-2">
             <h2 class="accordion-header mb-0" id="headingSix">
@@ -1013,502 +1010,251 @@
       </div>
     </div>
 
-    <div
-      id="prize"
-      class="mt-10 mx-5 xl:mx-16 xl:px-72"
-      style="padding-bottom: 60px"
-    >
-      <!-- <div class="hidden md:justify-center md:items-center">
-      <img class="h-[8rem] md:h-[20rem]" src="./assets/flyingComputer.gif" alt="shape pattern" />
-    </div> -->
-      <div class="prize">
-        <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl">
-          $ <span id="heading-prizes"></span>
-        </h1>
-        <div class="lg:mt-10 text-xl md:text-2xl p-2">
-          <!-- desktop view-->
-          <div
-            class="hidden lg:flex xl:hidden 2xl:flex justify-between items-end"
-          >
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-8 mascot-break:px-12 py-12"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] h-[10%] w-[20%] text-[#1E1E1E] text-center"
-              >
-                02
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] h-[10%] w-[20%] rotate-180 text-[#1E1E1E] text-center"
-              >
-                02
-              </div>
-              <div class="flex flex-col items-center">
-                <img src="data:image/png;base64,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" alt="" class="w-36" />
-                <div
-                  class="border-[#7F8394] border-8 bg-[#AFB1BE] text-[#1E1E1E] mt-2 px-10 mascot-break:px-16"
-                >
-                  RUNNER UPS
-                </div>
-                <div class="text-center w-48 mt-5">
-                  Prizes worth upto INR 35000
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-8 mascot-break:px-12 py-20"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] h-[10%] w-[20%] text-[#1E1E1E] text-center"
-              >
-                01
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] h-[10%] w-[20%] rotate-180 text-[#1E1E1E] text-center"
-              >
-                01
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <img src="data:image/png;base64,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" alt="" class="w-36" />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 px-12 mascot-break:px-20"
-                >
-                  WINNERS
-                </div>
-                <div class="text-center w-48 mt-5">
-                  Prizes worth upto INR 50000
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-8 mascot-break:px-12 py-12"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] h-[10%] w-[20%] text-[#1E1E1E] text-center"
-              >
-                03
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] h-[10%] w-[20%] rotate-180 text-[#1E1E1E] text-center"
-              >
-                03
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <img src="data:image/png;base64,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" alt="" class="w-36" />
-                <div
-                  class="border-[#CC5F27] border-8 bg-[#FF9849] text-[#1E1E1E] mt-2 px-10 mascot-break:px-16"
-                >
-                  RUNNER UPS
-                </div>
-                <div class="text-center w-48 mt-5">
-                  Prizes worth upto INR 25000
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- mobile view -->
-          <div class="lg:hidden xl:block 2xl:hidden w-full mt-10">
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 sm:px-10 py-4 mt-[30px]"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] px-2 py-0 text-[#1E1E1E] text-center"
-              >
-                01
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] px-2 py-0 rotate-180 text-[#1E1E1E] text-center"
-              >
-                01
-              </div>
-              <div class="flex justify-around items-center">
-                <div class="flex flex-col items-center">
-                  <img src="data:image/png;base64,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" alt="" class="w-24" />
-                  <div
-                    class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-8"
-                  >
-                    <div class="w-16 m-auto">WINNER</div>
-                  </div>
-                </div>
-                <div class="w-[70%] text-center sm:text-3xl px-5 2xl:px-20">
-                  Prizes worth upto INR 50000
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 sm:px-10 py-4 mt-[30px]"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] px-2 py-0 text-[#1E1E1E] text-center"
-              >
-                02
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] px-2 py-0 rotate-180 text-[#1E1E1E] text-center"
-              >
-                02
-              </div>
-              <div class="flex justify-around items-center">
-                <div class="flex flex-col items-center">
-                  <img src="data:image/png;base64,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" alt="" class="w-24" />
-                  <div
-                    class="border-[#7F8394] border-8 bg-[#AFB1BE] text-[#1E1E1E] mt-2 text-center px-4"
-                  >
-                    <div class="w-24 m-auto">RUNNER UPS</div>
-                  </div>
-                </div>
-                <div class="w-[70%] text-center sm:text-3xl px-5 2xl:px-20">
-                  Prizes worth upto INR 35000
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 sm:px-10 py-4 mt-[30px]"
-            >
-              <div
-                class="absolute left-0 top-0 bg-[#6460FF] px-2 py-0 text-[#1E1E1E] text-center"
-              >
-                03
-              </div>
-              <div
-                class="absolute right-0 bottom-0 bg-[#6460FF] px-2 py-0 rotate-180 text-[#1E1E1E] text-center"
-              >
-                03
-              </div>
-              <div class="flex justify-around items-center">
-                <div class="flex flex-col items-center">
-                  <img src="data:image/png;base64,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" alt="" class="w-24" />
-                  <div
-                    class="border-[#CC5F27] border-8 bg-[#FF9849] text-[#1E1E1E] mt-2 text-center px-4"
-                  >
-                    <div class="w-24 m-auto">RUNNER UPS</div>
-                  </div>
-                </div>
-                <div class="w-[70%] text-center sm:text-3xl px-5 2xl:px-20">
-                  Prizes worth upto INR 25000
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- additional tracks -->
-          <div class="w-full mt-10">
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                AUTH0
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl rotate-180 text-[#1E1E1E] text-center"
-              >
-                AUTH0
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-8"
-                >
-                  <div class="w-16 m-auto">AUTH0 SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win some exclusive swag, including an Auth0 branded Rocketbook
-                  and Rubik's Cube!
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                MONGODB
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl rotate-180 text-[#1E1E1E] text-center"
-              >
-                MONGODB
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAb0AAAHgCAYAAAAxPrNtAAAIBklEQVR42u3YsWucdQDG8Sf2bWKStsJlcMj5kiEOJYPokJLdVRCH/BWCUxdB9C8Q3LN0PUHcdHBoAiJUcFXIgYKxNUPOJqEJ5nqcg1aXWiPt7+3dm88HMv94n7zvfe/embquxwGAC+AFEwAgegAgegAgegAgegAgegAgegAgegAgegAgegAgegCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCiBwAtV5ng6Xzw1iBry0NDAM/UR5+/lB9+fdEQojdZ1paH2Vg9MwTwTF2bHxuhAK83ARA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9AEQPAEQPAEQPAEQPAEQPAEQPAEQPAEQPAEQPAEQPANEDANEDANEDgOlSmWAKXEty3QxwLgdJ+mZA9Kb7v9QxA5zLiQn4d15vAiB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6AIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAKIHAKIHAKIHANOlMgH/fAV6LaneLnvG8FYy/snWgOjxvKP3ejL7YdkzRreTkegBz+ljzgQAiB4AiB4AiB4AiB4AiB4AiB4AiB4AiB4AiB4AiB4AogcAogcAogcAogcAogcAogcAogcAogcAogcAogeA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AEgegAgegAgegAgegAgegAgegAgegAgegAgegAgegAgegCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiB4DoAYDoAYDoAYDoAYDoAYDoAYDoAYDoAYDoAYDoAYDoASB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6ACB6AIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAIgeAKIHAKIHAKIHAKIHAKIHAKIHAKIHAKIHAKIHAKIHAKIHgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAXGiVCfjb+MdkeKvwGfftDIgeE2C0/ecfQEt5vQmA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AEgegAgegAgegAgegAgegAgegAgegAgegAgegAgegBcWJUJpsAgye0Gznk5yXVzU8h+ku8bOGdoakRv+p36sGDKDRu6j+EJvN4EQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAED0AED0AED0AED0AED0AED0AED0AED0AED0AED0ARA8ARA8ARA8ARA8ARA8ARA8AGlCZ4On07izkm/5c0TO6nYfZXD8tfzHHSXYLn9FNMu++mThHSfYbuL9aYmt7MUenZX8z/Dy45L4Uvcnz2XdXi5+xvnLSTPSO/voraUn0JjZ6fTOcO3o7V3LvcNYQU8jrTQBEDwBEDwBEDwBEDwBEDwBEDwBEDwBEDwBEDwBEDwDRAwDRAwDRAwDRAwDRAwDRAwDRAwDRAwDRAwDRA0D0AED0AKAlKhNMvr3fLuXjL68WP2dz/STdzqjwxSQ5aGC0lSSXW3IDDBrY7Lg9z8vW9mKOTst+nz86nfHBJHqUcvdwLp98NVf8nI3V38tH75eGRuu2KHoHSfqeg3NHb+dK7h3OGoLH8noTANEDANEDANEDANEDANEDANEDANEDANEDANEDANEDQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAED0AED0AED0AmC4zdV2PzUDbfP3+3XQ7o7KH3EjSaeBidpP0yx7Ru7OQm70lNw5+6QGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AGA6AEgegAgegAgegAgegAgegAgegAgegAgegAgegAgegCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCIHgCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiB4DomQAA0QMA0QMA0QMA0QMA0QMA0QMA0QMA0QMA0QMA0QNA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9AAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQBEDwBEDwBEDwBEDwAm2Uxd12Mz0JT1lZN8+u5BOy7mRpJOA+fsJulP/1y9Owu52VvyEOCXHgCIHgCIHgCIHgCIHgCIHgCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiBwCiB4DoAYDoAYDoAYDoAYDoAYDoAYDoAYDoAcC5VSbgkXfeOM4rnVHRM7rLD5PVlgw239A5Sw2ccZxkv+wRa8vDvPfm/eKXsrWzmAdnlz3QiB5Ptrl+ko3Vs7KHdJK8auv/vVmn8Bl7zURvbXlYfK7etwt5cOa24fG83gRA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9AAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQAQPQBEDwBEDwBEDwCmS2UCGjVI8oUZAL/0AED0AED0AED0AED0ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9ABA9AEQPAEQPAEQPAEQPAEQPAEQPAEQPAEQPAP5bZQIe2RtU2RuMDAG01kxd12MzAHAReL0JgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBgOgBIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAIHoAiB4AtN0f1sWT/eBGQ8AAAAAASUVORK5CYII="
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-8"
-                >
-                  <div class="w-16 m-auto">MONGODB SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win a M5GO IoT Starter Kit for you and each member of your
-                  team!
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                GITHUB
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl rotate-180 text-[#1E1E1E] text-center"
-              >
-                GITHUB
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-8"
-                >
-                  <div class="w-16 m-auto">GITHUB SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win a GitHub Octocat Puzzle & Sticker bundle!
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                MATHWORKS
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 rotate-180 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                MATHWORKS
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-6"
-                >
-                  <div class="w-20 m-auto">MATHWORKS SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win an exclusive MathWorks branded Wireless YoYo Speaker and a
-                  free MATLAB software license!
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                STREAMLIT
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl rotate-180 text-[#1E1E1E] text-center"
-              >
-                STREAMLIT
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-6"
-                >
-                  <div class="w-20 m-auto">STREAMLIT SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win a Pimoroni PicoSystem programmable gaming system for you
-                  and each member of your team!
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative border-[#6460FF] border-4 outline outline-[#3531D2] outline-8 px-5 lg:px-8 sm:px-10 2xl:px-20 py-4 mt-[30px]"
-            >
-              <div
-                class="max-md:hidden absolute left-0 top-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl text-[#1E1E1E] text-center"
-              >
-                GODADDY
-              </div>
-              <div
-                class="max-md:hidden absolute right-0 bottom-0 bg-[#6460FF] px-1 py-0 max-2xl:text-xl rotate-180 text-[#1E1E1E] text-center"
-              >
-                GODADDY
-              </div>
-              <div class="flex justify-around items-center md:items-end">
-                <img
-                  src="data:image/png;base64,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"
-                  alt=""
-                  class="w-24 max-md:hidden"
-                />
-                <div
-                  class="border-[#FFAA01] border-8 bg-[#FFF301] text-[#1E1E1E] mt-2 text-center px-8"
-                >
-                  <div class="w-16 m-auto">GODADDY SPECIAL TRACK</div>
-                </div>
-                <div class="w-[70%] text-center px-5 self-center">
-                  Win a Hack from Home kit containing earbuds, blue light
-                  glasses, selfie ring light and a pouch for easy transport!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="sponsers" class="mt-10 mx-5 xl:mx-16 xl:px-72">
+    <div id="sponsers" class="mt-10 mx-5 xl:mx-16 xl:px-48 2xl:px-56">
       <h1 class="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
         $ <span id="heading-sponsors"></span>
       </h1>
       <div class="outer-container m-10">
         <!-- diamond tier -->
-        <div class="mx-auto">
-          <div class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px]  max-h-[40px] bg-[#1E1E1E] flex justify-center text-[#68ACB0] text-1xl xl:text-3xl  z-1 relative -top-2 ">
-              DIAMOND</h1>
-          </div>
-          <div class="diamond flex justify-between ">
-            
-              <img class="" src="/assets/l_d_border-7d597197.svg" alt="">
-            
-              <div class="d_contents grid justify-around sm:justify-between  grid-cols-1 place-items-center  min-[400px]:grid-cols-2 min-[900px]:grid-cols-3
-                min-[500px]:gap-x-28 min-[640px]:gap-x-5 xl:gap-x-0  min-[1280px]:grid-cols-2 min-[1450px]:grid-cols-3 gap-x-0 ">
-                <a target="_blank" href="https://mlh.io/">
-                <img class="max-w-[100px] -my-3 mt-4 xl:mt-8 sm:max-w-[150px]  lg:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] xl:mx-10 xl:mt-10 min-[1450px]:mt-0" src="/assets/mlh-logo-white-74b961d7.svg" alt=""></a>
-                <a target="_blank" href="https://www.postman.com/">
-                  <img class="max-w-[100px] my-1 mt-4 sm:max-w-[150px]  xl:max-w-[150px] min-[900px]:max-w-[150px] min-[640px]:ml-6  min-[640px]:translate-x-0 min-[1450px]:-ml-10 min-[1450px]:translate-x-10 xl:mx-14 xl:mt-2" src="/assets/postman-2f2ccaee.svg" alt=""></a>
-                <a target="_blank" href="https://aws.amazon.com/">
-                <img class="max-w-[100px] my-1  sm:max-h-[100px] sm:-ml-4 sm:max-w-[150px] min-[900px]:max-w-[150px] sm:mx-14 xl:max-w-[150px] sm:mt-0 sm:translate-x-10 sm:my-6 xl:-ml-8" src="/assets/AWS_logo_white_v2-1024x612-6df8aaac.png" alt=""></a>
-              </div>
-              <img class="h-full" src="/assets/d_border-dd8d4fd3.svg" alt="">
-            </div>
-            <div class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7 xl:-mt-2"></div>
-        </div>
-        <!-- platinum tier -->
-        <div class=" mt-10">
-          <div class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BE9BE5] text-1xl xl:text-3xl z-1 relative -top-2">
-              PLATINUM</h1>
+        <!-- <div class="mx-auto">
+          <div
+            class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[40px] bg-[#1E1E1E] flex justify-center text-[#68ACB0] text-1xl xl:text-3xl z-1 relative -top-2"
+            >
+              DIAMOND
+            </h1>
           </div>
           <div class="diamond flex justify-between">
-              <img src="/assets/l_p_border-b5b252e6.svg" alt="">
-              <div class="d_contents grid justify-around sm:flex justify-between sm:mt-7">
-                <a target="_blank" href="https://devfolio.co/">
-                <img class="max-w-[140px] mx-20 sm:mx-14 xl:ml-40 my-3 mt-6 sm:max-w-[200px] xl:max-w-[180px] min-[1280px]:translate-x-0 sm:translate-x-10 2xl:max-w-[200px] xl:mx-2 xl:mt-3" src="/assets/Devfolio-88f610a1.svg" alt=""></a>
-                <a target="_blank" href="https://polygon.technology/">
-                <img class="max-w-[140px] mx-20 sm:mx-14 my-3 sm:-translate-x-10 sm:max-w-[200px] min-[1280px]:translate-x-0 xl:max-w-[170px] 2xl:max-w-[200px] xl:mr-40" src="/assets/Polygon-49522c6d.svg" alt=""></a>
-              </div>
-              <img src="/assets/r_p_border-c96764d5.svg" alt="">
+            <img class="" src="assets/l_d_border.svg" alt="" />
+
+            <div
+              class="d_contents grid justify-around sm:justify-between grid-cols-1 place-items-center min-[400px]:grid-cols-2 min-[900px]:grid-cols-3 min-[500px]:gap-x-28 min-[640px]:gap-x-5 xl:gap-x-0 min-[1280px]:grid-cols-2 min-[1450px]:grid-cols-3 gap-x-0"
+            >
+              <a target="_blank" href="https://mlh.io/">
+                <img
+                  class="max-w-[100px] -my-3 mt-4 xl:mt-8 sm:max-w-[150px] lg:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] xl:mx-10 xl:mt-10 min-[1450px]:mt-0"
+                  src="assets/mlh-logo-white.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://www.postman.com/">
+                <img
+                  class="max-w-[100px] my-1 mt-4 sm:max-w-[150px] xl:max-w-[150px] min-[900px]:max-w-[150px] min-[640px]:ml-6 min-[640px]:translate-x-0 min-[1450px]:-ml-10 min-[1450px]:translate-x-10 xl:mx-14 xl:mt-2"
+                  src="assets/postman.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://aws.amazon.com/">
+                <img
+                  class="max-w-[100px] my-1 sm:max-h-[100px] sm:-ml-4 sm:max-w-[150px] min-[900px]:max-w-[150px] sm:mx-14 xl:max-w-[150px] sm:mt-0 sm:translate-x-10 sm:my-6 xl:-ml-8"
+                  src="assets/AWS_logo_white_v2-1024x612.png"
+                  alt=""
+              /></a>
             </div>
-            <div class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"></div>
-        </div> 
-        <!-- gold tier -->
-        <div class=" mt-10">
-          <div class="bg-[#DA77D6] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#DA77D6] text-2xl xl:text-3xl z-1 relative -top-2">
-              GOLD</h1>
+            <img class="h-full" src="assets/d_border.svg" alt="" />
           </div>
-          <div class="flex justify-between ">
-              <img src="/assets/l_g_border-444f9075.svg" alt="">
-              <div class="d_contents justify-around max-w-full  max-h-full grid grid-cols-1 place-items-center  min-[500px]:grid-cols-2 min-[500px]:gap-x-8   min-[640px]:grid-cols-3 min-[640px]:place-items-center min-[640px]:gap-x-7  min-[1000px]:grid-cols-4 min-[1280px]:grid-cols-2  min-[1280px]:gap-y-1 min-[1200px]:gap-y-0 min-[1400px]:grid-cols-3 min-[2000px]:grid-cols-4 ">
-                <a target="_blank" href="https://solana.com/">
-                <div><img class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px]  2xl:mx-14  min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]" src="/assets/Solana-793e8952.svg" alt=""></div></a>  
-                <a target="_blank" href="https://auth0.com/">
-                <div><img class="max-w-[160px] min-[1000px]:max-w-[180px]2xl:max-w-[200px] -m-5 sm:-m-0 mt-0.5 sm:mt-7 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:mx-7" src="/assets/Auth0_by_Okta_White-3a7b541a.png" alt=""></div></a>   
-                
-                <a target="_blank" href="https://replit.com/">
-                <div><img class="max-w-[180px]  2xl:my-4 2xl:max-w-[200px] -mx-4 sm:-mx-0 sm:mt-5 2xl:mx-14 2xl:mt-10 md:mt-4 min-[1280px]:-mt-7 min-[1400px]:-mt-2 min-[2100px]:-mt-2 min-[2000px]:max-w-[270px]   min-[2100px]:max-w-[300px]" src="/assets/Replit-1ee11cfb.svg" alt=""></div></a>
-                <a target="_blank" href="https://www.echo3d.com/">
-                <div><img class="max-w-[140px] sm:max-w-[160px] sm:translate-x-2 min-[1000px]:-translate-x-2 min-[1400px]:translate-x-2 min-[1000px]:max-w-[170px] min-[1000px]:mt-10 my-8 xl:max-h-[60px] 2xl:max-w-[200px] min-[1280px]:mt-0  2xl:my-12 min-[2100px]:max-w-[280px] min-[2000px]:max-w-[240px] min-[2000px]:mt-2 min-[2100px]:mt-4 " src="/assets/echo3D_brand_logo_2-b4574401.png" alt=""></div></a>
-                <a target="_blank" href="https://filecoin.io/blog/posts/filecoin-network-economics/">
-                  <div><img class="max-w-[130px] mt-0 sm:max-w-[160px] min-[1000px]:max-w-[180px] my-2 2xl:max-w-[200px] 2xl:ml-2 2xl:mx-0 2xl:mt-12 min-[1400px]:-mt-5 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:-mt-2 min-[2100px]:-mt-2  " src="/assets/Filecoin-ff8b0181.svg" alt=""></div></a>
-              </div>
-              <img src="/assets/r_g_border-8e6a00b9.svg" alt=""> 
-            </div>
-            <div class="bg-[#DA77D6] xl:max-w-full h-2.5 max-w-[1900px] ml-7 mr-7"></div>
-        </div> 
-        <!-- silver tier -->
-        <div class=" mt-10">
-          <div class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BABABA] text-2xl xl:text-3xl z-1 relative -top-2">
-              SILVER</h1>
+          <div
+            class="bg-[#68ACB0] h-2.5 max-w-[1900px] xl:max-w-full ml-7 mr-7 xl:-mt-2"
+          ></div>
+        </div> -->
+        <!-- platinum tier -->
+        <div class="mt-10">
+          <div
+            class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BE9BE5] text-1xl xl:text-3xl z-1 relative -top-2"
+            >
+              PLATINUM
+            </h1>
           </div>
-          <div class=" flex justify-between overflow-x-auto no-scrollbar">
-              <img src="/assets/l_s_border-2cd8d94c.svg" alt="">
-              <div class="d_contents grid justify-around sm:flex justify-between">
-                <a target="_blank" href="https://github.com">
-                <img class="max-w-[100px] my-1 mt-4 xl:mt-8 sm:max-w-[200px] xl:max-w-[150px] xl:mx-14" src="/assets/GitHub_Logo_White-f53b383c.png" alt=""></a>
-                <a target="_blank" href="https://jina.ai">
-                <img class="max-w-[100px] my-1 sm:max-w-[160px] sm:max-h-[100px] sm:mx-14 sm:my-6" src="assets/jina.png
-                " alt=""></a>
-              </div>
-              <img src="/assets/r_s_border-b735965e.svg" alt="">
+          <div class="diamond flex justify-between">
+            <img src="/assets/l_p_border-b5b252e6.svg" alt="" />
+            <div
+              class="d_contents grid justify-center sm:flex sm:mt-7"
+            >
+              <a target="_blank" href="https://devfolio.co/">
+                <img
+                  class="max-w-[140px] mx-20 sm:mx-14 xl:ml-  0 my-3 mt-6 sm:max-w-[200px] xl:max-w-[180px] min-[1280px]:translate-x-0 sm:translate-x-10 2xl:max-w-[200px] xl:mx-2 xl:mt-3"
+                  src="/assets/Devfolio-88f610a1.svg"
+                  alt=""
+              /></a>
             </div>
-            <div class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
+            <img src="/assets/r_p_border-c96764d5.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#BE9BE5] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          ></div>
         </div>
-      
-  
+        <!-- gold tier -->
+        <!-- <div class="mt-10">
+          <div
+            class="bg-[#DA77D6] h-2.5 max-w-[1900px] ml-7 mr-7 xl:max-w-full"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#DA77D6] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              GOLD
+            </h1>
+          </div>
+          <div class="flex justify-between">
+            <img src="assets/l_g_border.svg" alt="" />
+            <div
+              class="d_contents grid justify-around sm:flex justify-between sm:mt-7"
+            >
+            <a target="_blank" href="https://polygon.technology/">
+              <img
+                class="max-w-[140px] mx-20 sm:mx-14 my-3 sm:-translate-x-10 sm:max-w-[200px] min-[1280px]:translate-x-0 xl:max-w-[170px] 2xl:max-w-[200px] xl:mr-40"
+                src="assets/Polygon.svg"
+                alt=""
+            /></a>
+            <a target="_blank" href="https://ethindia.com/">
+                <div>
+                  <img
+                    class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px] 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                    src="assets/ETHIndia.png"
+                    alt=""
+                  /></div
+              ></a>
+              <a target="_blank" href="https://solana.com/">
+                <div>
+                  <img
+                    class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px] 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                    src="assets/Solana.svg"
+                    alt=""
+                  /></div
+              ></a>
+              <a target="_blank" href="https://auth0.com/">
+                <div>
+                  <img
+                    class="max-w-[160px] min-[1000px]:max-w-[180px]2xl:max-w-[200px] -m-5 sm:-m-0 mt-0.5 sm:mt-7 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:mx-7"
+                    src="assets/Auth0_by_Okta_White.png"
+                    alt=""
+                  /></div
+              ></a>
+
+              <a target="_blank" href="https://replit.com/">
+                <div>
+                  <img
+                    class="max-w-[180px] 2xl:my-4 2xl:max-w-[200px] -mx-4 sm:-mx-0 sm:mt-5 2xl:mx-14 2xl:mt-10 md:mt-4 min-[1280px]:-mt-7 min-[1400px]:-mt-2 min-[2100px]:-mt-2 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                    src="assets/Replit.svg"
+                    alt=""
+                  /></div
+              ></a>
+              <a target="_blank" href="https://www.echo3d.com/">
+                <div>
+                  <img
+                    class="max-w-[140px] sm:max-w-[160px] sm:translate-x-2 min-[1000px]:-translate-x-2 min-[1400px]:translate-x-2 min-[1000px]:max-w-[170px] min-[1000px]:mt-10 my-8 xl:max-h-[60px] 2xl:max-w-[200px] min-[1280px]:mt-0 2xl:my-12 min-[2100px]:max-w-[280px] min-[2000px]:max-w-[240px] min-[2000px]:mt-2 min-[2100px]:mt-4"
+                    src="assets/echo3D_brand_logo_2.png"
+                    alt=""
+                  /></div
+              ></a>
+              <a
+                target="_blank"
+                href="https://filecoin.io/blog/posts/filecoin-network-economics/"
+              >
+                <div>
+                  <img
+                    class="max-w-[130px] mt-0 sm:max-w-[160px] min-[1000px]:max-w-[180px] my-2 2xl:max-w-[200px] 2xl:ml-2 2xl:mx-0 2xl:mt-12 min-[1400px]:-mt-5 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px] min-[2000px]:-mt-2 min-[2100px]:-mt-2"
+                    src="assets/Filecoin.svg"
+                    alt=""
+                  /></div
+              ></a>
+            </div>
+            <img src="assets/r_g_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#DA77D6] xl:max-w-full h-2.5 max-w-[1900px] ml-7 mr-7"
+          ></div>
+        </div> -->
+        <!-- silver tier -->
+        <div class="mt-10">
+          <div
+            class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[80px] md:max-w-[150px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#BABABA] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              GOLD
+            </h1>
+          </div>
+          <div class="flex justify-between overflow-x-auto no-scrollbar">
+            <img src="/assets/l_s_border-2cd8d94c.svg" alt="" />
+            <div class="d_contents grid justify-around sm:flex mt-10">
+              <a target="_blank" href="https://polygon.technology/">
+                <img
+                  class="max-w-[140px] mx-20 sm:mx-14 my-3 sm:-translate-x-10 sm:max-w-[200px] min-[1280px]:translate-x-0 xl:max-w-[170px] 2xl:max-w-[200px] xl:mr-40"
+                  src="/assets/Polygon-49522c6d.svg"
+                  alt=""
+              /></a>
+              <a target="_blank" href="https://ethindia.com/">
+                  <div>
+                    <img
+                      class="max-w-[130px] sm:max-w-[160px] mt-6 2xl:max-w-[200px] sm:translate-x-2 min-[1000px]:max-w-[180px] 2xl:mx-14 min-[1280px]:mt-0 min-[2000px]:max-w-[270px] min-[2100px]:max-w-[300px]"
+                      src="/assets/ETHIndia-7c63d3df.png"
+                      alt=""
+                    /></div
+                ></a>
+            </div>
+            <img src="/assets/r_s_border-b735965e.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#BABABA] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          ></div>
+        </div>
+
         <!-- Hiring Partners -->
-  
-        <div class=" mt-10">
+
+        <!-- <div class=" mt-10">
           <div class="bg-[#6460ff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
             <h1 class=" mx-auto  pl-2 min-[410px]:pl-0 max-w-[100px] min-[400px]:max-w-[200px]  max-h-[30px]  bg-[#1E1E1E]  flex justify-center text-[#6460ff]  min-[400px]:text-2xl xl:text-3xl z-1 relative -top-2">
              HIRING PARTNERS </h1>
           </div>
           <div class=" flex justify-between overflow-x-auto no-scrollbar">
-              <img src="/assets/l_h_border-dbd840a4.svg" alt="">
+              <img src="assets/l_h_border.svg" alt="">
               <div class="d_contents flex justify-between overflow-x-auto ">
                 <a target="_blank" href="https://social3.club/">
-                <img class="max-w-[120px] min-[360px]:max-w-[200px] max-h-[60px] mt-12 my-8" src="/assets/Social3-Logo_on_White_blue-39fd2bdf.svg" alt=""></a>
+                <img class="max-w-[120px] min-[360px]:max-w-[200px] max-h-[60px] mt-12 my-8" src="assets/Social3-Logo_on_White_blue.svg" alt=""></a>
               </div>
-              <img src="/assets/r_h_border-e7d6e06a.svg" alt="">
+              <img src="assets/r_h_border.svg" alt="">
             </div>
             <div class="bg-[#6460ff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
-        </div>
-  
-         <!-- Digital Media -->
-         <div class=" mt-10">
-          <div class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7" >
-            <h1 class=" mx-auto max-w-[120px] pl-2 min-[410px]:pl-0 min-[410px]:max-w-[200px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#ffffff] text-2xl xl:text-3xl z-1 relative -top-2">
-              DIGITAL MEDIA</h1>
+        </div> -->
+
+        <!-- Digital Media -->
+        <!-- <div class="mt-10">
+          <div
+            class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          >
+            <h1
+              class="mx-auto max-w-[120px] pl-2 min-[410px]:pl-0 min-[410px]:max-w-[200px] max-h-[30px] bg-[#1E1E1E] flex justify-center text-[#ffffff] text-2xl xl:text-3xl z-1 relative -top-2"
+            >
+              DIGITAL MEDIA
+            </h1>
           </div>
           <div class="flex justify-between overflow-x-auto no-scrollbar">
-              <img src="/assets/l_m_border-c9ab541e.svg" alt="">
-              <div class="d_contents flex justify-between overflow-x-auto">
-                <a target="_blank" href="https://www.telegraphindia.com/edugraph">
-                <img class="max-w-[700px] max-h-[80px] my-8" src="assets\edugraph-og.png" alt=""></a>
-              </div>
-              <img src="/assets/r_m_border-19f64874.svg" alt="">
+            <img src="assets/l_m_border.svg" alt="" />
+            <div class="d_contents flex justify-between overflow-x-auto">
+              <a target="_blank" href="https://www.telegraphindia.com/edugraph">
+                <img
+                  class="max-w-[700px] max-h-[80px] my-8"
+                  src="assets\edugraph-og.png"
+                  alt=""
+              /></a>
             </div>
-            <div class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"></div>
-        </div>
+            <img src="assets/r_m_border.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#ffffff] h-2.5 xl:max-w-full max-w-[1900px] ml-7 mr-7"
+          ></div>
+        </div> -->
       </div>
     </div>
-    
+
     <!-- FAQ -->
     <div
       id="faq"
-      class="mt-0 xl:mt-0 mx-5 xl:mx-96 -translate-y-[0rem] xl:px-0"
+      class="mt-0 xl:mt-0 mx-5 xl:mx-64 2xl:mx-72 -translate-y-[0rem]"
       style="padding-bottom: 60px"
     >
       <div class="mb-10">
@@ -1591,7 +1337,7 @@
                 <div
                   class="example text-[#D6D6D6] text-xl sm:text-2xl pl-8 sm:pl-10 xl:pl-12"
                 >
-                  The Status Code 0 hackathon will be conducted in complete
+                  The Status Code 1 hackathon will be conducted in complete
                   offline/in person mode.
                 </div>
               </div>
@@ -1697,7 +1443,7 @@
                   <a
                     target="_blank"
                     class="text-blue-600 underline hover:text-blue-500"
-                    href="https://statuscode0.devfolio.co/"
+                    href="https://statuscode1.devfolio.co/"
                     >Devfolio</a
                   >
                 </div>
@@ -1719,7 +1465,7 @@
                   >
                     [+]
                   </button>
-                  What is the venue for Status Code 0?
+                  What is the venue for Status Code 1?
                 </h1>
               </div>
               <div
@@ -1838,14 +1584,14 @@
           <div class="resources footerelements flex flex-col justify-center">
             <a href="#">
               <img
-                class="w-32 md:w-64 hidden xl:block"
-                src="/assets/iupgz4ve 1-2aa14036.png"
+                class="h-16 md:h-32 hidden xl:block"
+                src="/assets/iiit_kalyani_logo-cd292579.png"
                 alt=""
               />
             </a>
           </div>
           <div
-            class="address footerelements flex flex-col justify-center items-center text-center flex flex-col justify-center items-center text-center"
+            class="mb-14 address footerelements flex flex-col justify-center items-center text-center flex flex-col justify-center items-center text-center"
           >
             <h1 class="footerheading text-2xl md:text-4xl md:mt-0 m-0">
               ADDRESS
@@ -1872,25 +1618,41 @@
               referrerpolicy="no-referrer-when-downgrade"
               class="w-72 h-32 xl:w-96 xl:h-32 footercontent"
             ></iframe> -->
-
-        </div>
-        <div class="resources footerelements text-center">
-          <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
-          <a href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
-            target="_blank" rel="noopener noreferrer">
-            Sponsorship Brochure<br />
-          </a>
-          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
-            target="_blank" rel="noopener noreferrer">
-            Code Of Conduct <br>
-          </a>
-          <a href="./cp.html"
-            class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white" rel="noopener noreferrer">
-            Community Partners<br />
-          </a>
-        </div>
+          </div>
+          <div class="resources footerelements text-center">
+            <h1 class="footerheading text-2xl md:text-4xl m-0">RESOURCES</h1>
+            <!-- <a
+              href="https://drive.google.com/file/d/1JKW9P9Kez_VF_kc4D9bF8mpgT7oi7iBT/view?pli=1"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white mb-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sponsorship Brochure<br />
+            </a> -->
+            <a
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code Of Conduct <br />
+            </a>
+            <!-- <a
+              href="./cp.html"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              rel="noopener noreferrer"
+            >
+              Community Partners<br />
+            </a> -->
+            <!-- <a
+              href="https://statuscode0.notion.site/Status-Code-0-Hacker-Guide-2e3862d425684151adaa0098defd6ecc"
+              class="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hacker guide <br />
+            </a> -->
+          </div>
           <div class="social text-center xl:text-left">
             <h1
               class="footerheading footerelements text-center text-2xl md:text-4xl m-0 mb-2"
@@ -1950,7 +1712,7 @@
           </div>
         </div>
         <div class="copyright flex items-center justify-center mx-5">
-          <h1 class="m-0 text-xl xl:text-2xl">© 2023 IIIT Kalyani</h1>
+          <h1 class="m-0 text-xl xl:text-2xl">© 2024 IIIT Kalyani</h1>
         </div>
       </div>
     </div>
@@ -2025,9 +1787,10 @@
             : 0;
         var leftPosition =
           defaultShiftWidth +
-          Math.max(
-            0,
-            Math.floor(
+          Math.min(
+            document.querySelector('.timeline-wrapper').scrollWidth -
+              timelineWrapperWidth,
+            Math.ceil(
               (document.querySelector('.timeline-wrapper').scrollLeft +
                 timelineElementWidth) /
                 timelineElementWidth
@@ -2050,6 +1813,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    
     
     
   </body>
