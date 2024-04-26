@@ -1,26 +1,44 @@
-name: copy_dist_to_deploy
+name: Copy to deploy branch
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-  copy:
-    name: Copy my folder
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: copy
+
+      - name: Copy files from main to deploy branch
         env:
-          SRC_FOLDER_PATH: 'dist'
-          TARGET_BRANCH: 'deploy'
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          files=$(ls $SRC_FOLDER_PATH) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git fetch                         # fetch branches
-          git checkout $TARGET_BRANCH       # checkout to your branch
-          rm -rf *
-          git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
-          git add -A
-          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
-          git push origin $TARGET_BRANCH # push to remote branch
+          git checkout -b deploy
+          git rm -rf .
+          git checkout main -- .
+      - name: Install dependencies and build
+        run: |
+          git checkout deploy
+          npm install
+          npm run build
+      - name: Remove files and folders except dist
+        run: |
+          git checkout deploy
+          rm -r $(ls -A | grep -v dist | grep -v .git)
+      - name: Move files from dist to root
+        run: |
+          git checkout deploy
+          mv dist/* .
+          rm -rf dist
+      - name: Commit and push changes
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git add .
+          git commit -m "Push build files to deploy branch"
+          git push origin deploy -f
