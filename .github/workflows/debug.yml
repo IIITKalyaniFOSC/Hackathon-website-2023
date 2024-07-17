@@ -1,8 +1,6 @@
 name: status_code_0_deployment
 on:
-  push:
-    branches:
-      - deploy
+  workflow_dispatch:
 jobs:
   debug:
     name: debug
