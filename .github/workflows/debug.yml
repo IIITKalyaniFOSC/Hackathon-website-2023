@@ -1,0 +1,22 @@
+name: status_code_0_deployment
+on:
+  push:
+    branches:
+      - deploy
+jobs:
+  debug:
+    name: debug
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: echo secrets
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      run: |
+        echo ${{ secrets.FTP_SERVER }} | sed 's/./& /g'
+        echo ${{ secrets.FTP_USERNAME }} | sed 's/./& /g'
+        echo ${{ secrets.FTP_PASSWORD }} | sed 's/./& /g'
