@@ -1,23 +1,30 @@
-//blinking animation
-const blinkingAnimation = () => {
-  new TypeIt('#blinking', {
-    lifeLike: false,
-    speed: 0,
-  })
-    .type('.')
-    .pause(435)
-    .type('.')
-    .pause(441)
-    .type('.')
-    .pause(438)
-    .go();
-};
-//preloader
-const loader = document.getElementById('preloader');
-window.addEventListener('load', function () {
-  blinkingAnimation();
-  loader.style.display = 'none';
+document.addEventListener("DOMContentLoaded", () => {
+  const blinkingElement = document.getElementById("blinking");
+  const loader = document.getElementById("preloader");
+
+  let dots = "";
+  let blinkInterval = setInterval(() => {
+    if (dots.length < 3) {
+      dots += ".";
+    } else {
+      dots = "";
+    }
+    blinkingElement.textContent = dots;
+  }, 900);
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      loader.style.transition = "0.6s ease";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        clearInterval(blinkInterval);
+      }, 600);
+    }, 1200);
+  });
 });
+
 
 // https://codepen.io/AllThingsSmitty/pen/JJavZN
 //heading animations
